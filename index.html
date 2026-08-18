@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree-Maa-Bala | Lalitha Sahasranama Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <!-- Sacred Invocation in Tamil -->
+        <p style="color: #FFD700; font-size: 1.3rem; font-weight: bold; letter-spacing: 1px; margin-bottom: 12px;">ஓம் ஸ்ரீ மாத்ரே நமஹ</p>
+        
+        <!-- Shree-Maa-Bala Featured Artwork (800px size) -->
+        <img src="Shreemaabala.jpeg" alt="Shree-Maa-Bala" style="display: block; margin: 0 auto 20px auto; width: 100%; max-width: 800px; height: auto; border-radius: 16px; border: 4px solid #FFD700; box-shadow: 0 8px 20px rgba(0,0,0,0.5);">
+        
+        <!-- Portal Name in English -->
+        <h1>Shree-Maa-Bala</h1>
+        <p>The Complete Divine Portal of Lalitha Sahasranama & Verses with Meanings</p>
+    </header>
+
+    <main class="container">
+        <!-- Compact Audio Link Section -->
+        <section class="card" style="padding: 15px 20px; text-align: center; border: 2px solid #FFD700; background: rgba(255, 215, 0, 0.05); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
+            <div style="text-align: left; flex: 1; min-width: 250px;">
+                <h3 style="margin: 0 0 5px 0; font-size: 1.1rem; color: #333;">🎧 Chanting & Pronunciation Guide</h3>
+                <p style="margin: 0; font-size: 0.9rem; color: #555;">Listen to the slow, word-by-word recitation.</p>
+            </div>
+            <a href="https://www.youtube.com/watch?v=ul3xLmnSp1s" target="_blank" class="btn" style="background: #FFD700; color: #000; font-weight: bold; padding: 8px 16px; font-size: 0.9rem; text-decoration: none; border-radius: 6px; white-space: nowrap;">▶ Listen Now</a>
+        </section>
+
+        <!-- Namavali Section -->
+        <section class="card highlight-card">
+            <h2>📜 ஶ்ரீ லலிதா சஹஸ்ரநாம நாமாவளி (1000 Names)</h2>
+            <p>Explore all 1000 divine names with multi-script switcher (Tamil, Devanagari, English).</p>
+            <a href="./Namavali.html" class="btn">Open Namavali</a>
+        </section>
+
+        <!-- Verses Section -->
+        <section class="card">
+            <h2>🌟 Verses / பிரிவுகள்</h2>
+            <div class="module-grid">
+                <a href="Verses_1_10.html" class="module-link">Verses 1-10</a>
+                <a href="Verses_11_20.html" class="module-link">Verses 11-20</a>
+                <a href="Verses_21_35.html" class="module-link">Verses 21-35</a>
+                <a href="Verses_36_50.html" class="module-link">Verses 36-50</a>
+                <a href="Verses_51_65.html" class="module-link">Verses 51-65</a>
+                <a href="Verses_66_80.html" class="module-link">Verses 66-80</a>
+                <a href="Verses_81_95.html" class="module-link">Verses 81-95</a>
+                <a href="Verses_96_110.html" class="module-link">Verses 96-110</a>
+                <a href="Verses_111_125.html" class="module-link">Verses 111-125</a>
+                <a href="Verses_126_140.html" class="module-link">Verses 126-140</a>
+                <a href="Verses_141_150.html" class="module-link">Verses 141-150</a>
+                <a href="Verses_151_160.html" class="module-link">Verses 151-160</a>
+                <a href="Verses_161_183.html" class="module-link">Verses 161-183</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sri Bala Leela Vinodini AI Assistant Chat Widget -->
+    <style>
+      #bala-chat-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        font-family: Arial, sans-serif;
+      }
+      #bala-toggle-btn {
+        background-color: #d97706;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 16px;
+        font-size: 13px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        transition: transform 0.2s;
+      }
+      #bala-toggle-btn:hover {
+        transform: scale(1.05);
+      }
+      .bala-toggle-avatar {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #fef3c7;
+        background: #fff;
+      }
+      #bala-window {
+        display: none;
+        width: 350px;
+        height: 480px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+        flex-direction: column;
+        overflow: hidden;
+        position: absolute;
+        bottom: 85px;
+        right: 0;
+        border: 1px solid #e5e7eb;
+        transition: height 0.3s ease;
+      }
+      #bala-header {
+        background: #b45309;
+        color: white;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .bala-header-left {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      #bala-header img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #fef3c7;
+      }
+      #bala-header-text h4 {
+        margin: 0;
+        font-size: 13px;
+      }
+      #bala-header-text span {
+        font-size: 10px;
+        color: #fde68a;
+      }
+      .bala-header-actions {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+      }
+      .bala-header-btn {
+        background: rgba(255,255,255,0.2);
+        border: none;
+        color: white;
+        font-size: 11px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 3px 7px;
+        border-radius: 4px;
+      }
+      .bala-header-btn:hover {
+        background: rgba(255,255,255,0.35);
+      }
+      #bala-messages {
+        flex: 1;
+        padding: 15px;
+        overflow-y: auto;
+        background: #fffbeb;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .bala-msg, .user-msg {
+        max-width: 80%;
+        padding: 10px 12px;
+        border-radius: 8px;
+        font-size: 14px;
+        line-height: 1.4;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+      .bala-msg {
+        background: #ffffff;
+        color: #1f2937;
+        align-self: flex-start;
+        border: 1px solid #f3f4f6;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      }
+      .user-msg {
+        background: #b45309;
+        color: white;
+        align-self: flex-end;
+      }
+      #bala-input-area {
+        display: flex;
+        padding: 10px;
+        background: #f9fafb;
+        border-top: 1px solid #e5e7eb;
+      }
+      #bala-input {
+        flex: 1;
+        padding: 8px 12px;
+        border: 1px solid #d1d5db;
+        border-radius: 6px;
+        outline: none;
+        font-size: 14px;
+      }
+      #bala-send-btn {
+        background: #b45309;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        margin-left: 8px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      #bala-send-btn:hover {
+        background: #92400e;
+      }
+    </style>
+
+    <div id="bala-chat-container">
+      <button id="bala-toggle-btn" onclick="toggleBalaChat()" title="Chat with Sri Bala Leela Vinodini">
+        <img src="Shreemaabala.jpeg" alt="Sri Bala" class="bala-toggle-avatar">
+        Sri Bala Leela Vinodini
+      </button>
+      <div id="bala-window">
+        <div id="bala-header">
+          <div class="bala-header-left">
+            <img src="Shreemaabala.jpeg" alt="Sri Bala Leela Vinodini">
+            <div id="bala-header-text">
+              <h4>Sri Bala Leela Vinodini</h4>
+              <span>Online | Lalitha Sahasranama</span>
+            </div>
+          </div>
+          <div class="bala-header-actions">
+            <button class="bala-header-btn" onclick="clearBalaChat()" title="Clear Chat">Clear</button>
+            <button class="bala-header-btn" onclick="toggleBalaChat()" title="Minimize">−</button>
+          </div>
+        </div>
+        <div id="bala-messages">
+          <div class="bala-msg">Namaskaram, dear devotee. I am Sri Bala Leela Vinodini. How may I assist you in exploring the sacred meanings today?</div>
+        </div>
+        <div id="bala-input-area">
+          <input type="text" id="bala-input" placeholder="Ask about a Nama (e.g. Nama 101)..." onkeypress="handleBalaKeyPress(event)">
+          <button id="bala-send-btn" onclick="sendBalaMessage()">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleBalaChat() {
+        const win = document.getElementById('bala-window');
+        win.style.display = win.style.display === 'flex' ? 'none' : 'flex';
+      }
+
+      function clearBalaChat() {
+        const messages = document.getElementById('bala-messages');
+        messages.innerHTML = '<div class="bala-msg">Namaskaram, dear devotee. I am Sri Bala Leela Vinodini. How may I assist you in exploring the sacred meanings today?</div>';
+      }
+
+      async function sendBalaMessage() {
+        const input = document.getElementById('bala-input');
+        const messages = document.getElementById('bala-messages');
+        const text = input.value.trim();
+        if (!text) return;
+
+        // Append user message
+        const userDiv = document.createElement('div');
+        userDiv.className = 'user-msg';
+        userDiv.textContent = text;
+        messages.appendChild(userDiv);
+        input.value = '';
+        messages.scrollTop = messages.scrollHeight;
+
+        // Append loading state for Bala
+        const balaDiv = document.createElement('div');
+        balaDiv.className = 'bala-msg';
+        balaDiv.textContent = 'Sri Bala Leela Vinodini is reflecting...';
+        messages.appendChild(balaDiv);
+        messages.scrollTop = messages.scrollHeight;
+
+        try {
+          const response = await fetch('https://shree-maa-bala.onrender.com/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: text })
+          });
+          const data = await response.json();
+          balaDiv.textContent = data.reply;
+        } catch (err) {
+          balaDiv.textContent = 'Namaskaram. My connection flickered for a moment. Please try again.';
+        }
+        messages.scrollTop = messages.scrollHeight;
+      }
+
+      function handleBalaKeyPress(e) {
+        if (e.key === 'Enter') sendBalaMessage();
+      }
+    </script>
+    <!-- End of Sri Bala Leela Vinodini AI Assistant -->
+
+</body>
+</html>

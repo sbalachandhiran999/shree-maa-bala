@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+<meta charset="UTF-8">
+<title>Lalitha Sahasranamam - Module 08 (Verses 96 to 110)</title>
+<style>
+  @page {
+    size: A4;
+    margin: 12mm;
+    @bottom-right {
+      content: "Module 08 • Page " counter(page);
+      font-size: 8pt;
+      font-family: Georgia, serif;
+      color: #8A5A36;
+    }
+    @bottom-left {
+      content: "Lalitha Sahasranamam — Verses 96 to 110 (Namas 459 to 541)";
+      font-size: 8pt;
+      font-family: Georgia, serif;
+      color: #8A5A36;
+    }
+  }
+
+  body {
+    font-family: 'Segoe UI', 'Mukta Malar', 'Latha', Arial, sans-serif;
+    color: #2D241E;
+    line-height: 1.45;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-size: 8.5pt;
+  }
+
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 88vh;
+    text-align: center;
+    border: 3px double #C59B27;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    background: radial-gradient(circle, #FFFDF8 0%, #FBF4E6 100%);
+  }
+
+  h1.title {
+    font-family: 'Georgia', serif;
+    color: #800020;
+    font-size: 22pt;
+    margin: 8px 0 2px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .tamil-title {
+    font-size: 15pt;
+    color: #800020;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    font-family: 'Georgia', serif;
+    color: #9A6B1F;
+    font-size: 11pt;
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .divider {
+    width: 120px;
+    height: 2px;
+    background-color: #C59B27;
+    margin: 10px auto;
+  }
+
+  .badge {
+    display: inline-block;
+    background-color: #800020;
+    color: #FFFFFF;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 8pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  .stage-card {
+    border: 1px solid #E2D1B3;
+    background-color: #FCFAF6;
+    border-left: 4px solid #800020;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    page-break-inside: avoid;
+  }
+
+  .stage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px dashed #D6C29E;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+  }
+
+  .stage-title {
+    font-family: Georgia, serif;
+    font-size: 10.5pt;
+    color: #800020;
+    font-weight: bold;
+  }
+
+  .verse-pill {
+    background-color: #F1E5D1;
+    color: #6E4613;
+    font-size: 7pt;
+    font-weight: bold;
+    padding: 2px 7px;
+    border-radius: 8px;
+    border: 1px solid #DFCEAE;
+  }
+
+  .anchor-box {
+    background-color: #FFF6E5;
+    border: 1px solid #F0DEB7;
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+  }
+
+  .anchor-title {
+    font-weight: bold;
+    color: #87570E;
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+
+  .anchor-desc {
+    font-style: italic;
+    color: #4A3B32;
+    font-size: 7.5pt;
+  }
+
+  .shloka-unit {
+    border-bottom: 1px solid #EFE6D8;
+    padding: 8px 0;
+    page-break-inside: avoid;
+  }
+
+  .shloka-unit:last-child {
+    border-bottom: none;
+  }
+
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 7.5pt;
+    margin-bottom: 2px;
+  }
+
+  .v-badge {
+    color: #800020;
+    font-weight: bold;
+  }
+
+  .n-badge {
+    color: #7A5318;
+    font-weight: 600;
+  }
+
+  .devanagari {
+    font-family: 'Sanskrit Text', 'Nirmala UI', Georgia, serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #691515;
+    line-height: 1.35;
+  }
+
+  .tamil-shloka {
+    font-size: 9.5pt;
+    color: #1A4D2E;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-top: 2px;
+  }
+
+  .iast {
+    font-size: 8pt;
+    color: #4A3B32;
+    font-style: italic;
+    line-height: 1.25;
+    margin-top: 2px;
+  }
+
+  .nama-card {
+    margin-top: 6px;
+    background-color: #F8F4EC;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 7.5pt;
+    line-height: 1.4;
+  }
+
+  .nama-header {
+    font-weight: bold;
+    color: #800020;
+    font-size: 8pt;
+    border-bottom: 1px solid #E5D6C0;
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+  }
+
+  .en-meaning {
+    color: #2D241E;
+    margin-bottom: 2px;
+  }
+
+  .ta-meaning {
+    color: #5C3D1E;
+    font-weight: 500;
+  }
+
+  .lbl {
+    font-weight: bold;
+    color: #800020;
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+  <div class="badge">Module 08 of 09 • தொகுதி 8</div>
+  <h1 class="title">Lalitha Sahasranamam</h1>
+  <div class="tamil-title">ஸ்ரீ லலிதா ஸஹஸ்ரநாம ஸ்தோத்திரம்</div>
+  <div class="subtitle">Complete Verses 96 to 110 (Namas 459 to 541) with Name-by-Name Meanings</div>
+  <div class="divider"></div>
+  <p style="font-size: 9pt; max-width: 500px; color: #4A3B32; margin: 6px auto;">
+    Trilingual Edition (Devanagari • தமிழ் • IAST) featuring <strong>The Splendid Queen (Sumukhi)</strong>, <strong>The Seven Yogini Deities of the Chakras (Dakini, Rakini, Lakini, Kakini, Sakini, Hakini, Yakini)</strong>, and <strong>The Cosmic Offerings (Svaha, Svadha)</strong>.
+  </p>
+  <div class="divider"></div>
+  <div style="font-size: 8pt; color: #5C4A3E; line-height: 1.5;">
+    <strong>Covers:</strong> Verses 96 to 110 (Namas 459 to 541)<br>
+    <strong>Visual Anchors:</strong> The Seven Yoginis & The Bodily Dhatus (சப்த யோகினிகள் & சப்த தாதுக்கள்)<br>
+    <em>Devanagari • தமிழ் வரிவடிவம் • English IAST • Granular Word-by-Word Definitions</em>
+  </div>
+</div>
+
+<!-- PAGE: VERSES 96 TO 97 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 15A: The Queen of Gods & The Perfection of Yoga / ஸுரநாயிகா & சித்தவித்யா</span>
+    <span class="verse-pill">Verses 96 – 97 | Namas 459 – 474</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Majestic and Agitating Mother (ஸுமுகீ & க்ஷோபிணீ)</div>
+    <div class="anchor-desc">Sumukhi, Ksobhiṇī, Vajreshwari, Vamadevi, Siddha-vidyā, and eternal youth beyond all aging.</div>
+  </div>
+  <!-- VERSE 96 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 96</span><span class="n-badge">Namas 459 – 467</span></div>
+    <div class="devanagari">सुमुखी नलिनी सुभ्रूः शोभना सुरनायिका । कालकण्ठी कान्तिमती क्षोभिणी सूक्ष्मरूपिणी ॥ ९६ ॥</div>
+    <div class="tamil-shloka">ஸுமுகீ நலிநீ ஸுப்ரூஃ ஶோபநா ஸுரநாயிகா । காலகண்டீ காந்திமதீ க்ஷோபிணீ ஸூக்ஷ்மரூபிணீ ॥ கூசு ॥</div>
+    <div class="iast">sumukhī nalinī subhrūḥ śobhanā suranāyikā | kālakaṇṭhī kāntimatī kṣobhiṇī sūkṣmarūpiṇī || 96 ||</div>
+    <div class="nama-card"><div class="nama-header">459. Sumukhī (ஸுமுகீ)</div><div class="en-meaning"><span class="lbl">English:</span> Having an exquisitely beautiful, bright, and auspicious face.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மங்களகரமான அழகிய திருமுகத்தை உடையவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">460. Nalinī (நலிநீ)</div><div class="en-meaning"><span class="lbl">English:</span> Soft, pure, and beautiful as a blossoming lotus.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தாமரை மலர் போன்ற மென்மையும் அழகும் கொண்டவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">461. Subhrūḥ (ஸுப்ரூஃ)</div><div class="en-meaning"><span class="lbl">English:</span> Possessing beautiful, arched eyebrows that govern the universe.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உலகை ஆளும் அழகிய புருவங்களைக் கொண்டவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">462. Śobhanā (ஶோபநா)</div><div class="en-meaning"><span class="lbl">English:</span> Radiating supreme grace, brilliance, and auspiciousness.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பேரெழிலோடு மங்களகரமாகப் பிரகாசிப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">463. Sura-nāyikā (ஸுரநாயிகா)</div><div class="en-meaning"><span class="lbl">English:</span> The supreme leader, queen, and protector of all celestial gods.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தேவர்கள் அனைவருக்கும் தலைவியாக விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">464. Kāla-kaṇṭhī (காலகண்டீ)</div><div class="en-meaning"><span class="lbl">English:</span> The consort of Kalakantha (Lord Shiva who swallowed the dark poison).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஆலகால நஞ்சை உண்ட நீலகண்டனின் நாயகியான காலகண்டி.</div></div>
+    <div class="nama-card"><div class="nama-header">465. Kāntimatī (காந்திமதீ)</div><div class="en-meaning"><span class="lbl">English:</span> Possessing a magnetic, effulgent, and luminous aura.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> வசீகரமான ஒளிபொருந்திய தேஜஸ் கொண்டவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">466. Kṣobhiṇī (க்ஷோபிணீ)</div><div class="en-meaning"><span class="lbl">English:</span> The agitator who stirs the cosmic elements into creation.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிரபஞ்சப் படைப்பிற்காக மூலப் பிரகிருதியை அதிரச் செய்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">467. Sūkṣma-rūpiṇī (ஸூக்ஷ்மரூபிணீ)</div><div class="en-meaning"><span class="lbl">English:</span> Having a subtle, unmanifest, and supremely delicate spiritual form.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> புலன்களுக்கு எட்டாத மிக நுண்ணிய சூட்சும வடிவானவள்.</div></div>
+  </div>
+  <!-- VERSE 97 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 97</span><span class="n-badge">Namas 468 – 474</span></div>
+    <div class="devanagari">वज्रेश्वरी वामदेवी वयोऽवस्थाविवर्जिता । सिद्धेश्वरा सिद्धविद्या सिद्धमाता यशस्विनी ॥ ९७ ॥</div>
+    <div class="tamil-shloka">வஜ்ரேஶ்வரீ வாமதேவீ வயோऽவஸ்தாவிவர்ஜிதா । ஸித்தேஶ்வரீ ஸித்தவித்யா ஸித்தமாதா யஶஸ்விநீ ॥ கூஎ ॥</div>
+    <div class="iast">vajreśvarī vāmadevī vayo'vasthāvivarjitā | siddheśvarī siddhavidyā siddhamātā yaśasvinī || 97 ||</div>
+    <div class="nama-card"><div class="nama-header">468. Vajreśvarī (வஜ்ரேஶ்வரீ)</div><div class="en-meaning"><span class="lbl">English:</span> The presiding deity of the Vajreshwari Pitha, invincible like a diamond.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> வஜ்ரேஸ்வரி பீடத்தின் நாயகியாகவும், வஜ்ரம் போல் உறுதியானவளாகவும் இருப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">469. Vāmadevī (வாமதேவீ)</div><div class="en-meaning"><span class="lbl">English:</span> The enchanting divine consort of Lord Vamadeva (Shiva).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> வாமதேவரான சிவபெருமானின் பத்தினியாக விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">470. Vayo'vasthā-vivarjitā (வயோऽவஸ்தாவிவர்ஜிதா)</div><div class="en-meaning"><span class="lbl">English:</span> Completely free from the bodily changes of aging and phases of life.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பருவ வயதின் எந்த மாறுதல்களும் மூப்பும் இல்லாதவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">471. Siddheśvarī (ஸித்தேஶ்வரீ)</div><div class="en-meaning"><span class="lbl">English:</span> The Empress of perfected beings (Siddhas) and granter of Siddhis.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சித்தர்களுக்கெல்லாம் ஈஸ்வரியாகவும் அட்டமா சித்திகளைத் தருபவளாகவும் இருப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">472. Siddha-vidyā (ஸித்தவித்யா)</div><div class="en-meaning"><span class="lbl">English:</span> The sacred, perfected mantra wisdom (Sri Vidya) that instantly grants realization.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உடனடியாக பலன் தரும் பரிபூரணமான சித்தியடைந்த வித்தை.</div></div>
+    <div class="nama-card"><div class="nama-header">473. Siddha-mātā (ஸித்தமாதா)</div><div class="en-meaning"><span class="lbl">English:</span> The compassionate Mother of all enlightened Siddha masters.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சித்தர்கள் அனைவருக்கும் அன்னையாக விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">474. Yaśasvinī (யஶஸ்விநீ)</div><div class="en-meaning"><span class="lbl">English:</span> Possessing eternal, resplendent, and universally celebrated fame.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எல்லையற்ற புகழும் கீர்த்தியும் கொண்டவள்.</div></div>
+  </div>
+</div>
+<!-- PAGE: VERSES 98 TO 101 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 15B: Vishuddhi & Anahata Chakras (Dakini & Rakini) / விசுத்தி & அனாஹத சக்கரங்கள்</span>
+    <span class="verse-pill">Verses 98 – 101 | Namas 475 – 494</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Throat and Heart Centers (டாகினி & ராகினி)</div>
+    <div class="anchor-desc">Dakiniswari in the throat (skin/twak) and Rakinamba in the heart (blood/rudhira), loving Payasam and Snigdhodana.</div>
+  </div>
+  <!-- VERSE 98 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 98</span><span class="n-badge">Namas 475 – 479</span></div>
+    <div class="devanagari">विशुद्धिचक्रनिलयाऽऽरक्तवर्णा त्रिलोचना । खट्वाङ्गादिप्रहरणा वदनैकसमन्विता ॥ ९८ ॥</div>
+    <div class="tamil-shloka">விஶுத்திசக்ரநிலயாऽऽரக்தவர்ணா த்ரிலோசநா । கட்வாங்காதிப்ரஹரணா வதநைகஸமந்விதா ॥ கூஅ ॥</div>
+    <div class="iast">viśuddhicakranilayā''raktavarṇā trilocanā | khaṭvāṅgādipraharaṇā vadanaikasamanvitā || 98 ||</div>
+    <div class="nama-card"><div class="nama-header">475. Viśuddhi-cakra-nilayā (விஶுத்திசக்ரநிலயா)</div><div class="en-meaning"><span class="lbl">English:</span> Residing in the sixteen-petaled Vishuddhi Chakra at the throat center (as Mother Dakini).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தொண்டைப் பகுதியில் உள்ள விசுத்தி சக்கரத்தில் தாகினி தேவியாக உறைபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">476. Ārakta-varṇā (ஆரக்தவர்ணா)</div><div class="en-meaning"><span class="lbl">English:</span> Having a radiant, rosy-red complexion in this center.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> விசுத்தி சக்கரத்தில் செந்நிறமான திருமேனியோடு பிரகாசிப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">477. Trilocanā (த்ரிலோசநா)</div><div class="en-meaning"><span class="lbl">English:</span> Endowed with three divine, all-seeing eyes.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மூன்று கண்களைக் கொண்டவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">478. Khaṭvāṅgādi-praharaṇā (கட்வாங்காதிப்ரஹரணா)</div><div class="en-meaning"><span class="lbl">English:</span> Wielding the Khatvanga (skull-mounted staff) and other powerful weapons.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> கட்வாங்கம் முதலான ஆயுதங்களைக் கைகளில் ஏந்தியவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">479. Vadanaika-samanvitā (வதநைகஸமந்விதா)</div><div class="en-meaning"><span class="lbl">English:</span> Possessing a single, unified, majestic face in this manifestation.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> இந்தச் சக்கரத்தில் ஒரு திருமுகத்துடன் அருள்பாலிப்பவள்.</div></div>
+  </div>
+  <!-- VERSE 99 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 99</span><span class="n-badge">Namas 480 – 484</span></div>
+    <div class="devanagari">पायसान्नप्रिया त्वक्स्था पशुलोकभयङ्करी । अमृतादिमहाशक्तिसंवृता डाकिनीश्वरी ॥ ९९ ॥</div>
+    <div class="tamil-shloka">பாயஸாந்நப்ரியா த்வக்ஸ்தா பஶுலோகபயங்கரீ । அம்ருதாதிமஹாஶக்திஸம்வ்ருதா டாகினீஶ்வரீ ॥ கூகூ ॥</div>
+    <div class="iast">pāyasānnapriyā tvaksthā paśulokabhayaṅkarī | amṛtādimahāśaktisaṃvṛtā ḍākinīśvarī || 99 ||</div>
+    <div class="nama-card"><div class="nama-header">480. Pāyasānna-priyā (பாயஸாந்நப்ரியா)</div><div class="en-meaning"><span class="lbl">English:</span> Deeply fond of sweet Payasam (milk-rice pudding) offered as naivedya.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பாயச அன்ன நைவேத்தியத்தில் மிகுந்த பிரியம் கொள்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">481. Tvak-sthā (த்வக்ஸ்தா)</div><div class="en-meaning"><span class="lbl">English:</span> Governing the skin (Twak), the tactile sensory organ of the human body.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உடலில் உள்ள தோல் தாதுவை ஆட்சி செய்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">482. Paśu-loka-bhayaṅkarī (பஶுலோகபயங்கரீ)</div><div class="en-meaning"><span class="lbl">English:</span> Terrifying to the ignorant, bound souls (Pashus) immersed in materialism.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அஞ்ஞானத்தில் உழலும் ஆன்மாக்களுக்கு அச்சம் தருபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">483. Amṛtādi-mahā-śakti-saṃvṛtā (அம்ருதாதிமஹாஶக்திஸம்வ்ருதா)</div><div class="en-meaning"><span class="lbl">English:</span> Surrounded by sixteen attendant shaktis beginning with Amrita.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அம்ருதா முதலான பதினாறு தேவதைகளால் சூழப்பட்டவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">484. Ḍākinīśvarī (டாகினீஶ்வரீ)</div><div class="en-meaning"><span class="lbl">English:</span> Manifesting as Mother Dakiniswari, the presiding deity of the Vishuddhi Chakra.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> விசுத்தி சக்கரத்தின் தலைவியான டாகினி ஈஸ்வரியாக விளங்குபவள்.</div></div>
+  </div>
+  <!-- VERSE 100 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 100</span><span class="n-badge">Namas 485 – 490</span></div>
+    <div class="devanagari">अनाहताब्जनिलया श्यामाभा वदनद्वया । दंष्ट्रोज्ज्वलाऽक्षमालादिधरा रुधिरसंस्थिता ॥ १०० ॥</div>
+    <div class="tamil-shloka">அநாஹதாப்ஜநிலயா ஶ்யாமாபா வதநத்வயா । தம்ஷ்ட்ரோஜ்ஜ்வலாऽக்ஷமாலாதிதரா ருதிரஸம்ஸ்திதா ॥ க00 ॥</div>
+    <div class="iast">anāhatābjanilayā śyāmābhā vadanadvayā | daṃṣṭrojjvalā'kṣamālādīdharā rudhirasaṃsthitā || 100 ||</div>
+    <div class="nama-card"><div class="nama-header">485. Anāhatābja-nilayā (அநாஹதாப்ஜநிலயா)</div><div class="en-meaning"><span class="lbl">English:</span> Residing in the twelve-petaled Anahata Chakra at the heart center (as Mother Rakini).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> இதயப் பகுதியில் உள்ள அனாஹத சக்கரத்தில் ராகினி தேவியாக உறைபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">486. Śyāmābhā (ஶ்யாமாபா)</div><div class="en-meaning"><span class="lbl">English:</span> Radiating a dark, brilliant, bluish-black (Shyama) luster.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> கரிய நிறமான சியாமள ஒளியோடு பிரகாசிப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">487. Vadana-dvayā (வதநத்வயா)</div><div class="en-meaning"><span class="lbl">English:</span> Possessing two majestic faces in this heart-center manifestation.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனாஹத சக்கரத்தில் இரு முகங்களோடு அருள்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">488. Daṃṣṭrojjvalā (தம்ஷ்ட்ரோஜ்ஜ்வலா)</div><div class="en-meaning"><span class="lbl">English:</span> Shining with gleaming, fierce, and beautiful tusks.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஒளிவீசும் கோரைப் பற்களுடன் உக்கிரமாகப் பிரகாசிப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">489. Akṣamālādi-dharā (அக்ஷமாலாதிதரா)</div><div class="en-meaning"><span class="lbl">English:</span> Adorned with a rosary of rudraksha beads and other divine emblems.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> கைகளில் ருத்திராட்ச மாலையை ஏந்தியவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">490. Rudhira-saṃsthitā (ருதிரஸம்ஸ்திதா)</div><div class="en-meaning"><span class="lbl">English:</span> Governing the blood (Rudhira) tissue system within the physical body.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உடலில் உள்ள இரத்தத் தாதுவை ஆட்சி செய்பவள்.</div></div>
+  </div>
+  <!-- VERSE 101 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 101</span><span class="n-badge">Namas 491 – 494</span></div>
+    <div class="devanagari">कालरात्र्यादिशक्त्यौघवृता स्निग्धौदनप्रिया । महावीरेन्द्रवरदा राकिण्यम्बास्वरूपिणी ॥ १०१ ॥</div>
+    <div class="tamil-shloka">காலராத்ர்யாதிஶக்த்யௌகவ்ருதா ஸ்நிக்தௌதநப்ரியா । மஹாவீரேந்த்ரவரதா ராகிண்யம்பாஸ்வரூபிணீ ॥ க0க ॥</div>
+    <div class="iast">kālarātryādiśaktyaughavṛtā snigdhaudanapriyā | mahāvīrendravaradā rākiṇyambāsvarūpiṇī || 101 ||</div>
+    <div class="nama-card"><div class="nama-header">491. Kālarātryādi-śakty-augha-vṛtā (காலராத்ர்யாதிஶக்த்யௌகவ்ருதா)</div><div class="en-meaning"><span class="lbl">English:</span> Surrounded by twelve attendant shaktis beginning with Kalaratri.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> காளராத்ரி முதலான பன்னிரண்டு தேவதைகளால் சூழப்பட்டவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">492. Snigdhaudana-priyā (ஸ்நிக்தௌதநப்ரியா)</div><div class="en-meaning"><span class="lbl">English:</span> Fond of offerings of rich, unctuous food mixed with ghee (Snigdhodana).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> நெய் கலந்த நெய்ச்சோறு நைவேத்தியத்தில் பிரியம் கொள்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">493. Mahā-vīrendra-varadā (மஹாவீரேந்த்ரவரதா)</div><div class="en-meaning"><span class="lbl">English:</span> Bestowing mighty boons upon great heroic spiritual seekers and warriors.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மாபெரும் வீரர்களுக்கும் யோகியர்களுக்கும் வரங்களை அருள்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">494. Rākiṇyambā-svarūpiṇī (ராகிண்யம்பாஸ்வரூபிணீ)</div><div class="en-meaning"><span class="lbl">English:</span> Manifesting as Mother Rakinamba, the presiding deity of the Anahata Chakra.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனாஹத சக்கரத்தின் தலைவியான ராகினி அம்பிகையாக விளங்குபவள்.</div></div>
+  </div>
+</div>
+<!-- PAGE: VERSES 102 TO 105 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 16A: Manipura & Svadhisthana Chakras (Lakini & Kakini) / மணிபூரகம் & சுவாதிஷ்டானம்</span>
+    <span class="verse-pill">Verses 102 – 105 | Namas 495 – 513</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Navel and Pelvic Centers (லாகினி & காகினி)</div>
+    <div class="anchor-desc">Lakinamba in the navel (muscle/mamsa) and Kakinamba in the sacral center (fat/medas), holding Vajra and Shula.</div>
+  </div>
+  <!-- VERSE 102 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 102</span><span class="n-badge">Namas 495 – 498</span></div>
+    <div class="devanagari">मणिपूराब्जनिलया वदनत्रयसंयुता । वज्रादिकायुधोपेता डामर्यादिभिरावृता ॥ १०२ ॥</div>
+    <div class="tamil-shloka">மணிபூராப்ஜநிலயா வதநத்ரயஸம்யுதா । வஜ்ராதிகாயுதோபேதா டாமர்யாதிபிராவ்ருதா ॥ க0உ ॥</div>
+    <div class="iast">maṇipūrābjanilayā vadanatrayasaṃyutā | vajrādikāyudhopetā ḍāmaryādibhirāvṛtā || 102 ||</div>
+    <div class="nama-card"><div class="nama-header">495. Maṇipūrābja-nilayā (மணிபூராப்ஜநிலயா)</div><div class="en-meaning"><span class="lbl">English:</span> Residing in the ten-petaled Manipura Chakra at the navel center (as Mother Lakini).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> நாபிப் பகுதியில் உள்ள மணிபூரக சக்கரத்தில் லாகினி தேவியாக உறைபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">496. Vadana-traya-saṃyutā (வதநத்ரயஸம்யுதா)</div><div class="en-meaning"><span class="lbl">English:</span> Possessing three majestic faces in this navel-center manifestation.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மணிபூரக சக்கரத்தில் மூன்று திருமுகங்களுடன் அருள்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">497. Vajrādikāyudhopetā (வஜ்ராதிகாயுதோபேதா)</div><div class="en-meaning"><span class="lbl">English:</span> Wielding the invincible thunderbolt (Vajra) and other divine weapons.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> கைகளில் வஜ்ராயுதம் முதலான ஆயுதங்களை ஏந்தியவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">498. Ḍāmary-ādibhir-āvṛtā (டாமர்யாதிபிராவ்ருதா)</div><div class="en-meaning"><span class="lbl">English:</span> Surrounded by ten attendant shaktis beginning with Damari.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> டாமரி முதலான பத்து தேவதைகளால் சூழப்பட்டவள்.</div></div>
+  </div>
+  <!-- VERSE 103 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 103</span><span class="n-badge">Namas 499 – 503</span></div>
+    <div class="devanagari">रक्तवर्णा मांसनिष्ठा गुडान्नप्रीतमानसा । समस्तभक्तसुखदा लाकिन्यम्बास्वरूपिणी ॥ १०३ ॥</div>
+    <div class="tamil-shloka">ரக்தவர்ணா மாம்ஸநிஷ்டா குடாந்நப்ரீதமாநஸா । ஸமஸ்தபக்தஸுகதா லாகிண்யம்பாஸ்வரூபிணீ ॥ க0ங ॥</div>
+    <div class="iast">raktavarṇā māṃsaniṣṭhā guḍānnaprītamānasā | samastabhaktasukhadā lākinyambāsvarūpiṇī || 103 ||</div>
+    <div class="nama-card"><div class="nama-header">499. Rakta-varṇā (ரக்தவர்ணா)</div><div class="en-meaning"><span class="lbl">English:</span> Radiating a vibrant, blood-red complexion.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மணிபூரகத்தில் இரத்தச் சிவப்பான திருமேனியோடு பிரகாசிப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">500. Māṃsa-niṣṭhā (மாம்ஸநிஷ்டா)</div><div class="en-meaning"><span class="lbl">English:</span> Governing the muscular tissue system (Mamsa) within the physical body.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உடலில் உள்ள மாமிச (தசை) தாதுவை ஆட்சி செய்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">501. Guḍānna-prīta-mānasā (குடாந்நப்ரீதமாநஸா)</div><div class="en-meaning"><span class="lbl">English:</span> Fond of offerings of sweet rice mixed with jaggery (Gudanna).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சர்க்கரைப் பொங்கல் நைவேத்தியத்தில் மனம் மகிழ்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">502. Samasta-bhakta-sukha-dā (ஸமஸ்தபக்தஸுகதா)</div><div class="en-meaning"><span class="lbl">English:</span> Bestowing all forms of happiness, joy, and peace to every devotee.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பக்தர்கள் அனைவருக்கும் முழுமையான இன்பங்களை வழங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">503. Lākinyambā-svarūpiṇī (லாகிண்யம்பாஸ்வரூபிணீ)</div><div class="en-meaning"><span class="lbl">English:</span> Manifesting as Mother Lakinamba, the presiding deity of the Manipura Chakra.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மணிபூரக சக்கரத்தின் தலைவியான லாகினி அம்பிகையாக விளங்குபவள்.</div></div>
+  </div>
+  <!-- VERSE 104 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 104</span><span class="n-badge">Namas 504 – 508</span></div>
+    <div class="devanagari">स्वाधिष्ठानाम्बुजगता चतुर्वक्त्रमनोहरा । शूलाद्यायुधसम्पन्ना पीतवर्णाऽतिगर्विता ॥ १०४ ॥</div>
+    <div class="tamil-shloka">ஸ்வாதிஷ்டாநாம்புஜகதா சதுர்வக்த்ரமநோஹரா । ஶூலாத்யாயுதஸம்பந்நா பீதவர்ணாऽதிகர்விதா ॥ க0ச ॥</div>
+    <div class="iast">svādhiṣṭhānāmbujagatā caturvaktramanoharā | śūlādyāyudhasampannā pītavarṇā'tigarvitā || 104 ||</div>
+    <div class="nama-card"><div class="nama-header">504. Svādhiṣṭhānāmbuja-gatā (ஸ்வாதிஷ்டாநாம்புஜகதா)</div><div class="en-meaning"><span class="lbl">English:</span> Residing in the six-petaled Svadhisthana Chakra at the lower abdomen (as Mother Kakini).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அடிவயிற்றில் உள்ள சுவாதிஷ்டான சக்கரத்தில் காகினி தேவியாக உறைபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">505. Catur-vaktra-manoharā (சதுர்வக்த்ரமநோஹரா)</div><div class="en-meaning"><span class="lbl">English:</span> Captivating and beautiful with four divine faces.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சுவாதிஷ்டானத்தில் நான்கு அழகிய முகங்களுடன் மனதைக் கவர்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">506. Śūlādy-āyudha-sampannā (ஶூலாத்யாயுதஸம்பந்நா)</div><div class="en-meaning"><span class="lbl">English:</span> Equipped with the trident (Trishula) and other divine weapons.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சூலாயுதம் முதலான ஆயுதங்களைக் கைகளில் ஏந்தியவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">507. Pīta-varṇā (பீதவர்ணா)</div><div class="en-meaning"><span class="lbl">English:</span> Shining with a brilliant, auspicious yellow (golden) complexion.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பொன்னிறமான மஞ்சள் திருமேனியோடு பிரகாசிப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">508. Ati-garvitā (அதிகர்விதா)</div><div class="en-meaning"><span class="lbl">English:</span> Exceedingly proud and majestic, conscious of Her supreme cosmic sovereignty.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தனது மாபெரும் இறைமையால் மிகுந்த கர்வமும் மிடுக்கும் கொண்டவள்.</div></div>
+  </div>
+  <!-- VERSE 105 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 105</span><span class="n-badge">Namas 509 – 513</span></div>
+    <div class="devanagari">मेदोनिष्ठा मधुप्रीता बन्दिन्यादिसमन्विता । दध्यन्नासक्तहृदया काकिनीरूपधारिणी ॥ १०५ ॥</div>
+    <div class="tamil-shloka">மேதோநிஷ்டா மதுப்ரீதா பந்திந்யாதிஸமந்விதா । தத்யந்நாஸக்தஹ்ருதயா காகிநீரூபதாரிணீ ॥ க0ரு ॥</div>
+    <div class="iast">medoniṣṭhā madhuprītā bandinyādisamanvitā | dadhyannāsaktahṛdayā kākinīrūpadhāriṇī || 105 ||</div>
+    <div class="nama-card"><div class="nama-header">509. Medo-niṣṭhā (மேதோநிஷ்டா)</div><div class="en-meaning"><span class="lbl">English:</span> Governing the fat/adipose tissue system (Meda) within the physical body.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உடலில் உள்ள கொழுப்பு (மேதஸ்) தாதுவை ஆட்சி செய்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">510. Madhu-prītā (மதுப்ரீதா)</div><div class="en-meaning"><span class="lbl">English:</span> Pleased by offerings of honey and sweet nectar.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தேன் நைவேத்தியத்தில் பிரியம் கொள்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">511. Bandiny-ādi-samanvitā (பந்திந்யாதிஸமந்விதா)</div><div class="en-meaning"><span class="lbl">English:</span> Surrounded by six attendant shaktis beginning with Bandini.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பந்தினி முதலான ஆறு தேவதைகளால் சூழப்பட்டவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">512. Dadhy-annāsakta-hṛdayā (தத்யந்நாஸக்தஹ்ருதயா)</div><div class="en-meaning"><span class="lbl">English:</span> Fond of offerings of curd-rice (Dadhyanna).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தயிர்சாத நைவேத்தியத்தில் மனம் மகிழ்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">513. Kākinī-rūpa-dhāriṇī (காகிநீரூபதாரிணீ)</div><div class="en-meaning"><span class="lbl">English:</span> Manifesting as Mother Kakinamba, the presiding deity of the Svadhisthana Chakra.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சுவாதிஷ்டான சக்கரத்தின் தலைவியான காகினி அம்பிகையாக விளங்குபவள்.</div></div>
+  </div>
+</div>
+<!-- PAGE: VERSES 106 TO 108 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 16B: Mooladhara & Ajna Chakras (Sakini & Hakini) / மூலாதாரம் & ஆக்ஞா</span>
+    <span class="verse-pill">Verses 106 – 108 | Namas 514 – 527</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Root and Brow Centers (சாகினி & ஹாகினி)</div>
+    <div class="anchor-desc">Sakinamba in the root (bone/asthi) and Hakinamba in the brow (marrow/majja), fond of Mudgaudana and Haridranna.</div>
+  </div>
+  <!-- VERSE 106 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 106</span><span class="n-badge">Namas 514 – 518</span></div>
+    <div class="devanagari">मूलाधाराम्बुजारूढा पञ्चवक्त्राऽस्थिसंस्थिता । अङ्कुशादिप्रहरणा वरदादिनिषेविता ॥ १०६ ॥</div>
+    <div class="tamil-shloka">மூலாதாராம்புஜாரூடா பஞ்சவக்த்ராऽஸ்திஸம்ஸ்திதா । அங்குஶாதிப்ரஹரணா வரதாதிநிஷேவிதா ॥ க0சு ॥</div>
+    <div class="iast">mūlādhārāmbujārūḍhā pañcavaktrā'sthisaṃsthitā | aṅkuśādipraharaṇā varadādiniṣevitā || 106 ||</div>
+    <div class="nama-card"><div class="nama-header">514. Mūlādhārāmbujārūḍhā (மூலாதாராம்புஜாரூடா)</div><div class="en-meaning"><span class="lbl">English:</span> Mounted upon the four-petaled Mooladhara Chakra at the base of the spine (as Mother Sakini).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> முதுகெலும்பின் அடியில் உள்ள மூலாதார சக்கரத்தில் சாகினி தேவியாக உறைபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">515. Pañca-vaktrā (பஞ்சவக்த்ரா)</div><div class="en-meaning"><span class="lbl">English:</span> Possessing five divine faces in this root-center manifestation.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மூலாதாரத்தில் ஐந்து திருமுகங்களுடன் அருள்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">516. Asthi-saṃsthitā (அஸ்திஸம்ஸ்திதா)</div><div class="en-meaning"><span class="lbl">English:</span> Governing the bone tissue system (Asthi) within the physical body.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உடலில் உள்ள எலும்பு (அஸ்தி) தாதுவை ஆட்சி செய்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">517. Aṅkuśādi-praharaṇā (அங்குஶாதிப்ரஹரணா)</div><div class="en-meaning"><span class="lbl">English:</span> Wielding the goad (Ankusha) and other powerful weapons.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> கைகளில் அங்குசம் முதலான ஆயுதங்களை ஏந்தியவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">518. Varadādi-niṣevitā (வரதாதிநிஷேவிதா)</div><div class="en-meaning"><span class="lbl">English:</span> Served by four attendant shaktis beginning with Varada.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> வரதா முதலான நான்கு தேவதைகளால் வழிபடப்படுபவள்.</div></div>
+  </div>
+  <!-- VERSE 107 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 107</span><span class="n-badge">Namas 519 – 523</span></div>
+    <div class="devanagari">मुद्गौदनासक्तचित्ता साकिन्यम्बास्वरूपिणी । आज्ञाचक्राब्जनिलया शुक्लवर्णा षडानना ॥ १०७ ॥</div>
+    <div class="tamil-shloka">முத்கௌதநாஸக்தசித்தா ஸாகிண்யம்பாஸ்வரூபிணீ । ஆஜ்ஞாசக்ராப்ஜநிலயா ஶுக்லவர்ணா ஷடாநநா ॥ க0எ ॥</div>
+    <div class="iast">mudgaudanāsaktacittā sākinyambāsvarūpiṇī | ājñācakrābjanilayā śuklavarṇā ṣaḍānanā || 107 ||</div>
+    <div class="nama-card"><div class="nama-header">519. Mudgaudanāsakta-cittā (முத்கௌதநாஸக்தசித்தா)</div><div class="en-meaning"><span class="lbl">English:</span> Fond of offerings of rice mixed with green gram (Mudgaudana / Pongal).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பயத்தம் பருப்பு கலந்த அன்ன (பொங்கல்) நைவேத்தியத்தில் மகிழ்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">520. Sākinyambā-svarūpiṇī (ஸாகிண்யம்பாஸ்வரூபிணீ)</div><div class="en-meaning"><span class="lbl">English:</span> Manifesting as Mother Sakinamba, the presiding deity of the Mooladhara Chakra.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மூலாதார சக்கரத்தின் தலைவியான சாகினி அம்பிகையாக விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">521. Ājñā-cakrābja-nilayā (ஆஜ்ஞாசக்ராப்ஜநிலயா)</div><div class="en-meaning"><span class="lbl">English:</span> Residing in the two-petaled Ajna Chakra between the eyebrows (as Mother Hakini).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> புருவ மத்தியில் உள்ள ஆக்ஞா சக்கரத்தில் ஹாகினி தேவியாக உறைபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">522. Śukla-varṇā (ஶுக்லவர்ணா)</div><div class="en-meaning"><span class="lbl">English:</span> Radiating a brilliant, pure white complexion.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஆக்ஞா சக்கரத்தில் வெண்ணிறமான திருமேனியோடு பிரகாசிப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">523. Ṣaḍ-ānanā (ஷடாநநா)</div><div class="en-meaning"><span class="lbl">English:</span> Possessing six divine faces in this eyebrow-center manifestation.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஆக்ஞா சக்கரத்தில் ஆறு திருமுகங்களுடன் அருள்பவள்.</div></div>
+  </div>
+  <!-- VERSE 108 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 108</span><span class="n-badge">Namas 524 – 527</span></div>
+    <div class="devanagari">मज्जासंस्था हंसवतीमुख्यशक्तिसमन्विता । हरिद्रान्नैकरसिका हाकिनीरूपधारिणी ॥ १०८ ॥</div>
+    <div class="tamil-shloka">மஜ்ஜாஸம்ஸ்தா ஹம்ஸவதீமுக்யஶக்திஸமந்விதா । ஹரித்ராந்நைகரஸிகா ஹாகிநீரூபதாரிணீ ॥ க0அ ॥</div>
+    <div class="iast">majjāsaṃsthā haṃsavatīmukhyaśaktisamanvitā | haridrānnaikarasikā hākinīrūpadhāriṇī || 108 ||</div>
+    <div class="nama-card"><div class="nama-header">524. Majjā-saṃsthā (மஜ்ஜாஸம்ஸ்தா)</div><div class="en-meaning"><span class="lbl">English:</span> Governing the bone marrow and nerve tissue system (Majja) within the body.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உடலில் உள்ள மஜ்ஜை தாதுவை ஆட்சி செய்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">525. Haṃsavatī-mukhya-śakti-samanvitā (ஹம்ஸவதீமுக்யஶக்திஸமந்விதா)</div><div class="en-meaning"><span class="lbl">English:</span> Surrounded by two primary attendant shaktis: Hamsavati and Kshamavati.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஹம்சவதி, க்ஷமாவதி ஆகிய இரண்டு தேவதைகளால் சூழப்பட்டவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">526. Haridrānnaika-rasikā (ஹரித்ராந்நைகரஸிகா)</div><div class="en-meaning"><span class="lbl">English:</span> Fond of offerings of yellow turmeric-rice (Haridranna).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மஞ்சள் சாத நைவேத்தியத்தில் மிகவும் பிரியம் கொள்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">527. Hākinī-rūpa-dhāriṇī (ஹாகிநீரூபதாரிணீ)</div><div class="en-meaning"><span class="lbl">English:</span> Manifesting as Mother Hakinamba, the presiding deity of the Ajna Chakra.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஆக்ஞா சக்கரத்தின் தலைவியான ஹாகினி அம்பிகையாக விளங்குபவள்.</div></div>
+  </div>
+</div>
+<!-- PAGE: VERSES 109 TO 110 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 17: Sahasrara Chakra (Yakini) & The Supreme Offerings / சஹஸ்ராரம் & ஸ்வாஹா</span>
+    <span class="verse-pill">Verses 109 – 110 | Namas 528 – 541</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Thousand-Petaled Lotus (யாகினி & சஹஸ்ராரம்)</div>
+    <div class="anchor-desc">Yakinamba in the crown (shukla/reproductive essence), faces in all directions, Svaha, Svadha, Shruti, and Smriti.</div>
+  </div>
+  <!-- VERSE 109 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 109</span><span class="n-badge">Namas 528 – 532</span></div>
+    <div class="devanagari">सहस्रदलपद्मस्था सर्ववर्णोपशोभिता । सर्वायुधधरा शुक्लसंस्थिता सर्वतोमुखी ॥ १०९ ॥</div>
+    <div class="tamil-shloka">ஸஹஸ்ரதலபத்மஸ்தா ஸர்வவர்ணோபஶோபிதா । ஸர்வாயுததரா ஶுக்லஸம்ஸ்திதா ஸர்வதோமுகீ ॥ க0கூ ॥</div>
+    <div class="iast">sahasradalapadmasthā sarvavarṇopaśobhitā | sarvāyudhadharā śuklasaṃsthitā sarvatomukhī || 109 ||</div>
+    <div class="nama-card"><div class="nama-header">528. Sahasra-dala-padma-sthā (ஸஹஸ்ரதலபத்மஸ்தா)</div><div class="en-meaning"><span class="lbl">English:</span> Seated in the thousand-petaled Sahasrara Chakra at the crown of the head (as Mother Yakini).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உச்சந்தலையில் உள்ள ஆயிரம் இதழ் கொண்ட சஹஸ்ரார சக்கரத்தில் யாகினி தேவியாக வீற்றிருப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">529. Sarva-varṇopaśobhitā (ஸர்வவர்ணோபஶோபிதா)</div><div class="en-meaning"><span class="lbl">English:</span> Radiantly illuminated with all the colors and all the alphabet letters (Varnas).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்து வர்ணங்களாலும் அனைத்து எழுத்துக்களாலும் சோபையுடன் விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">530. Sarvāyudha-dharā (ஸர்வாயுததரா)</div><div class="en-meaning"><span class="lbl">English:</span> Wielding every possible divine weapon.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்து விதமான ஆயுதங்களையும் கைகளில் ஏந்தியவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">531. Śukla-saṃsthitā (ஶுக்லஸம்ஸ்திதா)</div><div class="en-meaning"><span class="lbl">English:</span> Governing the reproductive vital essence (Shukla) within the physical body.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உடலில் உள்ள சுக்கிலம் / சுரோணிதம் ஆகிய உயிர் தாதுவை ஆட்சி செய்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">532. Sarvato-mukhī (ஸர்வதோமுகீ)</div><div class="en-meaning"><span class="lbl">English:</span> Having faces in all directions, looking everywhere simultaneously.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எத்திசையும் நோக்கும் பன்முகங்களைக் கொண்டவள்.</div></div>
+  </div>
+  <!-- VERSE 110 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 110</span><span class="n-badge">Namas 533 – 541</span></div>
+    <div class="devanagari">सर्वौदनप्रीतचित्ता याकिन्यम्बास्वरूपिणी । स्वाहा स्वधाऽमतिर्मेधा श्रुतिः स्मृतिरनुत्तमा ॥ ११० ॥</div>
+    <div class="tamil-shloka">ஸர்வௌதநப்ரீதசித்தா யாகிண்யம்பாஸ்வரூபிணீ । ஸ்வாஹா ஸ்வதாऽமதிர்மேதா ஶ்ருதிஃ ஸ்ம்ருதிரநுத்தமா ॥ கக0 ॥</div>
+    <div class="iast">sarvaudanaprītacittā yākinyambāsvarūpiṇī | svāhā svadhā'matirmedhā śrutiḥ smṛtiranuttamā || 110 ||</div>
+    <div class="nama-card"><div class="nama-header">533. Sarvaudana-prīta-cittā (ஸர்வௌதநப்ரீதசித்தா)</div><div class="en-meaning"><span class="lbl">English:</span> Delighted by offerings of all varieties of food (Sarvodana).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்து விதமான அன்ன நைவேத்தியங்களிலும் திருப்தியடைபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">534. Yākinyambā-svarūpiṇī (யாகிண்யம்பாஸ்வரூபிணீ)</div><div class="en-meaning"><span class="lbl">English:</span> Manifesting as Mother Yakinamba, the presiding deity of the Sahasrara Chakra.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சஹஸ்ரார சக்கரத்தின் தலைவியான யாகினி அம்பிகையாக விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">535. Svāhā (ஸ்வாஹா)</div><div class="en-meaning"><span class="lbl">English:</span> The sacred mantra 'Svaha' used to offer oblations to the celestial gods.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தேவர்களுக்கு அவிர்ப்பாகம் அளிக்கும் 'ஸ்வாஹா' தேவியாக இருப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">536. Svadhā (ஸ்வதா)</div><div class="en-meaning"><span class="lbl">English:</span> The sacred mantra 'Svadha' used to offer oblations to the ancestors (Pitrus).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பித்ருக்களுக்கு அவிர்ப்பாகம் அளிக்கும் 'ஸ்வதா' தேவியாக இருப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">537. Amatiḥ (அமதிஃ)</div><div class="en-meaning"><span class="lbl">English:</span> Supreme intelligence free from the limitations of the empirical mind.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உலகியலைத் தாண்டிய மேலான பேரறிவாக இருப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">538. Medhā (மேதா)</div><div class="en-meaning"><span class="lbl">English:</span> The power of retentive wisdom, intellectual grasp, and memory.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உயர்ந்த நினைவாற்றல் மற்றும் கிரகண சக்தியான மேதா தேவி.</div></div>
+    <div class="nama-card"><div class="nama-header">539. Śrutiḥ (ஶ்ருதிஃ)</div><div class="en-meaning"><span class="lbl">English:</span> The unwritten, revealed eternal truth of the Vedas (Shruti).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஒலி வடிவிலான வேதங்களின் (சுருதி) சொரூபமாக விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">540. Smṛtiḥ (ஸ்ம்ருதிஃ)</div><div class="en-meaning"><span class="lbl">English:</span> The remembered, codified spiritual laws and traditions (Smriti).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தர்ம நெறிகளைக் கூறும் ஸ்மிருதி சாஸ்திரங்களாக இருப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">541. Anuttamā (அநுத்தமா)</div><div class="en-meaning"><span class="lbl">English:</span> The Absolute Highest, beyond whom there is none superior.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தனக்கு மேலானவர் எவரும் இல்லாத உன்னதப் பரம்பொருள்.</div></div>
+  </div>
+</div>
+
+</body>
+</html>

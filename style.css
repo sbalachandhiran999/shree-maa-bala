@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #8B0000;
+    --secondary-color: #FFD700;
+    --bg-color: #FFF8DC;
+    --card-bg: #FFFFFF;
+    --text-color: #333333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+.highlight-card {
+    border-left: 6px solid var(--secondary-color);
+}
+
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.module-link, .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.module-link:hover, .btn:hover {
+    background-color: #a52a2a;
+}
+
+.btn.disabled {
+    background-color: #cccccc;
+    pointer-events: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 15px;
+    background: #fdf5e6;
+    border-radius: 8px;
+}
+
+.page-indicator {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* --- Added Chat Scroll & Layout Fixes --- */
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    max-height: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.chat-message, .bot-message, .user-message {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}

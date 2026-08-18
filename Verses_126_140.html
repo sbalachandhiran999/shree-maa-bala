@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+<meta charset="UTF-8">
+<title>Lalitha Sahasranamam - Module 10 (Verses 126 to 140)</title>
+<style>
+  @page {
+    size: A4;
+    margin: 12mm;
+    @bottom-right {
+      content: "Module 10 • Page " counter(page);
+      font-size: 8pt;
+      font-family: Georgia, serif;
+      color: #8A5A36;
+    }
+    @bottom-left {
+      content: "Lalitha Sahasranamam — Verses 126 to 140 (Namas 628 to 725)";
+      font-size: 8pt;
+      font-family: Georgia, serif;
+      color: #8A5A36;
+    }
+  }
+
+  body {
+    font-family: 'Segoe UI', 'Mukta Malar', 'Latha', Arial, sans-serif;
+    color: #2D241E;
+    line-height: 1.45;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-size: 8.5pt;
+  }
+
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 88vh;
+    text-align: center;
+    border: 3px double #C59B27;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    background: radial-gradient(circle, #FFFDF8 0%, #FBF4E6 100%);
+  }
+
+  h1.title {
+    font-family: 'Georgia', serif;
+    color: #800020;
+    font-size: 22pt;
+    margin: 8px 0 2px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .tamil-title {
+    font-size: 15pt;
+    color: #800020;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    font-family: 'Georgia', serif;
+    color: #9A6B1F;
+    font-size: 11pt;
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .divider {
+    width: 120px;
+    height: 2px;
+    background-color: #C59B27;
+    margin: 10px auto;
+  }
+
+  .badge {
+    display: inline-block;
+    background-color: #800020;
+    color: #FFFFFF;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 8pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  .stage-card {
+    border: 1px solid #E2D1B3;
+    background-color: #FCFAF6;
+    border-left: 4px solid #800020;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    page-break-inside: avoid;
+  }
+
+  .stage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px dashed #D6C29E;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+  }
+
+  .stage-title {
+    font-family: Georgia, serif;
+    font-size: 10.5pt;
+    color: #800020;
+    font-weight: bold;
+  }
+
+  .verse-pill {
+    background-color: #F1E5D1;
+    color: #6E4613;
+    font-size: 7pt;
+    font-weight: bold;
+    padding: 2px 7px;
+    border-radius: 8px;
+    border: 1px solid #DFCEAE;
+  }
+
+  .anchor-box {
+    background-color: #FFF6E5;
+    border: 1px solid #F0DEB7;
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+  }
+
+  .anchor-title {
+    font-weight: bold;
+    color: #87570E;
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+
+  .anchor-desc {
+    font-style: italic;
+    color: #4A3B32;
+    font-size: 7.5pt;
+  }
+
+  .shloka-unit {
+    border-bottom: 1px solid #EFE6D8;
+    padding: 8px 0;
+    page-break-inside: avoid;
+  }
+
+  .shloka-unit:last-child {
+    border-bottom: none;
+  }
+
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 7.5pt;
+    margin-bottom: 2px;
+  }
+
+  .v-badge {
+    color: #800020;
+    font-weight: bold;
+  }
+
+  .n-badge {
+    color: #7A5318;
+    font-weight: 600;
+  }
+
+  .devanagari {
+    font-family: 'Sanskrit Text', 'Nirmala UI', Georgia, serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #691515;
+    line-height: 1.35;
+  }
+
+  .tamil-shloka {
+    font-size: 9.5pt;
+    color: #1A4D2E;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-top: 2px;
+  }
+
+  .iast {
+    font-size: 8pt;
+    color: #4A3B32;
+    font-style: italic;
+    line-height: 1.25;
+    margin-top: 2px;
+  }
+
+  .nama-card {
+    margin-top: 6px;
+    background-color: #F8F4EC;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 7.5pt;
+    line-height: 1.4;
+  }
+
+  .nama-header {
+    font-weight: bold;
+    color: #800020;
+    font-size: 8pt;
+    border-bottom: 1px solid #E5D6C0;
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+  }
+
+  .en-meaning {
+    color: #2D241E;
+    margin-bottom: 2px;
+  }
+
+  .ta-meaning {
+    color: #5C3D1E;
+    font-weight: 500;
+  }
+
+  .lbl {
+    font-weight: bold;
+    color: #800020;
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+  <div class="badge">Module 10 of 13 • தொகுதி 10</div>
+  <h1 class="title">Lalitha Sahasranamam</h1>
+  <div class="tamil-title">ஸ்ரீ லலிதா ஸஹஸ்ரநாம ஸ்தோத்திரம்</div>
+  <div class="subtitle">Complete Verses 126 to 140 (Namas 628 to 725) with Name-by-Name Meanings</div>
+  <div class="divider"></div>
+  <p style="font-size: 9pt; max-width: 500px; color: #4A3B32; margin: 6px auto;">
+    Trilingual Edition (Devanagari • தமிழ் • IAST) featuring <strong>Gauri & The Golden Seed (Svarṇagarbhā)</strong>, <strong>The Triad of Will, Wisdom & Action (Icchā-Jñāna-Kriyā)</strong>, <strong>The Universal Sovereign (Rājarājeśvarī)</strong>, and <strong>The Embodiment of Dakshinamurti & Shiva-Jnana</strong>.
+  </p>
+  <div class="divider"></div>
+  <div style="font-size: 8pt; color: #5C4A3E; line-height: 1.5;">
+    <strong>Covers:</strong> Verses 126 to 140 (Namas 628 to 725)<br>
+    <strong>Visual Anchors:</strong> Golden Womb of Cosmos & Dakshinamurti Silence (ஸ்வர்ணகர்ப்பா & தட்சிணாமூர்த்தி சொரூபம்)<br>
+    <em>Devanagari • தமிழ் வரிவடிவம் • English IAST • Granular Word-by-Word Definitions</em>
+  </div>
+</div>
+
+
+<!-- PAGE: VERSES 126 TO 128 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 20A: Gauri, The Golden Womb & Cosmic Play / கௌரி & லீலாக்லுப்த பிரம்மாண்டம்</span>
+    <span class="verse-pill">Verses 126 – 128 | Namas 628 – 646</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Golden Cosmic Seed (ஸ்வர்ணகர்ப்பா)</div>
+    <div class="anchor-desc">Tryakṣarī, Uma, Gauri, golden womb of creation, knowledge incarnate, and Lopamudra's beloved.</div>
+  </div>
+
+  <!-- VERSE 126 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 126</span><span class="n-badge">Namas 628 – 634</span></div>
+    <div class="devanagari">त्र्यक्षरी दिव्यगन्धाढ्या सिन्दूरतिलकाञ्चिता । उमा शैलेन्द्रतनया गौरी गन्धर्वसेविता ॥ १२६ ॥</div>
+    <div class="tamil-shloka">த்ர்யக்ஷரீ திவ்யகந்தாட்யா ஸிந்தூரதிலகாஞ்சிதா । உமா ஶைலேந்த்ரதநயா கௌரீ கந்தர்வஸேவிதா ॥ கஉசு ॥</div>
+    <div class="iast">tryakṣarī divyagandhāḍhyā sindūratilakāñcitā | umā śailendratanayā gaurī gandharvasevitā || 126 ||</div>
+
+    <div class="nama-card"><div class="nama-header">628. Tryakṣarī (த்ர்யக்ஷரீ)</div><div class="en-meaning"><span class="lbl">English:</span> Embodying the three sacred root syllables of the supreme mantra (Aim-Klim-Sauh or the three Kutas).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மூன்று அட்சரங்களைக் கொண்ட மூல மந்திர வடிவானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">629. Divya-gandhāḍhyā (திவ்யகந்தாட்யா)</div><div class="en-meaning"><span class="lbl">English:</span> Richly fragrant with heavenly celestial scents, divine sandalwood, and musk.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தெய்வீக நறுமணங்கள் கமழும் திருமேனியைக் கொண்டவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">630. Sindūra-tilakāñcitā (ஸிந்தூரதிலகாஞ்சிதா)</div><div class="en-meaning"><span class="lbl">English:</span> Adorned with the bright, auspicious vermilion mark (Sindura Tilaka) upon Her radiant forehead.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தனது அழகிய நெற்றியில் மங்களகரமான சிந்தூரத் திலகம் அணிந்தவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">631. Umā (உமா)</div><div class="en-meaning"><span class="lbl">English:</span> Mother Uma, the embodiment of divine light and consort of Lord Shiva.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிரம்ம வித்தையின் உருவமான உமா தேவி.</div></div>
+    <div class="nama-card"><div class="nama-header">632. Śailendra-tanayā (ஶைலேந்த்ரதநயா)</div><div class="en-meaning"><span class="lbl">English:</span> The beloved daughter of the king of mountains (Himavan).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மலைகளின் அரசனான இமவானின் தவப்புதல்வி.</div></div>
+    <div class="nama-card"><div class="nama-header">633. Gaurī (கௌரீ)</div><div class="en-meaning"><span class="lbl">English:</span> Goddess Gauri, possessing a brilliant, fair, and golden complexion.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தங்கத்தைப் போல் ஒளிவீசும் திருமேனி கொண்ட கௌரி தேவி.</div></div>
+    <div class="nama-card"><div class="nama-header">634. Gandharva-sevitā (கந்தர்வஸேவிதா)</div><div class="en-meaning"><span class="lbl">English:</span> Served, worshipped, and serenaded with divine music by celestial Gandharvas.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> கந்தர்வர்களால் இன்னிசை பாடி சேவிக்கப்படுபவள்.</div></div>
+  </div>
+
+  <!-- VERSE 127 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 127</span><span class="n-badge">Namas 635 – 642</span></div>
+    <div class="devanagari">विश्वगर्भा स्वर्णगर्भाऽवरदा वागधीश्वरी । ध्यानगम्याऽपरिच्छेद्या ज्ञानदा ज्ञानविग्रहा ॥ १२७ ॥</div>
+    <div class="tamil-shloka">விஶ்வகர்பா ஸ்வர்ணகர்பாऽவரதா வாகதீஶ்வரீ । த்யாநகம்யாऽபரிச்சேத்யா ஜ்ஞாநதா ஜ்ஞாநவிக்ரஹா ॥ கஉஎ ॥</div>
+    <div class="iast">viśvagarbhā svarṇagarbhā'varadā vāgadhīśvarī | dhyānagamyā'paricchedyā jñānadā jñānavigrahā || 127 ||</div>
+
+    <div class="nama-card"><div class="nama-header">635. Viśva-garbhā (விஶ்வகர்பா)</div><div class="en-meaning"><span class="lbl">English:</span> Holding the entire universe within Her cosmic womb.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அகில பிரபஞ்சங்களையும் தன் கருவறையில் தாங்கி நிற்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">636. Svarṇa-garbhā (ஸ்வர்ணகர்பா)</div><div class="en-meaning"><span class="lbl">English:</span> The golden source of creation, holding the golden cosmic egg (Hiranyagarbha).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஹிரண்யகர்ப்பம் எனப்படும் பொன்மயமான பிரபஞ்சத்தை உள்ளடக்கியவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">637. Avaradā (அவரதா)</div><div class="en-meaning"><span class="lbl">English:</span> The destroyer of unholy desires, or bestowing boons effortlessly.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தீயவற்றை அழிப்பவளாகவும், வரங்களை வாரி வழங்குபவளாகவும் இருப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">638. Vāg-adhīśvarī (வாகதீஶ்வரீ)</div><div class="en-meaning"><span class="lbl">English:</span> The supreme sovereign Goddess and ruler of speech, literature, and eloquence.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> வாக்கிற்கும் கலைகளுக்கும் அதிபதியான வாக்தேவி.</div></div>
+    <div class="nama-card"><div class="nama-header">639. Dhyāna-gamyā (த்யாநகம்யா)</div><div class="en-meaning"><span class="lbl">English:</span> Attained and realized through deep, focused contemplative meditation.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மன ஒருமைப்பாட்டுடன் செய்யப்படும் தியானத்தினால் உணரப்படுபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">640. Aparicchedyā (அபரிச்சேத்யா)</div><div class="en-meaning"><span class="lbl">English:</span> Limitless, indivisible, and unconditioned by time, space, or substance.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> காலம், இடம், பொருட்களால் வரையறுக்க முடியாத எல்லையற்ற பரம்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">641. Jñāna-dā (ஜ்ஞாநதா)</div><div class="en-meaning"><span class="lbl">English:</span> The gracious bestower of pure spiritual knowledge and enlightenment.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஜீவர்களுக்கு முக்தி தரும் மெய்ஞ்ஞானத்தை அருள்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">642. Jñāna-vigrahā (ஜ்ஞாநவிக்ரஹா)</div><div class="en-meaning"><span class="lbl">English:</span> Whose very divine form is the personification of Pure Knowledge.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஞானத்தையே தனது திருவுருவமாகக் கொண்டவள்.</div></div>
+  </div>
+
+  <!-- VERSE 128 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 128</span><span class="n-badge">Namas 643 – 646</span></div>
+    <div class="devanagari">सर्ववेदान्त-संवेद्या सत्यानन्द-स्वरूपिणी । लोपामुद्रार्चिता लीला-कॢप्त-ब्रह्माण्ड-मण्डला ॥ १२८ ॥</div>
+    <div class="tamil-shloka">ஸர்வவேதாந்த-ஸம்வேத்யா ஸத்யாநந்த-ஸ்வரூபிணீ । லோபாமுத்ரார்சிதா லீலா-க்லுப்த-ப்ரம்ஹாண்ட-மண்டலா ॥ கஉஅ ॥</div>
+    <div class="iast">sarvavedānta-saṃvedyā satyānanda-svarūpiṇī | lopāmudrārcitā līlā-klṛpta-brahmāṇḍa-maṇḍalā || 128 ||</div>
+
+    <div class="nama-card"><div class="nama-header">643. Sarva-vedānta-saṃvedyā (ஸர்வவேதாந்தஸம்வேத்யா)</div><div class="en-meaning"><span class="lbl">English:</span> Known and comprehended through the ultimate teachings of all Upanishads (Vedanta).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்து உபநிடத வேதாந்த சாஸ்திரங்களாலும் அறியப்படுபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">644. Satyānanda-svarūpiṇī (ஸத்யாநந்தஸ்வரூபிணீ)</div><div class="en-meaning"><span class="lbl">English:</span> The embodiment of eternal Truth (Satya) and unalloyed Bliss (Ananda).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சத்தியமும் பேரின்பமும் இணைந்த சொரூபமாக விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">645. Lopāmudrārcitā (லோபாமுத்ரார்சிதா)</div><div class="en-meaning"><span class="lbl">English:</span> Worshipped with exalted devotion by Lopamudra (the sage-consort of Agastya).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அகத்தியரின் பத்தினியான லோபாமுத்திரையால் வழிபடப்படுபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">646. Līlā-klṛpta-brahmāṇḍa-maṇḍalā (லீலாக்லுப்தப்ரம்ஹாண்டமண்டலா)</div><div class="en-meaning"><span class="lbl">English:</span> Creating, sustaining, and dissolving cosmic multiverses as a mere playful sport (Lila).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அண்ட சராசரங்கள் அனைத்தையும் தனது திருவிளையாடலால் கணப்பொழுதில் அமைப்பவள்.</div></div>
+  </div>
+
+</div>
+
+
+<!-- PAGE: VERSES 129 TO 132 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 20B: The Triad of Powers & The Eightfold Form / முச்சக்தி & அஷ்டமூர்த்தி</span>
+    <span class="verse-pill">Verses 129 – 132 | Namas 647 – 676</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Triad of Will, Wisdom & Action (இச்சா-ஞான-கிரியா சக்தி)</div>
+    <div class="anchor-desc">Transcending observer and observed, triad of powers, eightfold cosmic body, and non-dual Brahman bliss.</div>
+  </div>
+
+  <!-- VERSE 129 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 129</span><span class="n-badge">Namas 647 – 655</span></div>
+    <div class="devanagari">अदृश्या दृश्यरहिता विज्ञात्री वेद्यवर्जिता । योगिनी योगदा योग्या योगानन्दा युगन्धरा ॥ १२९ ॥</div>
+    <div class="tamil-shloka">அத்ருஶ்யா த்ருஶ்யரஹிதா விஜ்ஞாத்ரீ வேத்யவர்ஜிதா । யோகிநீ யோகதா யோக்யா யோகாநந்தா யுகந்தரா ॥ கஉகூ ॥</div>
+    <div class="iast">adṛśyā dṛśyarahitā vijñātrī vedyavarjitā | yoginī yogadā yogyā yogānandā yugandharā || 129 ||</div>
+
+    <div class="nama-card"><div class="nama-header">647. Adṛśyā (அத்ருஶ்யா)</div><div class="en-meaning"><span class="lbl">English:</span> Invisible to physical mortal eyes, being pure Consciousness.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஊனக் கண்களால் பார்க்க முடியாத அருவப் பரம்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">648. Dṛśya-rahitā (த்ருஶ்யரஹிதா)</div><div class="en-meaning"><span class="lbl">English:</span> Free from being an object of perception, being the eternal Subject.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> காணப்படும் உலகப் பொருட்களுக்கு அப்பாற்பட்ட மெய்ப்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">649. Vijñātrī (விஜ்ஞாத்ரீ)</div><div class="en-meaning"><span class="lbl">English:</span> The supreme Knower and Consciousness witnessing all phenomena.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்தையும் உணரும் முழுமுதற் பேரறிவு சொரூபிணி.</div></div>
+    <div class="nama-card"><div class="nama-header">650. Vedya-varjitā (வேத்யவர்ஜிதா)</div><div class="en-meaning"><span class="lbl">English:</span> Having nothing external left to be known, being omniscient and non-dual.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தனக்கு வேறாக அறியப்பட வேண்டிய பொருள் எதுவுமில்லாதவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">651. Yoginī (யோகிநீ)</div><div class="en-meaning"><span class="lbl">English:</span> The supreme Yogini ever united with Lord Shiva in meditation.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சிவபெருமானுடன் எப்போதும் யோக நிலையில் இணைந்திருக்கும் யோகினி.</div></div>
+    <div class="nama-card"><div class="nama-header">652. Yoga-dā (யோகதா)</div><div class="en-meaning"><span class="lbl">English:</span> The gracious granter of spiritual union, yogic realization, and divine communion.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பக்தர்களுக்கு யோகப் பேற்றையும் சித்திகளையும் அருள்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">653. Yogyā (யோக்யா)</div><div class="en-meaning"><span class="lbl">English:</span> The most worthy and deserving object of all spiritual adoration.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தியானிப்பதற்கும் பூஜிப்பதற்கும் மிகவும் தகுதியானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">654. Yogānandā (யோகாநந்தா)</div><div class="en-meaning"><span class="lbl">English:</span> The embodiment of the bliss realized in the highest state of Samadhi.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> யோகத்தின் உச்சக்கட்டப் பேரின்பமாக விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">655. Yugan-dharā (யுகந்தரா)</div><div class="en-meaning"><span class="lbl">English:</span> The sovereign power that establishes, sustains, and transitions the cosmic cosmic Yugas.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சதுர் யுகங்களையும் காலச் சக்கரத்தையும் தாங்கி நடத்துபவள்.</div></div>
+  </div>
+
+  <!-- VERSE 130 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 130</span><span class="n-badge">Namas 656 – 659</span></div>
+    <div class="devanagari">इच्छाशक्तिज्ञानशक्तिक्रियाशक्तिस्वरूपिणी । सर्वाधारा सुप्रतिष्ठा सदसद्रूपधारिणी ॥ १३० ॥</div>
+    <div class="tamil-shloka">இச்சாஶக்திஜ்ஞாநஶக்திக்ரியாஶக்திஸ்வரூபிணீ । ஸர்வாதாரா ஸுப்ரதிஷ்டா ஸதஸத்ரூபதாரிணீ ॥ கங0 ॥</div>
+    <div class="iast">icchāśaktijñānaśaktikriyāśaktisvarūpiṇī | sarvādhārā supratiṣṭhā sadasadrūpadhāriṇī || 130 ||</div>
+
+    <div class="nama-card"><div class="nama-header">656. Icchā-śakti-jñāna-śakti-kriyā-śakti-svarūpiṇī (இச்சாஶக்திஜ்ஞாநஶக்திக்ரியாஶக்திஸ்வரூபிணீ)</div><div class="en-meaning"><span class="lbl">English:</span> Embodying the cosmic triad of powers: Will (Iccha), Wisdom (Jnana), and Action (Kriya).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> இச்சா சக்தி, ஞான சக்தி, கிரியா சக்தி ஆகிய முப்பெரும் சக்திகளின் உருவமானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">657. Sarvādhārā (ஸர்வாதாரா)</div><div class="en-meaning"><span class="lbl">English:</span> The sole foundational support and substratum of all universes.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்து உலகங்களுக்கும் ஆதாரமாக விளங்கும் மூலப்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">658. Supratiṣṭhā (ஸுப்ரதிஷ்டா)</div><div class="en-meaning"><span class="lbl">English:</span> Firmly and immovably established in Her own transcendent glory.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தனது சொந்த மகிமையிலேயே நிலைபெற்று விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">659. Sadasad-rūpa-dhāriṇī (ஸதஸத்ரூபதாரிணீ)</div><div class="en-meaning"><span class="lbl">English:</span> Manifesting as both the real (Sat, the unmanifest cause) and the apparent (Asat, the changing effect).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> காரியப் பிரபஞ்சமாகவும் காரண பரம்பொருளாகவும் விளங்குபவள்.</div></div>
+  </div>
+
+  <!-- VERSE 131 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 131</span><span class="n-badge">Namas 660 – 667</span></div>
+    <div class="devanagari">अष्टमूर्तिरजाजैत्री लोकयात्राविधायिनी । एकाकिनी भूमरूपा निर्द्वैता द्वैतवर्जिता ॥ १३१ ॥</div>
+    <div class="tamil-shloka">அஷ்டமூர்திரஜாஜைத்ரீ லோகயாத்ராவிதாயிநீ । ஏகாகிநீ பூமரூபா நிர்த்வைதா த்வைதவர்ஜிதா ॥ கஙக ॥</div>
+    <div class="iast">aṣṭamūrtirajājaitrī lokayātrāvidhāyinī | ekākinī bhūmarūpā nirdvaitā dvaitavarjitā || 131 ||</div>
+
+    <div class="nama-card"><div class="nama-header">660. Aṣṭa-mūrtiḥ (அஷ்டமூர்திஃ)</div><div class="en-meaning"><span class="lbl">English:</span> Manifesting in the eightfold cosmic form (Earth, Water, Fire, Air, Space, Sun, Moon, and the Jiva).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஐம்பூதங்கள், சூரியன், சந்திரன், ஆன்மா எனும் எட்டு வடிவங்களாகத் திகழ்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">661. Ajā (அஜா)</div><div class="en-meaning"><span class="lbl">English:</span> Unborn, eternal, and having no origin or demise.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிறப்பற்ற நித்திய பரம்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">662. Jaitrī (ஜைத்ரீ)</div><div class="en-meaning"><span class="lbl">English:</span> Triumphant and ever-victorious over all cosmic forces.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எப்போதும் வெற்றியை அடையும் பேராற்றல்.</div></div>
+    <div class="nama-card"><div class="nama-header">663. Loka-yātrā-vidhāyinī (லோகயாத்ராவிதாயிநீ)</div><div class="en-meaning"><span class="lbl">English:</span> Orchestrating and sustaining the daily journey, lifecycle, and progress of the worlds.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உலக இயக்கங்களையும் உயிர்களின் வாழ்வையும் முறைப்படுத்தி நடத்துபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">664. Ekākinī (ஏகாகிநீ)</div><div class="en-meaning"><span class="lbl">English:</span> Solitary, singular, and existing alone before creation as non-dual reality.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> படைப்புக்கு முன் தனியொருத்தியாக விளங்கும் ஏக பரம்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">665. Bhūma-rūpā (பூமரூபா)</div><div class="en-meaning"><span class="lbl">English:</span> Embodying the Infinite, limitless, and all-comprehensive Reality (Bhuma).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எல்லையற்ற பூரணத்துவத்தின் பெருவடிவானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">666. Nirdvaitā (நிர்த்வைதா)</div><div class="en-meaning"><span class="lbl">English:</span> Deceitless, unified, and beyond all notions of duality.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பேதமற்ற அத்வைத சொரூபிணி.</div></div>
+    <div class="nama-card"><div class="nama-header">667. Dvaita-varjitā (த்வைதவர்ஜிதா)</div><div class="en-meaning"><span class="lbl">English:</span> Free from any division, distinction, or duality of subject and object.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> இரண்டற்ற ஒன்றான ஏகப் பரம்பொருள்.</div></div>
+  </div>
+
+  <!-- VERSE 132 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 132</span><span class="n-badge">Namas 668 – 676</span></div>
+    <div class="devanagari">अन्नदा वसुदा वृद्धा ब्रह्मात्मैक्यस्वरूपिणी । बृहती ब्राह्मणी ब्राह्मी ब्रह्मानन्दा बलिप्रिया ॥ १३२ ॥</div>
+    <div class="tamil-shloka">அந்நதா வஸுதா வ்ருத்தா ப்ரம்ஹாத்மைக்யஸ்வரூபிணீ । ப்ருஹதீ ப்ராஹ்மணீ ப்ராஹ்மீ ப்ரம்ஹாநந்தா பலிப்ரியா ॥ கஙஉ ॥</div>
+    <div class="iast">annadā vasudā vṛddhā brahmātmaikyasvarūpiṇī | bṛhatī brāhmaṇī brāhmī brahmānandā balipriyā || 132 ||</div>
+
+    <div class="nama-card"><div class="nama-header">668. Anna-dā (அந்நதா)</div><div class="en-meaning"><span class="lbl">English:</span> Goddess Annapurna, the benevolent giver of food and spiritual nourishment to all.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்து உயிர்களுக்கும் அன்னத்தை வாரி வழங்கும் அன்னபூரணி.</div></div>
+    <div class="nama-card"><div class="nama-header">669. Vasu-dā (வஸுதா)</div><div class="en-meaning"><span class="lbl">English:</span> Bestower of divine wealth, riches, and prosperity.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> செல்வ வளங்களையும் ஐஸ்வர்யங்களையும் அருள்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">670. Vṛddhā (வ்ருத்தா)</div><div class="en-meaning"><span class="lbl">English:</span> The Ancient and Primal, existing before everything in the universe.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்திற்கும் மூத்த ஆதி பரம்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">671. Brahmātmaikya-svarūpiṇī (ப்ரம்ஹாத்மைக்யஸ்வரூபிணீ)</div><div class="en-meaning"><span class="lbl">English:</span> The embodiment of the non-dual oneness of the Individual Self (Atman) and Supreme Brahman.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஜீவாத்மாவும் பரமாத்மாவும் ஒன்றே எனும் அத்வைத ஐக்கிய வடிவானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">672. Bṛhatī (ப்ருஹதீ)</div><div class="en-meaning"><span class="lbl">English:</span> Vast, cosmic, and immensely great beyond measure.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மிகவும் பிரம்மாண்டமான பரம்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">673. Brāhmaṇī (ப்ராஹ்மணீ)</div><div class="en-meaning"><span class="lbl">English:</span> Embodying the creative power of Brahma and the soul of the Vedic Brahman.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிரம்ம தத்துவத்தின் வடிவான பிராம்மணி.</div></div>
+    <div class="nama-card"><div class="nama-header">674. Brāhmī (ப்ராஹ்மீ)</div><div class="en-meaning"><span class="lbl">English:</span> Consort of Brahma and the power of supreme consciousness.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிரம்ம சக்தியான பிராம்மி தேவி.</div></div>
+    <div class="nama-card"><div class="nama-header">675. Brahmānandā (ப்ரம்ஹாநந்தா)</div><div class="en-meaning"><span class="lbl">English:</span> The personification of the infinite Bliss of Brahman.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிரம்ம ஞானத்தால் விளையும் பரமானந்த சொரூபம்.</div></div>
+    <div class="nama-card"><div class="nama-header">676. Bali-priyā (பலிப்ரியா)</div><div class="en-meaning"><span class="lbl">English:</span> Pleased with sacred devotional offerings and the surrender of the ego.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பக்திப் பூர்வமான நைவேத்தியங்களிலும் அகந்தை தியாகத்திலும் மகிழ்பவள்.</div></div>
+  </div>
+
+</div>
+
+
+<!-- PAGE: VERSES 133 TO 136 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 21A: The Supreme Sovereign & Ocean Girdle / ராஜராஜேஸ்வரி & சாகரமேகலா</span>
+    <span class="verse-pill">Verses 133 – 136 | Namas 677 – 699</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Empress upon the Imperial Throne (ராஜராஜேஸ்வரி)</div>
+    <div class="anchor-desc">Language itself, Rajarajeshwari elevating devotees to thrones, and ocean-girdled truth.</div>
+  </div>
+
+  <!-- VERSE 133 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 133</span><span class="n-badge">Namas 677 – 682</span></div>
+    <div class="devanagari">भाषारूपा बृहत्सेना भावाभावविवर्जिता । सुखाराध्या शुभकरी शोभनासुलभागतिः ॥ १३३ ॥</div>
+    <div class="tamil-shloka">பாஷாரூபா ப்ருஹத்ஸேநா பாவாபாவவிவர்ஜிதா । ஸுகாராத்யா ஶுபகரீ ஶோபநாஸுலபாகதிஃ ॥ கஙங ॥</div>
+    <div class="iast">bhāṣārūpā bṛhatsenā bhāvābhāvavivarjitā | sukhārādhyā śubhakarī śobhanāsulabhāgatiḥ || 133 ||</div>
+
+    <div class="nama-card"><div class="nama-header">677. Bhāṣā-rūpā (பாஷாரூபா)</div><div class="en-meaning"><span class="lbl">English:</span> The very soul of all spoken languages, dialects, and expressive communications.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்து மொழிகளின் வடிவமாக விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">678. Bṛhat-senā (ப்ருஹத்ஸேநா)</div><div class="en-meaning"><span class="lbl">English:</span> Commander of vast, celestial, and invincible armies of Shaktis.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிரம்மாண்டமான சேனைகளைக் கொண்டவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">679. Bhāvābhāva-vivarjitā (பாவாபாவவிவர்ஜிதா)</div><div class="en-meaning"><span class="lbl">English:</span> Beyond existence (Bhava) and non-existence (Abhava), being absolute reality.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உள்ளது, இல்லாது எனும் இரு நிலைகளையும் கடந்தவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">680. Sukhārādhyā (ஸுகாராத்யா)</div><div class="en-meaning"><span class="lbl">English:</span> Easily and joyfully worshipped through sincere devotion without harsh mortifications.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தூய பக்தியினால் எளிதில் வழிபடக் கூடியவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">681. Śubha-karī (ஶுபகரீ)</div><div class="en-meaning"><span class="lbl">English:</span> The perennial doer of all good and bestower of auspiciousness.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எப்போதும் நன்மைகளையும் மங்களங்களையும் அருள்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">682. Śobhanā-sulabhā-gatiḥ (ஶோபநாஸுலபாகதிஃ)</div><div class="en-meaning"><span class="lbl">English:</span> The luminous, auspicious, and easily accessible pathway to supreme liberation.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எளிதில் அடையக்கூடிய அழகிய நற்கதியாக விளங்குபவள்.</div></div>
+  </div>
+
+  <!-- VERSE 134 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 134</span><span class="n-badge">Namas 683 – 687</span></div>
+    <div class="devanagari">राजराजेश्वरी राज्यदायिनी राज्यवल्लभा । राजत्कृपा राजपीठनिवेशितनिजाश्रिता ॥ १३४ ॥</div>
+    <div class="tamil-shloka">ராஜராஜேஶ்வரீ ராஜ்யதாயிநீ ராஜ்யவல்லபா । ராஜத்க்ருபா ராஜபீடநிவேஶிதநிஜாஶ்ரிதா ॥ கஙச ॥</div>
+    <div class="iast">rājarājeśvarī rājyadāyinī rājyavallabhā | rājatkṛpā rājapīṭhaniveśitanijāśritā || 134 ||</div>
+
+    <div class="nama-card"><div class="nama-header">683. Rājarājeśvarī (ராஜராஜேஶ்வரீ)</div><div class="en-meaning"><span class="lbl">English:</span> Sri Rajarajeshwari, the supreme Empress of all sovereigns, deities, and cosmic realms.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அகில உலகங்களின் சக்கரவர்த்தினியான ஸ்ரீராஜராஜேஸ்வரி.</div></div>
+    <div class="nama-card"><div class="nama-header">684. Rājya-dāyinī (ராஜ்யதாயிநீ)</div><div class="en-meaning"><span class="lbl">English:</span> The bestower of earthly kingdoms, spiritual sovereignty, and self-mastery.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அரச பதவிகளையும் ஆன்ம சாம்ராஜ்யத்தையும் தருபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">685. Rājya-vallabhā (ராஜ்யவல்லபா)</div><div class="en-meaning"><span class="lbl">English:</span> The beloved protector and ruler of cosmic domains.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பேரரசை அன்போடு பரிபாலிக்கும் நாயகி.</div></div>
+    <div class="nama-card"><div class="nama-header">686. Rājat-kṛpā (ராஜத்க்ருபா)</div><div class="en-meaning"><span class="lbl">English:</span> Whose compassion shines majestically and abundantly over all creation.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அரச கம்பீரத்தோடு கருணை மழை பொழிபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">687. Rāja-pīṭha-niveśita-nijāśritā (ராஜபீடநிவேஶிதநிஜாஶ்ரிதா)</div><div class="en-meaning"><span class="lbl">English:</span> Elevating Her surrendered devotees to sit upon royal thrones of temporal and spiritual glory.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தன்னைச் சரணடைந்த பக்தர்களை அரியணையில் ஏற்றி அழகு பார்ப்பவள்.</div></div>
+  </div>
+
+  <!-- VERSE 135 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 135</span><span class="n-badge">Namas 688 – 693</span></div>
+    <div class="devanagari">राज्यलक्ष्मीः कोशनाथा चतुरङ्गबलेश्वरी । साम्राज्यदायिनी सत्यसन्धा सागरमेखला ॥ १३५ ॥</div>
+    <div class="tamil-shloka">ராஜ்யலக்ஷ்மீஃ கோஶநாதா சதுரங்கபலேஶ்வரீ । ஸாம்ராஜ்யதாயிநீ ஸத்யஸந்தா ஸாகரமேகலா ॥ கஙரு ॥</div>
+    <div class="iast">rājyalakṣmīḥ kośanāthā caturaṅgabaleśvarī | sāmrājyadāyinī satyasandhā sāgaramekhalā || 135 ||</div>
+
+    <div class="nama-card"><div class="nama-header">688. Rājya-lakṣmīḥ (ராஜ்யலக்ஷ்மீஃ)</div><div class="en-meaning"><span class="lbl">English:</span> The presiding Goddess of imperial prosperity, governance, and royal majesty.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அரச வளங்களின் அதிதேவதையான ராஜ்யலட்சுமி.</div></div>
+    <div class="nama-card"><div class="nama-header">689. Kośa-nāthā (கோஶநாதா)</div><div class="en-meaning"><span class="lbl">English:</span> The guardian of all treasures, spiritual secrets, and the five bodily sheaths.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பொக்கிஷங்களுக்கும் பஞ்ச கோசங்களுக்கும் தலைவி.</div></div>
+    <div class="nama-card"><div class="nama-header">690. Caturaṅga-baleśvarī (சதுரங்கபலேஶ்வரீ)</div><div class="en-meaning"><span class="lbl">English:</span> Commander of the fourfold armies (infantry, cavalry, chariots, elephants).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> நால்வகைப் படைகளுக்கும் அதிபதியான ஈஸ்வரி.</div></div>
+    <div class="nama-card"><div class="nama-header">691. Sāmrājya-dāyinī (ஸாம்ராஜ்யதாயிநீ)</div><div class="en-meaning"><span class="lbl">English:</span> The bestower of universal empire and spiritual self-rule (Swarajya).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பேரரசு ஆட்சியையும் ஆன்ம விடுதலையையும் தருபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">692. Satya-sandhā (ஸத்யஸந்தா)</div><div class="en-meaning"><span class="lbl">English:</span> Unswervingly true to Her divine promises and dedicated to truth.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> கொடுத்த வாக்கை என்றும் தவறாது காக்கும் சத்திய வடிவானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">693. Sāgara-mekhalā (ஸாகரமேகலா)</div><div class="en-meaning"><span class="lbl">English:</span> Adorned with the oceans as Her glorious waist-girdle.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பெருங்கடல்களையே தனது ஒட்டியாணமாகக் கொண்ட பூமித்தாய்.</div></div>
+  </div>
+
+  <!-- VERSE 136 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 136</span><span class="n-badge">Namas 694 – 699</span></div>
+    <div class="devanagari">दीक्षिता दैत्यशमनी सर्वलोकवशङ्करी । सर्वार्थदात्री सावित्री सच्चिदानन्दरूपिणी ॥ १३६ ॥</div>
+    <div class="tamil-shloka">தீக்ஷிதா தைத்யஶமநீ ஸர்வலோகவஶங்கரீ । ஸர்வார்ததாத்ரீ ஸாவித்ரீ ஸச்சிதாநந்தரூபிணீ ॥ கஙசு ॥</div>
+    <div class="iast">dīkṣitā daityaśamanī sarvalokavaśaṅkarī | sarvārthadātrī sāvitrī saccidānandarūpiṇī || 136 ||</div>
+
+    <div class="nama-card"><div class="nama-header">694. Dīkṣitā (தீக்ஷிதா)</div><div class="en-meaning"><span class="lbl">English:</span> Consecrated and initiated in the sacred universal sacrifice.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தெய்வீக வேள்வித் தீட்சை பூண்டவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">695. Daitya-śamanī (தைத்யஶமநீ)</div><div class="en-meaning"><span class="lbl">English:</span> The vanquisher and pacifier of demons and negative cosmic forces.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அசுரர்களின் கொடுமைகளை அடக்கி அழிப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">696. Sarva-loka-vaśaṅkarī (ஸர்வலோகவஶங்கரீ)</div><div class="en-meaning"><span class="lbl">English:</span> Drawing and captivating all worlds toward Her with divine love.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்து உலகங்களையும் தனது அன்பால் வசீகரிப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">697. Sarvārtha-dātrī (ஸர்வார்ததாத்ரீ)</div><div class="en-meaning"><span class="lbl">English:</span> The bountiful granter of all righteous desires and spiritual goals.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பக்தர்கள் விரும்பும் அனைத்தையும் வாரி வழங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">698. Sāvitrī (ஸாவித்ரீ)</div><div class="en-meaning"><span class="lbl">English:</span> Goddess Savitri, the luminous solar force generating and purifying all life.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சூரியனின் ஒளிமயமான சாவித்திரி தேவி.</div></div>
+    <div class="nama-card"><div class="nama-header">699. Sac-cid-ānanda-rūpiṇī (ஸச்சிதாநந்தரூபிணீ)</div><div class="en-meaning"><span class="lbl">English:</span> The supreme embodiment of Existence (Sat), Consciousness (Chit), and Bliss (Ananda).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சச்சிதானந்தப் பரம்பொருளின் திருவுருவானவள்.</div></div>
+  </div>
+
+</div>
+
+
+<!-- PAGE: VERSES 137 TO 140 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 21B: The Banyan Tree Guru & Shiva-Jnana / குரு மண்டலம் & தட்சிணாமூர்த்தி</span>
+    <span class="verse-pill">Verses 137 – 140 | Namas 700 – 725</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Silent Enlightener under the Banyan Tree (தட்சிணாமூர்த்தி சொரூபிணி)</div>
+    <div class="anchor-desc">Beyond time and space, Saraswati, Guru mandala, totally independent, and bestower of Shiva-Jnana.</div>
+  </div>
+
+  <!-- VERSE 137 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 137</span><span class="n-badge">Namas 700 – 706</span></div>
+    <div class="devanagari">देशकालापरिच्छिन्ना सर्वगा सर्वमोहिनी । सरस्वती शास्त्रमयी गुहाम्बा गुह्यरूपिणी ॥ १३७ ॥</div>
+    <div class="tamil-shloka">தேஶகாலாபரிச்சிந்நா ஸர்வகா ஸர்வமோஹிநீ । ஸரஸ்வதீ ஶாஸ்த்ரமயீ குஹாம்பா குஹ்யரூபிணீ ॥ கஙஎ ॥</div>
+    <div class="iast">deśakālāparicchinnā sarvagā sarvamohinī | sarasvatī śāstramayī guhāmbā guhyarūpiṇī || 137 ||</div>
+
+    <div class="nama-card"><div class="nama-header">700. Deśa-kālāparicchinnā (தேஶகாலாபரிச்சிந்நா)</div><div class="en-meaning"><span class="lbl">English:</span> Unbounded and unconditioned by limitations of time, space, or geography.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தேசம் மற்றும் காலத்தின் எல்லைகளுக்கு உட்படாதவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">701. Sarva-gā (ஸர்வகா)</div><div class="en-meaning"><span class="lbl">English:</span> Omnipresent and moving everywhere throughout the cosmic fabric.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எங்கும் வியாபித்திருக்கும் சர்வ வியாபினி.</div></div>
+    <div class="nama-card"><div class="nama-header">702. Sarva-mohinī (ஸர்வமோஹிநீ)</div><div class="en-meaning"><span class="lbl">English:</span> Enchanting the entire creation through Her divine beauty and cosmic maya.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அகில உலகங்களையும் தனது அழகால் மயக்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">703. Sarasvatī (ஸரஸ்வதீ)</div><div class="en-meaning"><span class="lbl">English:</span> Mother Saraswati, the Goddess of wisdom, learning, fine arts, and speech.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> கலைமகளான சரஸ்வதி தேவி.</div></div>
+    <div class="nama-card"><div class="nama-header">704. Śāstra-mayī (ஶாஸ்த்ரமயீ)</div><div class="en-meaning"><span class="lbl">English:</span> The personification of all sacred scriptures, sciences, and treatises.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்து சாஸ்திரங்களின் மெய்ப்பொருளாக விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">705. Guhāmbā (குஹாம்பா)</div><div class="en-meaning"><span class="lbl">English:</span> The loving Mother of Lord Guha (Subrahmanya / Skanda).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> குஹனான முருகப்பெருமானின் தாய்.</div></div>
+    <div class="nama-card"><div class="nama-header">706. Guhya-rūpiṇī (குஹ்யரூபிணீ)</div><div class="en-meaning"><span class="lbl">English:</span> Whose esoteric nature is hidden deep within the spiritual heart cave.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ரகசிய மறைபொருளாக உள்ளத்தில் உறைபவள்.</div></div>
+  </div>
+
+  <!-- VERSE 138 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 138</span><span class="n-badge">Namas 707 – 711</span></div>
+    <div class="devanagari">सर्वोपाधि-विनिर्मुक्ता सदाशिव-पतिव्रता । सम्प्रदायेश्वरी साध्वी गुरुमण्डल-रूपिणी ॥ १३८ ॥</div>
+    <div class="tamil-shloka">ஸர்வோபாதி-விநிர்முக்தா ஸதாஶிவ-பதிவ்ரதா । ஸம்ப்ரதாயேஶ்வரீ ஸாத்வீ குருமண்டல-ரூபிணீ ॥ கஙஅ ॥</div>
+    <div class="iast">sarvopādhi-vinirmuktā sadāśiva-pativratā | sampradāyeśvarī sādhvī gurumaṇḍala-rūpiṇī || 138 ||</div>
+
+    <div class="nama-card"><div class="nama-header">707. Sarvopādhi-vinirmuktā (ஸர்வோபாதிவிநிர்முக்தா)</div><div class="en-meaning"><span class="lbl">English:</span> Free from all limiting conditions, mental projections, and adjuncts.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எந்தவிதமான உபாதிக்கோ எல்லைக்கோ உட்படாத பரம் பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">708. Sadāśiva-pativratā (ஸதாஶிவபதிவ்ரதா)</div><div class="en-meaning"><span class="lbl">English:</span> Eternally and unconditionally dedicated as the chaste consort of Lord Sadashiva.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சதாசிவ மூர்த்தியின் பதிவிரதையான திவ்ய நாயகி.</div></div>
+    <div class="nama-card"><div class="nama-header">709. Sampradāyeśvarī (ஸம்ப்ரதாயேஶ்வரீ)</div><div class="en-meaning"><span class="lbl">English:</span> The presiding Goddess and guardian of the unbroken lineage of Srividya traditions.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஸ்ரீவித்யா குரு பரம்பரையின் தலைவி.</div></div>
+    <div class="nama-card"><div class="nama-header">710. Sādhvī (ஸாத்வீ)</div><div class="en-meaning"><span class="lbl">English:</span> The pinnacle of noble virtue, purity, and righteous living.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தூய நற்பண்புகளின் முழு வடிவமானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">711. Guru-maṇḍala-rūpiṇī (குருமண்டல-ரூபிணீ)</div><div class="en-meaning"><span class="lbl">English:</span> Embodying the sacred lineage of Gurus (Divya, Siddha, and Manava Oghas).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஸ்ரீகுரு மண்டலத்தின் முழு வடிவமாக விளங்குபவள்.</div></div>
+  </div>
+
+  <!-- VERSE 139 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 139</span><span class="n-badge">Namas 712 – 720</span></div>
+    <div class="devanagari">कुलोत्तीर्णा भगाराध्या माया मधुमती मही । गणाम्बा गुह्यकाराध्या कोमलाङ्गी गुरुप्रिया ॥ १३९ ॥</div>
+    <div class="tamil-shloka">குலோத்தீர்ணா பகாராத்யா மாயா மதுமதீ மஹீ । கணாம்பா குஹ்யகாராத்யா கோமலாங்கீ குருப்ரியா ॥ கஙகூ ॥</div>
+    <div class="iast">kulottīrṇā bhagārādhyā māyā madhumatī mahī | gaṇāmbā guhyakārādhyā komalāṅgī gurupriyā || 139 ||</div>
+
+    <div class="nama-card"><div class="nama-header">712. Kulottīrṇā (குலோத்தீர்ணா)</div><div class="en-meaning"><span class="lbl">English:</span> Transcending the bodily chakras (Kula) to abide in the Sahasrara (Akula).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சக்கரங்களைக் கடந்து சஹஸ்ராரத்தில் நிலைபெற்றவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">713. Bhagārādhyā (பகாராத்யா)</div><div class="en-meaning"><span class="lbl">English:</span> Worshipped within the solar and central triangle mandala.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சூரிய மண்டலத்திலும் முக்கோண பீடத்திலும் வழிபடப்படுபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">714. Māyā (மாயா)</div><div class="en-meaning"><span class="lbl">English:</span> The cosmic power of creative projection and illusion.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிரபஞ்சத்தை இயக்கும் மாயா சக்தி.</div></div>
+    <div class="nama-card"><div class="nama-header">715. Madhumatī (மதுமதீ)</div><div class="en-meaning"><span class="lbl">English:</span> The embodiment of the sweet, blissful seventh yogic plane of consciousness.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> யோகத்தின் மதுமதி நிலையின் ஆனந்த வடிவானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">716. Mahī (மஹீ)</div><div class="en-meaning"><span class="lbl">English:</span> Mother Earth, supporting and sustaining all beings.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பூமாதேவியாக இருந்து அனைவரையும் தாங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">717. Gaṇāmbā (கணாம்பா)</div><div class="en-meaning"><span class="lbl">English:</span> The loving Mother of Lord Ganesha and all the celestial attendants (Ganas).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> கணங்களுக்கெல்லாம் அன்னையாக விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">718. Guhyakārādhyā (குஹ்யகாராத்யா)</div><div class="en-meaning"><span class="lbl">English:</span> Worshipped by Guhyakas (mystical celestials like Kubera).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> குஹ்யகர்கள் எனப்படும் தேவதைகளால் வழிபடப்படுபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">719. Komalāṅgī (கோமலாங்கீ)</div><div class="en-meaning"><span class="lbl">English:</span> Possessing a delicate, soft, and exquisitely tender divine form.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மென்மையான அழகிய திருமேனி கொண்டவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">720. Guru-priyā (குருப்ரியா)</div><div class="en-meaning"><span class="lbl">English:</span> Dear to the heart of the Guru, and loving all true spiritual teachers.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஸ்ரீகுருவிற்குப் பிரியமானவளாகத் திகழ்பவள்.</div></div>
+  </div>
+
+  <!-- VERSE 140 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 140</span><span class="n-badge">Namas 721 – 725</span></div>
+    <div class="devanagari">स्वतन्त्रा सर्वतन्त्रेशी दक्षिणामूर्तिरूपिणी । सनकादिसमाराध्या शिवज्ञानप्रदायिनी ॥ १४० ॥</div>
+    <div class="tamil-shloka">ஸ்வதந்த்ரா ஸர்வதந்த்ரேஶீ தக்ஷிணாமூர்திரூபிணீ । ஸநகாதிஸமாராத்யா ஶிவஜ்ஞாநப்ரதாயிநீ ॥ கச0 ॥</div>
+    <div class="iast">svatantrā sarvatantreśī dakṣiṇāmūrtirūpiṇī | sanakādisamārādhyā śivajñānapradāyinī || 140 ||</div>
+
+    <div class="nama-card"><div class="nama-header">721. Svatantrā (ஸ்வதந்த்ரா)</div><div class="en-meaning"><span class="lbl">English:</span> Completely autonomous, independent, and free from any external control.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> முற்றிலும் சுதந்திரமான தனிப்பெரும் இறைவி.</div></div>
+    <div class="nama-card"><div class="nama-header">722. Sarva-tantreśī (ஸர்வதந்த்ரேஶீ)</div><div class="en-meaning"><span class="lbl">English:</span> The supreme Empress and presiding deity of all sacred Tantras.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்து தந்திர சாஸ்திரங்களுக்கும் தலைவி.</div></div>
+    <div class="nama-card"><div class="nama-header">723. Dakṣiṇāmūrti-rūpiṇī (தக்ஷிணாமூர்திரூபிணீ)</div><div class="en-meaning"><span class="lbl">English:</span> Embodying the silent, enlightening wisdom of Lord Dakshinamurti under the banyan tree.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மௌன குருவான தட்சிணாமூர்த்தியின் சொரூபமாக விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">724. Sanakādi-samārādhyā (ஸநகாதிஸமாராத்யா)</div><div class="en-meaning"><span class="lbl">English:</span> Reverently worshipped by the great primordial sages: Sanaka, Sanandana, Sanatana, and Sanatkumara.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சனகர் முதலான பிரம்மரிஷிகளால் வழிபடப்படுபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">725. Śiva-jñāna-pradāyinī (ஶிவஜ்ஞாநப்ரதாயிநீ)</div><div class="en-meaning"><span class="lbl">English:</span> The gracious bestower of supreme non-dual Self-knowledge and Shiva-consciousness.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உயர்ந்த சிவஞானத்தை அடியார்களுக்கு வாரி வழங்குபவள்.</div></div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+<meta charset="UTF-8">
+<title>Lalitha Sahasranamam - Module 01 (Verses 1 to 10)</title>
+<style>
+  @page {
+    size: A4;
+    margin: 12mm;
+    @bottom-right {
+      content: "Module 01 • Page " counter(page);
+      font-size: 8pt;
+      font-family: Georgia, serif;
+      color: #8A5A36;
+    }
+    @bottom-left {
+      content: "Lalitha Sahasranamam — Verses 1 to 10 (Namas 1 to 26)";
+      font-size: 8pt;
+      font-family: Georgia, serif;
+      color: #8A5A36;
+    }
+  }
+
+  body {
+    font-family: 'Segoe UI', 'Mukta Malar', 'Latha', Arial, sans-serif;
+    color: #2D241E;
+    line-height: 1.45;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-size: 8.5pt;
+  }
+
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 88vh;
+    text-align: center;
+    border: 3px double #C59B27;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    background: radial-gradient(circle, #FFFDF8 0%, #FBF4E6 100%);
+  }
+
+  h1.title {
+    font-family: 'Georgia', serif;
+    color: #800020;
+    font-size: 22pt;
+    margin: 8px 0 2px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .tamil-title {
+    font-size: 15pt;
+    color: #800020;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    font-family: 'Georgia', serif;
+    color: #9A6B1F;
+    font-size: 11pt;
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .divider {
+    width: 120px;
+    height: 2px;
+    background-color: #C59B27;
+    margin: 10px auto;
+  }
+
+  .badge {
+    display: inline-block;
+    background-color: #800020;
+    color: #FFFFFF;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 8pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  .stage-card {
+    border: 1px solid #E2D1B3;
+    background-color: #FCFAF6;
+    border-left: 4px solid #800020;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    page-break-inside: avoid;
+  }
+
+  .stage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px dashed #D6C29E;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+  }
+
+  .stage-title {
+    font-family: Georgia, serif;
+    font-size: 10.5pt;
+    color: #800020;
+    font-weight: bold;
+  }
+
+  .verse-pill {
+    background-color: #F1E5D1;
+    color: #6E4613;
+    font-size: 7pt;
+    font-weight: bold;
+    padding: 2px 7px;
+    border-radius: 8px;
+    border: 1px solid #DFCEAE;
+  }
+
+  .anchor-box {
+    background-color: #FFF6E5;
+    border: 1px solid #F0DEB7;
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+  }
+
+  .anchor-title {
+    font-weight: bold;
+    color: #87570E;
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+
+  .anchor-desc {
+    font-style: italic;
+    color: #4A3B32;
+    font-size: 7.5pt;
+  }
+
+  .shloka-unit {
+    border-bottom: 1px solid #EFE6D8;
+    padding: 8px 0;
+    page-break-inside: avoid;
+  }
+
+  .shloka-unit:last-child {
+    border-bottom: none;
+  }
+
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 7.5pt;
+    margin-bottom: 2px;
+  }
+
+  .v-badge {
+    color: #800020;
+    font-weight: bold;
+  }
+
+  .n-badge {
+    color: #7A5318;
+    font-weight: 600;
+  }
+
+  .devanagari {
+    font-family: 'Sanskrit Text', 'Nirmala UI', Georgia, serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #691515;
+    line-height: 1.35;
+  }
+
+  .tamil-shloka {
+    font-size: 9.5pt;
+    color: #1A4D2E;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-top: 2px;
+  }
+
+  .iast {
+    font-size: 8pt;
+    color: #4A3B32;
+    font-style: italic;
+    line-height: 1.25;
+    margin-top: 2px;
+  }
+
+  .nama-card {
+    margin-top: 6px;
+    background-color: #F8F4EC;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 7.5pt;
+    line-height: 1.4;
+  }
+
+  .nama-header {
+    font-weight: bold;
+    color: #800020;
+    font-size: 8pt;
+    border-bottom: 1px solid #E5D6C0;
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+  }
+
+  .en-meaning {
+    color: #2D241E;
+    margin-bottom: 2px;
+  }
+
+  .ta-meaning {
+    color: #5C3D1E;
+    font-weight: 500;
+  }
+
+  .lbl {
+    font-weight: bold;
+    color: #800020;
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+  <div class="badge">Module 01 of 09 • தொகுதி 1</div>
+  <h1 class="title">Lalitha Sahasranamam</h1>
+  <div class="tamil-title">ஸ்ரீ லலிதா ஸஹஸ்ரநாம ஸ்தோத்திரம்</div>
+  <div class="subtitle">Complete Verses 1 to 10 (Namas 1 to 26) with Name-by-Name Meanings</div>
+  <div class="divider"></div>
+  <p style="font-size: 9pt; max-width: 500px; color: #4A3B32; margin: 6px auto;">
+    Trilingual Edition (Devanagari • தமிழ் • IAST) covering <strong>The Sacred Origin from Chidagni Kunda</strong>, <strong>The Four Divine Implements</strong>, and the first stage of <strong>Keśādi-Pāda Meditation</strong> (Crown to Fragrant Smile).
+  </p>
+  <div class="divider"></div>
+  <div style="font-size: 8pt; color: #5C4A3E; line-height: 1.5;">
+    <strong>Covers:</strong> Verses 1 to 10 (Namas 1 to 26)<br>
+    <strong>Visual Anchors:</strong> Chidagni Kunda Altar & Radiant Facial Splendor (சிதாக்னி குண்டம் & திருமுகம்)<br>
+    <em>Devanagari • தமிழ் வரிவடிவம் • English IAST • Granular Word-by-Word Definitions</em>
+  </div>
+</div>
+
+<!-- PAGE 1: VERSES 1 TO 3 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 1: Sacred Origin & The Four Implements / அவதாரமும் நான்கு ஆயுதங்களும்</span>
+    <span class="verse-pill">Verses 1 – 3 | Namas 1 – 12</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Blazing Altar of Pure Consciousness (சிதாக்னி குண்டம்)</div>
+    <div class="anchor-desc">Rising from the fire altar of pure consciousness like a thousand rising suns, holding the sugarcane bow (Mind), five flower arrows (Sense Perceptions), the noose of divine love (Raga), and the goad of discernment (Krodha).</div>
+  </div>
+
+  <!-- VERSE 1 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 1</span><span class="n-badge">Namas 1 – 5</span></div>
+    <div class="devanagari">श्रीमाता श्रीमहाराज्ञी श्रीमत्सिंहासनेश्वरी । चिदग्निकुण्डसम्भूता देवकार्यसमुद्यता ॥ १ ॥</div>
+    <div class="tamil-shloka">ஸ்ரீமாதா ஸ்ரீமஹாராஜ்ஞீ ஸ்ரீமத்ஸிம்ஹாஸநேஶ்வரீ । சிதாக்நிகுண்டஸம்பூதா தேவகார்யஸமுத்யதா ॥ க ॥</div>
+    <div class="iast">śrīmātā śrīmahārājñī śrīmatsiṃhāsaneśvarī | cidagnikuṇḍasambhūtā devakāryasamudyatā || 1 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">1. Śrīmātā (ஸ்ரீமாதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The Divine Supreme Mother who nurtures, protects, and sustains all cosmic creation.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> உலக உயிர்கள் அனைத்தையும் பெற்று வளர்த்துப் பாதுகாக்கும் முழுமுதற் புனித அன்னை.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">2. Śrīmahārājñī (ஸ்ரீமஹாராஜ்ஞீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The Great Sovereign Empress ruling over the infinite multiverses.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> அகில பிரபஞ்சங்கள் அனைத்தையும் ஆட்சி செய்யும் தனிப்பெரும் பேரரசி.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">3. Śrīmatsiṃhāsaneśvarī (ஸ்ரீமத்ஸிம்ஹாஸநேஶ்வரீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The Supreme Queen seated upon the auspicious golden lion throne (representing transcendent consciousness).</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> மங்களகரமான திவ்ய சிம்மாசனத்தில் வீற்றிருந்து ஆட்சி புரியும் ஈஸ்வரி.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">4. Cidagni-kuṇḍa-sambhūtā (சிதாக்நிகுண்டஸம்பூதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Manifested from the sacrificial fire-altar of Pure Consciousness (Chidagni).</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> தூய ஞானமாகிய சிதாக்னி குண்டத்திலிருந்து தோன்றியவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">5. Deva-kārya-samudyatā (தேவகார்யஸமுத்யதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Ever-intent on accomplishing the purpose of the gods (annihilating darkness and restoring cosmic balance).</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> தேவர்களின் துயரம் தீர்த்து பிரபஞ்ச நன்மைகளை நிறைவேற்ற முனைந்தவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 2 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 2</span><span class="n-badge">Namas 6 – 9</span></div>
+    <div class="devanagari">उद्यद्भानुसहस्राभा चतुर्बाहुसमन्विता । रागस्वरूपपाशाढ्या क्रोधाकाराङ्कुशोज्ज्वला ॥ २ ॥</div>
+    <div class="tamil-shloka">உத்யத்பாநுஸஹஸ்ராபா சதுர்பாஹுஸமந்விதா । ராகஸ்வரூபபாஶாட்யா க்ரோதாகாராங்குஶோஜ்ஜ்வலா ॥ உ ॥</div>
+    <div class="iast">udyadbhānusahasrābhā caturbāhusamanvitā | rāgasvarūpapāśāḍhyā krodhākārāṅkuśojjvalā || 2 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">6. Udyad-bhānu-sahasrābhā (உத்யத்பாநுஸஹஸ்ராபா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Radiant with the brilliant crimson glow of a thousand rising suns.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஒரே சமயத்தில் உதிக்கின்ற ஆயிரம் சூரியன்களின் ஒளி போன்ற பேரொளி கொண்டவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">7. Catur-bāhu-samanvitā (சதுர்பாஹுஸமந்விதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Endowed with four graceful arms holding the divine cosmic implements.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> நான்கு திருக்கரங்களை உடையவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">8. Rāga-svarūpa-pāśāḍhyā (ராகஸ்வரூபபாஶாட்யா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Holding the noose (Pasha) in Her hand, which is the subtle embodiment of divine love and pure attraction.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> தூய அன்பாகிய பாசக் கயிற்றைக் கரத்தில் ஏந்தியிருப்பவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">9. Krodhākārāṅkuśojjvalā (க்ரோதாகாராங்குஶோஜ்ஜ்வலா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Shining with the flashing goad (Ankusha) of righteous wrath that destroys ignorance and restrains lower impulses.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> தீமைகளை அடக்கும் அங்குசத்தை ஏந்தி ஒளிர்பவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 3 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 3</span><span class="n-badge">Namas 10 – 12</span></div>
+    <div class="devanagari">मनोरूपेक्षुकोदण्डा पञ्चतन्मात्रसायका । निजारुणप्रभापूरमज्जद्ब्रह्माण्डमण्डला ॥ ३ ॥</div>
+    <div class="tamil-shloka">மநோரூபேக்ஷுகோதண்டா பஞ்சதந்மாத்ரஸாயகா । நிஜாருணப்ரபாபூரமஜ்ஜத்ப்ரம்ஹாண்டமண்டலா ॥ ங ॥</div>
+    <div class="iast">manorūpekṣukodaṇḍā pañcatanmātrasāyakā | nijāruṇaprabhāpūramajjadbrahmāṇḍamaṇḍalā || 3 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">10. Mano-rūpekṣu-kodaṇḍā (மநோரூபேக்ஷுகோதண்டா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Holding the sweet sugarcane bow representing the Cosmic Mind (*Manas*).</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> மனித மனதை தனது கரும்பு வில்லாகக் கரத்தில் ஏந்தியவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">11. Pañca-tanmātra-sāyakā (பஞ்சதந்மாத்ரஸாயகா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Armed with the five fragrant flower-arrows symbolizing the subtle elements (*Tanmatras*: Sound, Touch, Form, Taste, Smell).</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஐந்து புலன் உணர்வுகளையும் (சப்த, ஸ்பரிச, ரூப, ரச, கந்த) மலர் அம்புகளாகக் கொண்டவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">12. Nijāruṇa-prabhā-pūra-majjad-brahmāṇḍa-maṇḍalā (நிஜாருணப்ரபாபூரமஜ்ஜத்ப்ரம்ஹாண்டமண்டலா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Immersing all the universes in the boundless crimson flood of Her natural rosy aura.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> தனது செவ்வொளி வெள்ளத்தில் அகில பிரபஞ்சங்களையும் மூழ்கச் செய்து அருள்பவள்.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 2: VERSES 4 TO 7 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 2A: Keśādi-Pāda Meditation — Crown to Nose / திருமுடி முதல் திருநாசி வரை</span>
+    <span class="verse-pill">Verses 4 – 7 | Namas 13 – 20</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Radiant Crown & Crescent Brow (கிரீடமும் பிறை நெற்றியும்)</div>
+    <div class="anchor-desc">Tresses fragrant with Champaka and Ashoka flowers, ruby-studded crown, crescent-moon forehead adorned with musk kasturi tilaka, bow-like eyebrows, and fish-shaped eyes.</div>
+  </div>
+
+  <!-- VERSE 4 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 4</span><span class="n-badge">Namas 13 – 14</span></div>
+    <div class="devanagari">चम्पकाशोकपुन्नागसौगन्धिकलसत्कचा । कुरुविन्दमणिश्रेणीकनत्कोटीरमण्डिता ॥ ४ ॥</div>
+    <div class="tamil-shloka">சம்பகாஶோகபுந்நாகஸௌகந்திகலஸத்கசா । குருவிந்தமணிஶ்ரேணீகநத்கோடீரமண்டிதா ॥ ச ॥</div>
+    <div class="iast">campakāśokapunnāgasaugandhikalasatkacā | kuruvindamaṇiśreṇīkanatkoṭīramaṇḍitā || 4 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">13. Campakāśoka-punnāga-saugandhika-lasat-kacā (சம்பகாஶோகபுந்நாகஸௌகந்திகலஸத்கசா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Hair shining radiantly, adorned with fresh Champaka, Ashoka, Punnaga, and fragrant blue water-lilies.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> செண்பகம், அசோகம், புன்னாகம், செங்கழுநீர் ஆகிய நறுமண மலர்களால் சூடப்பட்ட அழகிய திருக்கூந்தலை உடையவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">14. Kuruvinda-maṇi-śreṇī-kanat-koṭīra-maṇḍitā (குருவிந்தமணிஶ்ரேணீகநத்கோடீரமண்டிதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Adorned with a glorious crown dazzling with rows of brilliant Padmaraga rubies (Kuruvinda).</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> குருவிந்தம் என்னும் உயர்தர மாணிக்கக் கற்கள் வரிசையாகப் பதிக்கப்பட்டு மின்னும் கிரீடத்தை அணிந்தவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 5 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 5</span><span class="n-badge">Namas 15 – 16</span></div>
+    <div class="devanagari">अष्टमीचन्द्रविभ्राजदलिकस्थलशोभिता । मुखचन्द्रकलङ्काभमृगनाभिविशेषका ॥ ५ ॥</div>
+    <div class="tamil-shloka">அஷ்டமீசந்த்ரவிப்ராஜதலிகஸ்தலஶோபிதா । முகசந்த்ரகலங்காபம்ருகநாபிவிஶேஷகா ॥ ரு ॥</div>
+    <div class="iast">aṣṭamīcandravibhrājadalikasthalaśobhitā | mukhacandrakalaṅkābhamṛganābhiviśeṣakā || 5 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">15. Aṣṭamī-candra-vibhrājad-alika-sthala-śobhitā (அஷ்டமீசந்த்ரவிப்ராஜதலிகஸ்தலஶோபிதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Beautiful with a forehead curved and luminous like the crescent moon of the eighth lunar day (*Ashtami*).</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> அஷ்டமி திதியின் அழகிய பிறைச்சந்திரன் போல் ஒளிவீசும் நெற்றியை உடையவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">16. Mukha-candra-kalaṅkābha-mṛganābhi-viśeṣakā (முகசந்த்ரகலங்காபம்ருகநாபிவிஶேஷகா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Wearing a musk (*Kasturi*) tilaka upon Her moon-like face, appearing like the mark on the moon.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> சந்திர வதனத்தில் மான் போன்ற கஸ்தூரி பொட்டினைத் திலகமாக அணிந்தவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 6 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 6</span><span class="n-badge">Namas 17 – 18</span></div>
+    <div class="devanagari">वदनस्मरमाङ्गल्यगृहतोरणचिल्लिका । वक्त्रलक्ष्मीपरीवाहचलन्मीनाभलोचना ॥ ६ ॥</div>
+    <div class="tamil-shloka">வதநஸ்மரமாங்கல்யக்ருஹதோரணசில்லிகா । வக்த்ரலக்ஷ்மீபரீவாஹசலந்மீநாபலோசநா ॥ சு ॥</div>
+    <div class="iast">vadanasmaramāṅgalyagṛhatoraṇacillikā | vaktralakṣmīparīvāhacalanmīnābhalocanā || 6 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">17. Vadana-smara-māṅgalya-gṛha-toraṇa-cillikā (வதநஸ்மரமாங்கல்யக்ருஹதோரணசில்லிகா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Eyebrows arched like festive torana archways over the auspicious dwelling of Her radiant face.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> மன்மதனின் மங்கள இல்லம் போன்ற முகத்திற்குத் தோரணமாக விளங்கும் அழகிய புருவங்களை உடையவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">18. Vaktra-lakṣmī-parīvāha-calan-mīnābha-locanā (வக்த்ரலக்ஷ்மீபரீவாஹசலந்மீநாபலோசநா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Eyes moving gracefully like darting fish within the flowing stream of Her facial beauty.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> முகத்தின் அழகு வெள்ளத்தில் துள்ளி விளையாடும் மீன்கள் போன்ற அழகிய கண்களை உடையவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 7 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 7</span><span class="n-badge">Namas 19 – 20</span></div>
+    <div class="devanagari">नवचम्पकपुष्पाभनासादण्डविराजिता । ताराकान्तितिरस्कारिनासाभरणभासुरा ॥ ७ ॥</div>
+    <div class="tamil-shloka">நவசம்பகபுஷ்பாபநாஸாதண்டவிராஜிதா । தாராகாந்திதிரஸ்காரிநாஸாபரணபாஸுரா ॥ எ ॥</div>
+    <div class="iast">navacampakapuṣpābhanāsādaṇḍavirājitā | tārākāntitiraskārināsābharaṇabhāsurā || 7 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">19. Nava-campaka-puṣpābha-nāsādaṇḍa-virājitā (நவசம்பகபுஷ்பாபநாஸாதண்டவிராஜிதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Resplendent with a slender, delicate nose shaped like a fresh blooming Champaka bud.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> புதிதாக மலர்ந்த செண்பக மொட்டைப் போன்ற நேர்த்தியான அழகிய மூக்கினை உடையவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">20. Tārā-kānti-tiraskāri-nāsābharaṇa-bhāsurā (தாராகாந்திதிரஸ்காரிநாஸாபரணபாஸுரா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Shining with a sparkling nose-ring whose brilliance eclipses the luster of the morning star.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> விண்மீன்களின் பிரகாசத்தையும் மிஞ்சும் ஒளி வீசும் மூக்குத்தியை அணிந்தவள்.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 3: VERSES 8 TO 10 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 2A (Contd.): Ears, Cheeks, Lips, Teeth & Fragrant Breath / திருக்காதணி & திருவாய்மலர்</span>
+    <span class="verse-pill">Verses 8 – 10 | Namas 21 – 26</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Sun & Moon Earrings & Pearl-Like Teeth (காதணி & முத்துப்பல்)</div>
+    <div class="anchor-desc">Ears adorned with Kadamba blossoms and earrings formed by the Sun and Moon, ruby-mirror cheeks, coral-red lips, teeth shining like the sixteen Shuddhavidya sprouts, and breath fragrant with camphor betel-chew.</div>
+  </div>
+
+  <!-- VERSE 8 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 8</span><span class="n-badge">Namas 21 – 22</span></div>
+    <div class="devanagari">कदम्बमञ्जरीक्लृप्तकर्णपूरमनोहरा । ताटङ्कयुगलीभूततपनोडुपमण्डला ॥ ८ ॥</div>
+    <div class="tamil-shloka">கதம்பமஞ்ஜரீக்லுப்தகர்ணபூரமநோஹரா । தாடங்கயுகலீபூததபநோடுமண்டலா ॥ அ ॥</div>
+    <div class="iast">kadambamañjarīklṛptakarṇapūramanoharā | tāṭaṅkayugalībhūtatapanoḍupamaṇḍalā || 8 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">21. Kadamba-mañjarī-klṛpta-karṇapūra-manoharā (கதம்பமஞ்ஜரீக்லுப்தகர்ணபூரமநோஹரா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Enchanting with clusters of fragrant Kadamba blossoms tucked behind Her ears.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> காதுகளில் அலங்காரமாகச் சூடப்பட்ட கதம்ப மலர்க் கொத்துகளால் மனம் கவர்பவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">22. Tāṭaṅka-yugalī-bhūta-tapanoḍupa-maṇḍalā (தாடங்கயுகலீபூததபநோடுமண்டலா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Wearing the very orbs of the Sun and Moon as Her twin luminous ear-studs (*Tatankas*).</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> சூரிய சந்திர மண்டலங்களையே தனது இரு காதணிகளாகத் (தாடங்கம்) தரித்திருப்பவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 9 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 9</span><span class="n-badge">Namas 23 – 24</span></div>
+    <div class="devanagari">पद्मरागशिलादर्शपरिभाविकपोलभूः । नवविद्रुमबिम्बश्रीन्यक्कारिरदनच्छदा ॥ ९ ॥</div>
+    <div class="tamil-shloka">பத்மராகஶிலாதர்ஶபரிபாவிகபோலபூஃ । நவவித்ருமபிம்பஶ்ரீந்யக்காரிரதநச்சதா ॥ கூ ॥</div>
+    <div class="iast">padmarāgaśilādarśaparibhāvikapolabhūḥ | navavidrumabimbaśrīnyakkāriradanacchadā || 9 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">23. Padmarāga-śilādarśa-paribhāvi-kapolabhūḥ (பத்மராகஶிலாதர்ஶபரிபாவிகபோலபூஃ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Cheeks whose flawless polished luster outshines mirrors fashioned from pure rubies.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> பத்மராக மாணிக்கக் கண்ணாடியின் அழகையும் மிஞ்சுகின்ற பளபளப்பான கன்னங்களை உடையவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">24. Nava-vidruma-bimba-śrī-nyakkāri-radanacchadā (நவவித்ருமபிம்பஶ்ரீந்யக்காரிரதநச்சதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Lips whose natural red hue eclipses fresh coral and ripe Bimba fruit.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> பவழம் மற்றும் கொவ்வைப்பழத்தின் சிவப்பழகையும் வெல்லும் செவ்விதழ்களை உடையவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 10 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 10</span><span class="n-badge">Namas 25 – 26</span></div>
+    <div class="devanagari">शुद्धविद्याङ्कुराकारद्विजपङ्क्तिद्वयोज्ज्वला । कर्पूरवीटिकामोदसमाकर्षिदिगन्तरा ॥ १० ॥</div>
+    <div class="tamil-shloka">ஶுத்தவித்யாங்குராகாரத்விஜபங்க்தித்வயோஜ்ஜ்வலா । கர்பூரவீடிகாமோதஸமாகர்ஷிதிகந்தரா ॥ க0 ॥</div>
+    <div class="iast">śuddhavidyāṅkurākāradvijapaṅktidvayojjvalā | karpūravīṭikāmodasamākarṣidigantarā || 10 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">25. Śuddha-vidyāṅkurākāra-dvija-paṅkti-dvayojjvalā (ஶுத்தவித்யாங்குராகாரத்விஜபங்க்தித்வயோஜ்ஜ்வலா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Dazzling with twin rows of teeth that look like the pristine sprouts of the sixteen sacred Shuddhavidya letters.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> சுத்த வித்யையின் முளைகள் போன்ற வெண்மையான ஒளிவீசும் பல்வரிசைகளை உடையவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">26. Karpūra-vīṭikāmoda-samākarṣi-digantarā (கர்பூரவீடிகாமோதஸமாகர்ஷிதிகந்தரா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Filling all cardinal directions with the sweet, divine fragrance of Her camphor betel-chew (*Tambula*).</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> கற்பூரம் கலந்த தாம்பூலத்தின் நறுமணத்தால் திசைகள் அனைத்தையும் ஈர்த்து மகிழ்விப்பவள்.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

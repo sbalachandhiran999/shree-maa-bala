@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+<meta charset="UTF-8">
+<title>Lalitha Sahasranamam - Module 12 (Verses 151 to 160)</title>
+<style>
+  @page {
+    size: A4;
+    margin: 12mm;
+    @bottom-right {
+      content: "Module 12 • Page " counter(page);
+      font-size: 8pt;
+      font-family: Georgia, serif;
+      color: #8A5A36;
+    }
+    @bottom-left {
+      content: "Lalitha Sahasranamam — Verses 151 to 160 (Namas 791 to 861)";
+      font-size: 8pt;
+      font-family: Georgia, serif;
+      color: #8A5A36;
+    }
+  }
+
+  body {
+    font-family: 'Segoe UI', 'Mukta Malar', 'Latha', Arial, sans-serif;
+    color: #2D241E;
+    line-height: 1.45;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-size: 8.5pt;
+  }
+
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 88vh;
+    text-align: center;
+    border: 3px double #C59B27;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    background: radial-gradient(circle, #FFFDF8 0%, #FBF4E6 100%);
+  }
+
+  h1.title {
+    font-family: 'Georgia', serif;
+    color: #800020;
+    font-size: 22pt;
+    margin: 8px 0 2px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .tamil-title {
+    font-size: 15pt;
+    color: #800020;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    font-family: 'Georgia', serif;
+    color: #9A6B1F;
+    font-size: 11pt;
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .divider {
+    width: 120px;
+    height: 2px;
+    background-color: #C59B27;
+    margin: 10px auto;
+  }
+
+  .badge {
+    display: inline-block;
+    background-color: #800020;
+    color: #FFFFFF;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 8pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  .stage-card {
+    border: 1px solid #E2D1B3;
+    background-color: #FCFAF6;
+    border-left: 4px solid #800020;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    page-break-inside: avoid;
+  }
+
+  .stage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px dashed #D6C29E;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+  }
+
+  .stage-title {
+    font-family: Georgia, serif;
+    font-size: 10.5pt;
+    color: #800020;
+    font-weight: bold;
+  }
+
+  .verse-pill {
+    background-color: #F1E5D1;
+    color: #6E4613;
+    font-size: 7pt;
+    font-weight: bold;
+    padding: 2px 7px;
+    border-radius: 8px;
+    border: 1px solid #DFCEAE;
+  }
+
+  .anchor-box {
+    background-color: #FFF6E5;
+    border: 1px solid #F0DEB7;
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+  }
+
+  .anchor-title {
+    font-weight: bold;
+    color: #87570E;
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+
+  .anchor-desc {
+    font-style: italic;
+    color: #4A3B32;
+    font-size: 7.5pt;
+  }
+
+  .shloka-unit {
+    border-bottom: 1px solid #EFE6D8;
+    padding: 8px 0;
+    page-break-inside: avoid;
+  }
+
+  .shloka-unit:last-child {
+    border-bottom: none;
+  }
+
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 7.5pt;
+    margin-bottom: 2px;
+  }
+
+  .v-badge {
+    color: #800020;
+    font-weight: bold;
+  }
+
+  .n-badge {
+    color: #7A5318;
+    font-weight: 600;
+  }
+
+  .devanagari {
+    font-family: 'Sanskrit Text', 'Nirmala UI', Georgia, serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #691515;
+    line-height: 1.35;
+  }
+
+  .tamil-shloka {
+    font-size: 9.5pt;
+    color: #1A4D2E;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-top: 2px;
+  }
+
+  .iast {
+    font-size: 8pt;
+    color: #4A3B32;
+    font-style: italic;
+    line-height: 1.25;
+    margin-top: 2px;
+  }
+
+  .nama-card {
+    margin-top: 6px;
+    background-color: #F8F4EC;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 7.5pt;
+    line-height: 1.4;
+  }
+
+  .nama-header {
+    font-weight: bold;
+    color: #800020;
+    font-size: 8pt;
+    border-bottom: 1px solid #E5D6C0;
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+  }
+
+  .en-meaning {
+    color: #2D241E;
+    margin-bottom: 2px;
+  }
+
+  .ta-meaning {
+    color: #5C3D1E;
+    font-weight: 500;
+  }
+
+  .lbl {
+    font-weight: bold;
+    color: #800020;
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+  <div class="badge">Module 12 of 13 • தொகுதி 12</div>
+  <h1 class="title">Lalitha Sahasranamam</h1>
+  <div class="tamil-title">ஸ்ரீ லலிதா ஸஹஸ்ரநாம ஸ்தோத்திரம்</div>
+  <div class="subtitle">Complete Verses 151 to 160 (Namas 791 to 861) with Name-by-Name Meanings</div>
+  <div class="divider"></div>
+  <p style="font-size: 9pt; max-width: 500px; color: #4A3B32; margin: 6px auto;">
+    Trilingual Edition (Devanagari • தமிழ் • IAST) featuring <strong>Satyaj્ઞānānanda-rūpā</strong>, <strong>Parañjyotiḥ & Paramāṇuḥ</strong>, <strong>Janmamṛtyu-jarātapta (Reliever of Aging & Death)</strong>, and <strong>Kāntārdha-vigrahā (Ardhanarishwari)</strong>.
+  </p>
+  <div class="divider"></div>
+  <div style="font-size: 8pt; color: #5C4A3E; line-height: 1.5;">
+    <strong>Covers:</strong> Verses 151 to 160 (Namas 791 to 861)<br>
+    <strong>Visual Anchors:</strong> Homogeneous Bliss & Ardhanarishwari Splendor (ஸாமரஸ்யம் & காந்தார்த விக்ரஹா)<br>
+    <em>Devanagari • தமிழ் வரிவடிவம் • English IAST • Granular Word-by-Word Definitions</em>
+  </div>
+</div>
+
+
+<!-- PAGE: VERSES 151 TO 153 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 24A: Satyajnanananda & Kalānidhi / சத்யஞானானந்த & கலানিதி</span>
+    <span class="verse-pill">Verses 151 – 153 | Namas 791 – 812</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Ocean of Bliss and Supreme Light (பரஞ்ஜ்யோதி)</div>
+    <div class="anchor-desc">Satyajnanananda, Samarasya, Kapardini, Kalānidhi, Parañjyotiḥ, and Paramāṇuḥ.</div>
+  </div>
+
+  <!-- VERSE 151 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 151</span><span class="n-badge">Namas 791 – 796</span></div>
+    <div class="devanagari">सत्यज्ञानानन्दरूपा सामरस्यपरायणा । कपर्दिनी कलामाला कामधुक् कामरूपिणी ॥ १५१ ॥</div>
+    <div class="tamil-shloka">ஓம் ஸத்யஞானானந்த³ரூபாயை நம: । ஓம் ஸாமரஸ்யபராயணாயை நம: । கப்ர்திநீ கலாமாலா காமது³கே⁴ காமரூபிணீ ॥ க௫க ॥</div>
+    <div class="iast">satyajñānānandarūpā sāmarasyaparāyaṇā | kapardinī kalāmālā kāmadhukkāmarūpiṇī || 151 ||</div>
+
+    <div class="nama-card"><div class="nama-header">791. Satyajñānānanda-rūpā (ஓம் ஸத்யஞானானந்த³ரூபாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The embodiment of Truth, Wisdom, and Bliss.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சத்தியம், ஞானம், ஆனந்தம் ஆகியவற்றுடன் கூடிய சொரூபம்.</div></div>
+    <div class="nama-card"><div class="nama-header">792. Sāmarasyaparāyaṇā (ஓம் ஸாமரஸ்யபராயணாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Absorbed in non-dual homogeneous bliss (Samarasya).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சிவசக்தி ஐக்கியமான சமரசப் பேரின்பத்தில் திளைத்திருப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">793. Kapardinī (ஓம் கபர்தி³ன்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Adorned with matted locks of hair (Kaparda).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஜடாமுடி தரித்த கபர்தினி.</div></div>
+    <div class="nama-card"><div class="nama-header">794. Kalāmālā (ஓம் கலாமாலாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Wearing a garland of crescent lunar digits and arts.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> கலா மாலையைத் தரித்தவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">795. Kāmadhuk (ஓம் காமது³கே⁴ நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The wish-yielding celestial cow (Kamadhenu) fulfilling all pure desires.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> வேண்டியது வழங்கும் காமதேனு போன்றவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">796. Kāma-rūpiṇī (ஓம் காமரூபிண்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Assuming any desirable form at will.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> விரும்பிய வடிவங்களை எங்கும் எடுப்பவள்.</div></div>
+  </div>
+
+  <!-- VERSE 152 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 152</span><span class="n-badge">Namas 797 – 805</span></div>
+    <div class="devanagari">कलानिधिः काव्याकला रसज्ञा रसशेवधिः । पुष्टा पुरातना पूज्या पुष्करा पुष्करेक्षणा ॥ १५२ ॥</div>
+    <div class="tamil-shloka">கலாநிதிஃ காவ்யகலா ரஸஜ்ஞா ரஸஶேவதிஃ । புஷ்டா புராதநா பூஜ்யா புஷ்கரா புஷ்கரேக்ஷணா ॥ க௫உ ॥</div>
+    <div class="iast">kalānidhiḥ kāvyakalā rasajñā rasaśevadhiḥ | puṣṭā purātanā pūjyā puṣkarā puṣkarēkṣaṇā || 152 ||</div>
+
+    <div class="nama-card"><div class="nama-header">797. Kalānidhiḥ (ஓம் கலானித⁴யே நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The infinite treasure-house of all arts and lunar digits.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்துத்துக் கலைகளுக்கும் நிதியானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">798. Kāvyakalā (ஓம் காவ்யகலாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The essence and soul of poetry, literature, and aesthetic expression.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> காவியக் கலைகளின் உண்மை வடிவம்.</div></div>
+    <div class="nama-card"><div class="nama-header">799. Rasajñā (ஓம் ரஸஜ்ஞாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The connoisseur and experiencer of all spiritual and emotional flavors (Rasa).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்து ரசங்களையும் உணர்ந்து சுவைப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">800. Rasaśevadhiḥ (ஓம் ரஸஶேவத⁴யே நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The boundless ocean and treasury of transcendental bliss.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பேரின்ப ரசத்தின் பொக்கிஷமானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">801. Puṣṭā (ஓம் புஷ்டாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Nourished, complete, and self-satisfied in Her glory.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பரிபூரண திருப்தியுடன் பொலிபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">802. Purātanā (ஓம் புராதனாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The ancient, primordial Being existing before time.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> காலத்திற்கும் முற்பட்ட அனாதியான பழமையானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">803. Pūjyā (ஓம் பூஜ்யாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Worthy of universal worship and veneration.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைவராலும் வழிபடத்தக்க உயர்ந்தவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">804. Puṣkarā (ஓம் புஷ்கராயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The nourishing giver of water, lotus-like purity, and prosperity.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தாமரை போன்று தூய்மையானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">805. Puṣkarēkṣaṇā (ஓம் புஷ்கரேக்ஷணாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Having large, tender eyes shaped like lotus petals.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தாமரை மலர் போன்ற கண்களை உடையவள்.</div></div>
+  </div>
+
+  <!-- VERSE 153 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 153</span><span class="n-badge">Namas 806 – 812</span></div>
+    <div class="devanagari">परंज्योतिः परंधाम परमाणुः परात्परः । पाशहस्ता पाशहन्त्री परमन्त्रविभेदिनी ॥ १५३ ॥</div>
+    <div class="tamil-shloka">பரஞ்ஜ்யோதிஃ பரந்தாம பரமாணுஃ பராத்பரஃ । பாஶஹஸ்தா பாஶஹந்த்ரீ பரமந்த்ரவிபேதிநீ ॥ க௫ங ॥</div>
+    <div class="iast">parañjyōtiḥ parandhāma paramāṇuḥ parātparaḥ | pāśahastā pāśahantrī paramantravibhēdinī || 153 ||</div>
+
+    <div class="nama-card"><div class="nama-header">806. Parañjyōtiḥ (ஓம் பரஸ்மை ஜ்யோதிஷே நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The Supreme, self-luminous Divine Light.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்து ஒளிக்கும் மேலான பரஞ்ஜோதி.</div></div>
+    <div class="nama-card"><div class="nama-header">807. Parandhāma (ஓம் பரஸ்மை தா⁴ம்னே நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The ultimate spiritual Abode and destination of seekers.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> முயற்சியின் உச்சமான பரம தியான வீடு.</div></div>
+    <div class="nama-card"><div class="nama-header">808. Paramāṇuḥ (ஓம் பரமாணவே நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Subtler than the sub-atomic particle, pervading the minutest core.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அணுவுக்கும் அணுவான சூட்சுமப் பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">809. Parātparaḥ (ஓம் பராத்பராயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Higher than the highest, supreme beyond all transcendences.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உயர்ந்தவர்களுக்கும் மேலான பராத்பரள்.</div></div>
+    <div class="nama-card"><div class="nama-header">810. Pāśahastā (ஓம் பாஶஹஸ்தாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Holding the noose (Pasha) in Her hand to bind illusion.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> கைகளில் பாசக் கயிற்றை ஏந்தியவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">811. Pāśahantrī (ஓம் பாஶஹன்த்ர்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The destroyer of the bonds of worldly attachment.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பந்தபாசங்களை அ அறுத்து எறிபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">812. Paramantra-vibhedinī (ஓம் பரமன்த்ரவிபே⁴தி³ன்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Annihilator of hostile spells and negative vibrations.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எதிரிகளின் தீய மந்திரங்களைத் தகர்ப்பவள்.</div></div>
+  </div>
+
+</div>
+
+
+<!-- PAGE: VERSES 154 TO 156 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 24B: Murtamurta & Brahmani / மூர்த்தாமூர்த்தா & பிரம்மாணி</span>
+    <span class="verse-pill">Verses 154 – 156 | Namas 813 – 836</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Fifty Sacred Shakti Pithas (பஞ்சாஶத் பீட ரூபிணி)</div>
+    <div class="anchor-desc">Murtamurta, Brahmani, Brahmajanani, Praneshvari, and Panchasat-pitha-rupini.</div>
+  </div>
+
+  <!-- VERSE 154 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 154</span><span class="n-badge">Namas 813 – 820</span></div>
+    <div class="devanagari">मूर्तार्ताऽनित्यतृप्ता मुनिमानसहंसिका । सत्यव्रता सत्यरूपा सर्वाङ्गैर्यामिणी सती ॥ १५४ ॥</div>
+    <div class="tamil-shloka">மூர் தாமூர்தாऽநித்யத்ருப்தா முனிமாநஸஹம்ஸிகா । ஸத்யவ்ரதா ஸத்யரூபா ஸர்வாந்தர்யாமிணீ ஸதீ ॥ க௫ச ॥</div>
+    <div class="iast">mūrtāmūrtā nityatṛptā munimānasahaṃsikā | satyavratā satyarūpā sarvāntaryāmiṇī satī || 154 ||</div>
+
+    <div class="nama-card"><div class="nama-header">813. Mūrtā (ஓம் மூர்தாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Manifesting with concrete physical forms.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உருவமுடன் வெளிப்படும் மூர்த்தா.</div></div>
+    <div class="nama-card"><div class="nama-header">814. Amūrtā (ஓம் அமூர்தாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Unmanifest and formless in Her transcendental essence.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உருவமற்ற அருவப் பரம்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">815. Nityatṛptā (ஓம் அனித்யத்ருப்தாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Eternally content and self-satisfied.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> என்றும் குறையாத திருப்தி உடையவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">816. Munimānasa-haṃsikā (ஓம் முனிமானஸஹம்ஸிகாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The royal swan swimming in the purified minds of sages.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> முனிவர்களின் மனமாகிய குளத்தில் நீந்தும் அன்னப் பறவை.</div></div>
+    <div class="nama-card"><div class="nama-header">817. Satyavratā (ஓம் ஸத்யவ்ரதாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Committed eternally to truth and sacred vows.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சத்திய விரதத்தைக் கடைப்பிடிப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">818. Satyarūpā (ஓம் ஸத்யரூபாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The absolute embodiment of Truth.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சத்தியத்தின் திருவுருவானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">819. Sarvāntaryāmiṇī (ஓம் ஸர்வான்தர்யாமிண்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The inner guide dwelling within all beings.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அகிலத்தின் உள்ளேயிருந்து இயக்கும் அந்தர்யாமி.</div></div>
+    <div class="nama-card"><div class="nama-header">820. Satī (ஓம் ஸத்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The chaste, eternal, and virtuous reality.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பதிவிரதையின் சிகரமான சதி தேவி.</div></div>
+  </div>
+
+  <!-- VERSE 155 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 155</span><span class="n-badge">Namas 821 – 829</span></div>
+    <div class="devanagari">ब्रह्माणी ब्रह्मजननी बहुरूपा बुधार्चिता । प्रसवित्री प्रचण्डाऽऽज्ञा प्रतिष्ठा प्रकटाकृतिः ॥ १५५ ॥</div>
+    <div class="tamil-shloka">ப்ரம்ஹாணீ ப்ரம்ஹஜநநீ பகுரூபா புதார்சிதா । ப்ரஸவித்ரீ ப்ரசண்டாऽऽஜ்ஞா ப்ரதிஷ்டா ப்ரகடாக்ருதிஃ ॥ க௫ரு ॥</div>
+    <div class="iast">brahmāṇī brahmajananī bahurūpā budhārcitā | prasavitrī pracaṇḍā''jñā pratiṣṭhā prakaṭākṛtiḥ || 155 ||</div>
+
+    <div class="nama-card"><div class="nama-header">821. Brahmāṇī (ஓம் ப்³ரஹ்மாண்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Embodying the supreme power of Brahma.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிரம்ம சக்தியான பிரம்மாணி.</div></div>
+    <div class="nama-card"><div class="nama-header">822. Brahmajananī (ஓம் ப்³ரஹ்மணே நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The Mother who gave birth to the Creator Brahma.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிரம்மாவுக்கே தாயாக விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">823. Bahurūpā (ஓம் ஜனந்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Assuming infinite manifold forms.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பல வடிவங்களை ஏற்கும் பன்முகப் பெரும்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">824. Budhārcitā (ஓம் ப³ஹுரூபாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Worshipped by enlightened sages and scholars (Budhas).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஞானிகளாலும் அறிஞர்களாலும் வழிபடப்படுபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">825. Prasavitrī (ஓம் பு³தா⁴ர்சிதாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The Mother who brings forth creation.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிரபஞ்சத்தைப் படைத்து ஈன்றெடுத்த தாய்.</div></div>
+    <div class="nama-card"><div class="nama-header">826. Pracaṇḍā (ஓம் ப்ரஸவித்ர்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Fierce and immensely powerful against adharma.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தீய சக்திகளை அழிக்கத் திரண்டுழும் உக்கிர வடிவம்.</div></div>
+    <div class="nama-card"><div class="nama-header">827. Ājñā (ஓம் ப்ரசண்டா³யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The sovereign divine command and law.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மறுக்க முடியாத ஈசுவர ஆக்ஞை.</div></div>
+    <div class="nama-card"><div class="nama-header">828. Pratiṣṭhā (ஓம் ஆஜ்ஞாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The foundation and stable support of all worlds.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அகிலத்தை நிலைநிறுத்தும் ஸ்திரமான பிரதிஷ்டை.</div></div>
+    <div class="nama-card"><div class="nama-header">829. Prakaṭākṛtiḥ (ஓம் ப்ரதிஷ்டா²யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Manifesting clearly in tangible, visible divine forms.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தெளிவான திருவுருவத்துடன் காட்சியளிப்பவள்.</div></div>
+  </div>
+
+  <!-- VERSE 156 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 156</span><span class="n-badge">Namas 830 – 836</span></div>
+    <div class="devanagari">प्राणेश्वरी प्राणदातृ पञ्चाशत्पीठरूपिणी । विसृङ्खला विविक्तस्था वीरमाता वियतप्रसूः ॥ १५६ ॥</div>
+    <div class="tamil-shloka">ப்ராணேஶ்வரீ ப்ராணதாத்ரு பஞ்சாஶத்பீடரூபிணீ । விஸ்ருங்கலா விவிக்தஸ்தா வீரமாதா வியத்ப்ரஸூஃ ॥ க௫௬ ॥</div>
+    <div class="iast">prāṇeśvarī prāṇadātrī pañcāśatpīṭharūpiṇī | viśr̥ṅkhalā viviktasthā vīramātā viyatprasūḥ || 156 ||</div>
+
+    <div class="nama-card"><div class="nama-header">830. Prāṇeśvarī (ஓம் ப்ரகடாக்ருதயே நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The Queen and ruler of all life-breaths (Pranas).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உயிர்களின் பிராண நாதனுக்கும் பிராணனுக்கும் தலைவி.</div></div>
+    <div class="nama-card"><div class="nama-header">831. Prāṇadātrī (ஓம் ப்ராணேஶ்வர்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The generous bestower of vitality and life.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஜீவர்களுக்கு உயிர்சக்தியை வாரி வழங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">832. Pañcāśat-pīṭha-rūpiṇī (ஓம் ப்ராணதா³த்ர்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Embodying the fifty sacred Shakti Pithas across the earth.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஐம்பது சக்தி பீடங்களின் வடிவமாகத் திகழ்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">833. Viśr̥ṅkhalā (ஓம் பஞ்சாஶத்பீட²ரூபிண்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Unshackled, completely free from all material bonds.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எந்தத் தளைகளுக்கும் உட்படாத சுதந்திரமானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">834. Viviktasthā (ஓம் விஶ்ர்ருங்க²லாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Residing in solitary, tranquil, and pure spiritual spaces.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஏகாந்தமான தூய இடங்களில் உறைபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">835. Vīramātā (ஓம் விவிக்தஸ்தா²யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The proud Mother of heroic souls and spiritual warriors.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> வீரர்களுக்கு அன்னையாக விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">836. Viyat-prasūḥ (ஓம் வீரமாத்ரே நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The Mother who created space (Viyat / Akasha).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஆகாயத்தைப் படைத்தளித்த முதன்மைத் தாய்.</div></div>
+  </div>
+
+</div>
+
+
+<!-- PAGE: VERSES 157 TO 160 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 25: Reliever of Aging, Shantyatita Kala & Ardhanarishwari / ஜராதப்த & காந்தார்த விக்ரஹா</span>
+    <span class="verse-pill">Verses 157 – 160 | Namas 837 – 861</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Half-Shiva Half-Shakti Splendor (காந்தார்த விக்ரஹா)</div>
+    <div class="anchor-desc">Mukunda, Bhavarogaghni, Janmamrtyu-jaratapta, Shantyatita-kalatmika, and Kantardha-vigraha.</div>
+  </div>
+
+  <!-- VERSE 157 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 157</span><span class="n-badge">Namas 837 – 842</span></div>
+    <div class="devanagari">मुकुन्दा मुक्तिनिलया मूलविग्रहरूपिणी । भावज्ञा भवरोगघ्नी भवचक्रप्रवर्तिनी ॥ १५७ ॥</div>
+    <div class="tamil-shloka">முகுந்தா முக்திநிலயா மூலவிக்ரஹரூபிணீ । பாவஜ்ஞா பவரோகக்நீ பவசக்ரப்ரவர்திநீ ॥ க௫எ ॥</div>
+    <div class="iast">mukundā muktinilayā mūlavigraharūpiṇī | bhāvajñā bhavarōgaghnī bhavacakrapravartinī || 157 ||</div>
+
+    <div class="nama-card"><div class="nama-header">837. Mukundā (ஓம் வியத்ப்ரஸுவே நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Bestower of Mukti (liberation), identical with Vishnu.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> முக்தியை வழங்கும் முகுந்த வடிவானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">838. Mukti-nilayā (ஓம் முகுன்தா³யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The ultimate abode and resting place of liberation.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> விடுதலையின் நிலையான இருப்பிடம்.</div></div>
+    <div class="nama-card"><div class="nama-header">839. Mūla-vigraha-rūpiṇī (ஓம் முக்தினிலயாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The root, primary, and foundational form of all deities.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்து மூர்த்தங்களுக்கும் மூலமான வடிவம்.</div></div>
+    <div class="nama-card"><div class="nama-header">840. Bhāvajñā (ஓம் மூலவிக்³ரஹரூபிண்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Knower of every subtle emotion, intent, and feeling in hearts.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அடியார்கள் உள்ளத்தின் பாவனைகளையும் உணர்வுகளையும் அறிபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">841. Bhavarōgaghnī (ஓம் பா⁴வஜ்ஞாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The absolute destroyer of the chronic disease of worldly rebirth.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிறவிப் பிணியை அடியோடு அறுக்கும் மருத்துவர்.</div></div>
+    <div class="nama-card"><div class="nama-header">842. Bhavacakra-pravartinī (ஓம் ப⁴வரோக³த்⁴ன்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The turner and controller of the wheel of worldly existence (Samsara chakra).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சம்சாரச் சக்கரத்தை இயக்கி ஆட்சி செய்பவள்.</div></div>
+  </div>
+
+  <!-- VERSE 158 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 158</span><span class="n-badge">Namas 843 – 850</span></div>
+    <div class="devanagari">छन्दःसारा शास्त्रसारा मन्त्रसारा मङ्गलप्रदा । स्तोत्रसारा समाराध्या प्राणसारा सतत्परा ॥ १५८ ॥</div>
+    <div class="tamil-shloka">சந்தஃஸாரா ஶாஸ்த்ரஸாரா மந்த்ரஸாரா மங்களப்ரதா । ஸ்தோத்ரஸாரா ஸமாராத்யா ப்ராணஸாரா ஸதத்பரா ॥ க௫அ ॥</div>
+    <div class="iast">chandaḥsārā śāstrasārā mantrasārā maṅgalapradā | stōtrasārā samārādhyā prāṇasārā satatparā || 158 ||</div>
+
+    <div class="nama-card"><div class="nama-header">843. Chandaḥsārā (ஓம் ப⁴வசக்ரப்ரவர்தின்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The essence of all Vedic meters.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> வேதங்களின் சந்தங்களின் சாரம்.</div></div>
+    <div class="nama-card"><div class="nama-header">844. Śāstrasārā (ஓம் ச²ன்த:³ஸாராயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The essence of all sacred scriptures.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சகல சாஸ்திரங்களின் மெய்சாரம்.</div></div>
+    <div class="nama-card"><div class="nama-header">845. Mantrasārā (ஓம் ஶாஸ்த்ரஸாராயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The essence of all powerful mantras.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்து மந்திரங்களின் உயிர்ச் சாரம்.</div></div>
+    <div class="nama-card"><div class="nama-header">846. Maṅgalapradā (ஓம் மன்த்ரஸாராயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The bestower of all auspiciousness.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சகல மங்களங்களையும் வாரி வழங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">847. Stōtrasārā (ஓம் தலோத³ர்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The essence of all hymns of praise.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்து ஸ்தோத்திரங்களின் சாரம்.</div></div>
+    <div class="nama-card"><div class="nama-header">848. Samārādhyā (ஓம் உதா³ரகீர்தயே நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Worthy of complete, perfect worship.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> முழுமையாக வழிபடத்தக்க உன்னதப் பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">849. Prāṇasārā (ஓம் உத்³தா³மவைப⁴வாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The vital essence of life-breath.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிராண சக்தியின் உட்பொருளான சாரம்.</div></div>
+    <div class="nama-card"><div class="nama-header">850. Satatparā (ஓம் வர்ணரூபிண்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Ever transcendent and supreme.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எப்பொழுதும் மேலான பரம்பொருள்.</div></div>
+  </div>
+
+  <!-- VERSE 159 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 159</span><span class="n-badge">Namas 851 – 853</span></div>
+    <div class="devanagari">जन्ममृत्यु-जरातप्त-जनविश्रान्ति-दायिनी । सर्वोपनिष-दुद्-घुष्टा शान्त्यतीत-कलात्मिका ॥ १५९ ॥</div>
+    <div class="tamil-shloka">ஜன்மம்ருத்யு-ஜராதப்த-ஜநவிஶ்ராந்தி-தாயிநீ । ஸர்வோபநிஷ-துத்-குஷ்டா ஶாந்த்யாதீத-கலாத்மிகா ॥ க௫கூ ॥</div>
+    <div class="iast">janmamṛtyu-jarātapta-janaviśrānti-dāyinī | sarvopaniṣad-udghuṣṭā śāntyatīta-kalātmikā || 159 ||</div>
+
+    <div class="nama-card"><div class="nama-header">851. Janmamṛtyu-jarātapta-janaviśrānti-dāyinī (ஓம் ஜன்மம்ருத்யுஜராதப்தஜன விஶ்ரான்திதா³யின்யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Bestower of absolute peace and rest to those scorched by birth, death, and old age.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிறப்பு, இறப்பு, மூப்பு என்னும் துன்பத்தால் தவிப்போருக்கு இளைப்பாறுதலும் சாந்தியும் தருபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">852. Sarvopaniṣad-udghuṣṭā (ஓம் ஸர்வோபனிஷது³த்³ கு⁴ஷ்டாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Proclaimed loudly and gloriously by all the Upanishads.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அனைத்து உபநிடதங்களாலும் முழங்கிப் போற்றப்படும் பரம்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">853. Śāntyatīta-kalātmikā (ஓம் ஶான்த்யதீதகலாத்மிகாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Embodying the transcendental Shantyatita Kala (the state beyond peace).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சாந்தினைக் கடந்த உன்னத நிலையான சாந்த்யாதீத கலையின் ஆன்மா.</div></div>
+  </div>
+
+  <!-- VERSE 160 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 160</span><span class="n-badge">Namas 854 – 861</span></div>
+    <div class="devanagari">गम्भीरा गगनान्तस्था गर्विता गानलोलुपा । कल्पना-रहिता काष्ठाऽकान्ता कान्तार्ध-विग्रहा ॥ १६० ॥</div>
+    <div class="tamil-shloka">கம்பீரா ககநாந்தஸ்தா கர்வ்தா காநலோலுபா । கற்பநா-ரஹிதா காஷ்டாऽகாந்தா காந்தார்த-விக்ரஹா ॥ க௬0 ॥</div>
+    <div class="iast">gambhīrā gaganāntasthā garvitā gānalolupā | kalpanā-rahitā kāṣṭhā'kāntā kāntārdha-vigrahā || 160 ||</div>
+
+    <div class="nama-card"><div class="nama-header">854. Gambhīrā (ஓம் க³ம்பீ⁴ராயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Profound, unfathomable, and majestic.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஆழமும் கம்பீரமும் கொண்ட அகிலத்தின் தாய்.</div></div>
+    <div class="nama-card"><div class="nama-header">855. Gaganāntasthā (ஓம் க³க³னான்த:ஸ்தா²யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Residing in the vast, boundless expanse of space (Akasha).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பரந்த ஆகாய வெளியில் நிறைந்திருப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">856. Garvitā (ஓம் க³ர்விதாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Majestic and supremely proud of Her boundless sovereign power.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தமது பேரரசாட்சியால் மிடுக்கும் பெருமிதமும் கொண்டவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">857. Gānalolupā (ஓம் கா³னலோலுபாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Enraptured and deeply fond of divine devotional music and singing.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தெய்வீக இசையையும் கானங்களையும் கேட்டு மகிழ்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">858. Kalpanā-rahitā (ஓம் கற்பனாரஹிதாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Free from all mental constructs, imaginations, and artificial limitations.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எந்தவித கற்பனைகளும் மன விகற்பங்களும் அற்றவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">859. Kāṣṭhā (ஓம் காஷ்டா²யை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> The ultimate supreme limit, zenith, and culmination of all spiritual attainment.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அடையத்தக்க உயர் உச்சமான இலக்கு (காஷ்டா).</div></div>
+    <div class="nama-card"><div class="nama-header">860. Akāntā (ஓம் அகான்தாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Unexcelled in beauty, or beyond worldly attractiveness.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஒப்பற்ற பேரெழில் கொண்டவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">861. Kāntārdha-vigrahā (ஓம் காந்தார்த⁴விக்³ரஹாயை நம:)</div><div class="en-meaning"><span class="lbl">English:</span> Sharing Her divine body equally as the left half of Lord Kameshwara (Ardhanarishwari).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> காமேஸ்வரரின் திருமேனியில் பாதியைக் கொண்ட அர்த்தநாரீஸ்வரி.</div></div>
+  </div>
+
+</div>
+
+</body>
+</html>

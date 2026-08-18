@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+<meta charset="UTF-8">
+<title>Lalitha Sahasranamam - Module 04 (Verses 36 to 50)</title>
+<style>
+  @page {
+    size: A4;
+    margin: 12mm;
+    @bottom-right {
+      content: "Module 04 • Page " counter(page);
+      font-size: 8pt;
+      font-family: Georgia, serif;
+      color: #8A5A36;
+    }
+    @bottom-left {
+      content: "Lalitha Sahasranamam — Verses 36 to 50 (Namas 88 to 192)";
+      font-size: 8pt;
+      font-family: Georgia, serif;
+      color: #8A5A36;
+    }
+  }
+
+  body {
+    font-family: 'Segoe UI', 'Mukta Malar', 'Latha', Arial, sans-serif;
+    color: #2D241E;
+    line-height: 1.45;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-size: 8.5pt;
+  }
+
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 88vh;
+    text-align: center;
+    border: 3px double #C59B27;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    background: radial-gradient(circle, #FFFDF8 0%, #FBF4E6 100%);
+  }
+
+  h1.title {
+    font-family: 'Georgia', serif;
+    color: #800020;
+    font-size: 22pt;
+    margin: 8px 0 2px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .tamil-title {
+    font-size: 15pt;
+    color: #800020;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    font-family: 'Georgia', serif;
+    color: #9A6B1F;
+    font-size: 11pt;
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .divider {
+    width: 120px;
+    height: 2px;
+    background-color: #C59B27;
+    margin: 10px auto;
+  }
+
+  .badge {
+    display: inline-block;
+    background-color: #800020;
+    color: #FFFFFF;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 8pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  .stage-card {
+    border: 1px solid #E2D1B3;
+    background-color: #FCFAF6;
+    border-left: 4px solid #800020;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    page-break-inside: avoid;
+  }
+
+  .stage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px dashed #D6C29E;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+  }
+
+  .stage-title {
+    font-family: Georgia, serif;
+    font-size: 10.5pt;
+    color: #800020;
+    font-weight: bold;
+  }
+
+  .verse-pill {
+    background-color: #F1E5D1;
+    color: #6E4613;
+    font-size: 7pt;
+    font-weight: bold;
+    padding: 2px 7px;
+    border-radius: 8px;
+    border: 1px solid #DFCEAE;
+  }
+
+  .anchor-box {
+    background-color: #FFF6E5;
+    border: 1px solid #F0DEB7;
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+  }
+
+  .anchor-title {
+    font-weight: bold;
+    color: #87570E;
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+
+  .anchor-desc {
+    font-style: italic;
+    color: #4A3B32;
+    font-size: 7.5pt;
+  }
+
+  .shloka-unit {
+    border-bottom: 1px solid #EFE6D8;
+    padding: 8px 0;
+    page-break-inside: avoid;
+  }
+
+  .shloka-unit:last-child {
+    border-bottom: none;
+  }
+
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 7.5pt;
+    margin-bottom: 2px;
+  }
+
+  .v-badge {
+    color: #800020;
+    font-weight: bold;
+  }
+
+  .n-badge {
+    color: #7A5318;
+    font-weight: 600;
+  }
+
+  .devanagari {
+    font-family: 'Sanskrit Text', 'Nirmala UI', Georgia, serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #691515;
+    line-height: 1.35;
+  }
+
+  .tamil-shloka {
+    font-size: 9.5pt;
+    color: #1A4D2E;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-top: 2px;
+  }
+
+  .iast {
+    font-size: 8pt;
+    color: #4A3B32;
+    font-style: italic;
+    line-height: 1.25;
+    margin-top: 2px;
+  }
+
+  .nama-card {
+    margin-top: 6px;
+    background-color: #F8F4EC;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 7.5pt;
+    line-height: 1.4;
+  }
+
+  .nama-header {
+    font-weight: bold;
+    color: #800020;
+    font-size: 8pt;
+    border-bottom: 1px solid #E5D6C0;
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+  }
+
+  .en-meaning {
+    color: #2D241E;
+    margin-bottom: 2px;
+  }
+
+  .ta-meaning {
+    color: #5C3D1E;
+    font-weight: 500;
+  }
+
+  .lbl {
+    font-weight: bold;
+    color: #800020;
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+  <div class="badge">Module 04 of 09 • தொகுதி 4</div>
+  <h1 class="title">Lalitha Sahasranamam</h1>
+  <div class="tamil-title">ஸ்ரீ லலிதா ஸஹஸ்ரநாம ஸ்தோத்திரம்</div>
+  <div class="subtitle">Complete Verses 36 to 50 (Namas 88 to 192) with Name-by-Name Meanings</div>
+  <div class="divider"></div>
+  <p style="font-size: 9pt; max-width: 500px; color: #4A3B32; margin: 6px auto;">
+    Trilingual Edition (Devanagari • தமிழ் • IAST) featuring <strong>Kundalini Ascent Across 6 Chakras & 3 Granthis</strong>, <strong>Divine Grace & Motherly Compassion</strong>, <strong>Pure Nirguna Names</strong>, and <strong>Durga the Spiritual Citadel</strong>.
+  </p>
+  <div class="divider"></div>
+  <div style="font-size: 8pt; color: #5C4A3E; line-height: 1.5;">
+    <strong>Covers:</strong> Verses 36 to 50 (Namas 88 to 192)<br>
+    <strong>Visual Anchors:</strong> Golden Kundalini Ascent & Spotless Sky of Awareness (குண்டலினி & நிர்க்குண சொரூபம்)<br>
+    <em>Devanagari • தமிழ் வரிவடிவம் • English IAST • Granular Word-by-Word Definitions</em>
+  </div>
+</div>
+
+<!-- PAGE 1: VERSES 36 TO 40 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 6: Kundalini Ascent Through 6 Chakras & 3 Granthis / குண்டலினி யோகம்</span>
+    <span class="verse-pill">Verses 36 – 40 | Namas 88 – 111</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Golden Serpent Ascending Sushumna (சுழுமுனை நாடி)</div>
+    <div class="anchor-desc">Rising from Mooladhara, piercing Brahma, Vishnu, and Rudra knots, reaching the 1,000-petaled Sahasrara to shower streams of immortal bliss nectar.</div>
+  </div>
+
+  <!-- VERSE 36 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 36</span><span class="n-badge">Namas 88 – 91</span></div>
+    <div class="devanagari">मूलमन्त्रात्मिका मूलकूटत्रयकलेवरा । कुलामृतैकरसिका कुलसङ्केतपालिनी ॥ ३६ ॥</div>
+    <div class="tamil-shloka">மூலமந்த்ராத்மிகா மூலகூடத்ரயகலேவரா । குலாம்ருதைகரஸிகா குலஸங்கேதபாலிநீ ॥ ஙசு ॥</div>
+    <div class="iast">mūlamantrātmikā mūlakūṭatrayakalevarā | kulāmṛtaikarasikā kulasaṅketapālinī || 36 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">88. Mūlamantrātmikā (மூலமந்த்ராத்மிகா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The living soul, essence, and reality of the supreme Moola Mantra.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> மூல மந்திரத்தின் ஆன்மாவாகவும் அதன் உள்ளுணர்வாகவும் திகழ்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">89. Mūlakūṭatraya-kalevarā (மூலகூடத்ரயகலேவரா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Having the three syllable clusters of the root mantra as Her physical and cosmic body.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> மூல மந்திரத்தின் மூன்று கூடங்களையே தனது திருமேனியாகக் கொண்டவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">90. Kulāmṛtaika-rasikā (குலாம்ருதைகரஸிகா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Relishing the nectar of pure spiritual union flowing in the inner yogic path (Kulamrita).</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> குலமார்க்கத்தில் பெருகும் ஞான அமிர்த ரசத்தை ஆனந்தமாகச் சுவைப்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">91. Kulasaṅketa-pālinī (குலஸங்கேதபாலிநீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The strict guardian and protector of the sacred, esoteric traditions of Srividya worship.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> சாஸ்திரங்களின் ரகசிய வழிபாட்டு முறைகளையும் நியதிகளையும் பாதுகாப்பவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 37 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 37</span><span class="n-badge">Namas 92 – 98</span></div>
+    <div class="devanagari">कुलाङ्गना कुलान्तःस्था कौलिनी कुलयोगिनी । अकुला समयान्तःस्था समयाचारतत्परा ॥ ३७ ॥</div>
+    <div class="tamil-shloka">குலாங்கநா குலாந்தஃஸ்தா கௌலிநீ குலயோகிநீ । அகுலா ஸமயாந்தஃஸ்தா ஸமயாசாரதத்பரா ॥ ஙஎ ॥</div>
+    <div class="iast">kulāṅganā kulāntaḥsthā kaulinī kulayoginī | akulā samayāntaḥsthā samayācāratatparā || 37 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">92. Kulāṅganā (குலாங்கநா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The noble, chaste mother and queen of the pure spiritual lineage.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> குலப்பெண்மணியாகக் குடும்பத்தையும் குரு பரம்பரையையும் காப்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">93. Kulāntaḥsthā (குலாந்தஃஸ்தா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Residing deep within the sacred spiritual pathway and inner chakras.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> குல நெறியின் உள்ளும், யோக சக்கரங்களின் நடுவிலும் உறைபவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">94. Kaulinī (கௌலிநீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Presiding over the sacred Kaula tradition and inner kundalini path.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> கௌல மார்க்கத்தின் அதிதேவதையாக விளங்குபவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">95. Kulayoginī (குலயோகிநீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The supreme Yogini uniting the physical body with transcendent consciousness.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> உடலையும் உள்ளத்தையும் ஞானத்துடன் இணைக்கும் குல யோகினியானவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">96. Akulā (அகுலா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The unconditioned, transcendent reality beyond all forms, lineage, and attributes.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> உருவங்கள், குலங்கள் மற்றும் மாற்றங்களைக் கடந்து நின்ற பராசக்தி.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">97. Samayāntaḥsthā (ஸமயாந்தஃஸ்தா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Dwelling in the internal meditative pathway (*Samayachara*) within the spiritual heart.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> அந்தர்யாகம் எனப்படும் சமயாசார மன வழிபாட்டில் வசிப்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">98. Samayācāra-tatparā (ஸமயாசாரதத்பரா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Highly pleased and devoted to those who worship Her through pure internal mental contemplation.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> தூய மனத்தினால் செய்யப்படும் உள்முக வழிபாட்டில் பேரன்பு கொள்பவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 38 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 38</span><span class="n-badge">Namas 99 – 102</span></div>
+    <div class="devanagari">मूलाधारैकनिलया ब्रह्मग्रन्थिविभेदिनी । मणिपूरान्तरुदिता विष्णुग्रन्थिविभेदिनी ॥ ३८ ॥</div>
+    <div class="tamil-shloka">மூலாதாரைகநிலயா ப்ரம்ஹக்ரந்திவிபேதிநீ । மணிபூராந்தருதிதா விஷ்ணுக்ரந்திவிபேதிநீ ॥ ஙஅ ॥</div>
+    <div class="iast">mūlādhāraikanilayā brahmagranthivibhedinī | maṇipūrāntaruditā viṣṇugranthivibhedinī || 38 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">99. Mūlādhāraika-nilayā (மூலாதாரைகநிலயா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Having Her primal resting abode in the Mooladhara chakra at the base of the spine.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> மூலாதார சக்கரத்தில் குண்டலினி சக்தியாக நிலைபெற்றிருப்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">100. Brahma-granthi-vibhedinī (ப்ரம்ஹக்ரந்திவிபேதிநீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Piercing through the Brahma Granthi knot of physical attachment as She ascends.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> உடற்பற்றை அறுத்து பிரம்ம கிரந்தியைத் தகர்த்து மேலே எழும்பிச் செல்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">101. Maṇipūrāntar-uditā (மணிபூராந்தருதிதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Emerging and glowing with brilliant effulgence inside the Manipura navel chakra.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> மணிபூரக சக்கரத்தில் ஜோதி வடிவாகப் பிரகாசிப்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">102. Viṣṇu-granthi-vibhedinī (விஷ்ணுக்ரந்திவிபேதிநீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Piercing through the Vishnu Granthi knot of emotional desire and ego.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> உணர்ச்சித் தளைகளை அறுத்து விஷ்ணு கிரந்தியைத் தகர்த்து ஒளிர்பவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 39 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 39</span><span class="n-badge">Namas 103 – 106</span></div>
+    <div class="devanagari">आज्ञाचक्रान्तरालस्था रुद्रग्रन्थिविभेदिनी । सहस्राराम्बुजारूढा सुधासाराभिवर्षिणी ॥ ३९ ॥</div>
+    <div class="tamil-shloka">ஆஜ்ஞாசக்ராந்தராலஸ்தா ருத்ரக்ரந்திவிபேதிநீ । ஸஹஸ்ராராம்புஜாரூடா ஸுதாதாராபிவர்ஷிணீ ॥ ஙகூ ॥</div>
+    <div class="iast">ājñācakrāntarālasthā rudragranthivibhedinī | sahasrārāmbujārūḍhā sudhāsārābhivarṣiṇī || 39 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">103. Ājñā-cakrāntarāla-sthā (ஆஜ்ஞாசக்ராந்தராலஸ்தா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Shining radiantly between the eyebrows within the Ajna chakra.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> புருவ மத்தியில் உள்ள ஆக்ஞா சக்கரத்தில் ஞான ஒளியாக வீற்றிருப்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">104. Rudra-granthi-vibhedinī (ருத்ரக்ரந்திவிபேதிநீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Piercing the Rudra Granthi knot of intellectual ignorance and subtle ego.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> அறியாமையை அறுத்து ருத்ர கிரந்தியைத் திறந்து உச்சந்தலைக்குச் செல்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">105. Sahasrārāmbujārūḍhā (ஸஹஸ்ராராம்புஜாரூடா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Ascending to and reigning supreme upon the thousand-petaled lotus (*Sahasrara*) at the crown.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> உச்சந்தலையில் உள்ள ஆயிரம் இதழ் தாமரையில் வீற்றிருப்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">106. Sudhā-sārābhivarṣiṇī (ஸுதாதாராபிவர்ஷிணீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Showering streams of immortal bliss nectar throughout all the nadis and nerve channels.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> யோகியின் நாடி நரம்புகள் அனைத்திலும் ஆனந்த அமிர்த மழையைப் பொழிபவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 40 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 40</span><span class="n-badge">Namas 107 – 111</span></div>
+    <div class="devanagari">तटिल्लतासमरुचिः षट्चक्रोपरिसंस्थिता । महासक्तिः कुण्डलिनी बिसतन्तुतनीयसी ॥ ४० ॥</div>
+    <div class="tamil-shloka">தடில்லதாஸமருசிஃ ஷட்சக்ரோபரிஸம்ஸ்திதா । மஹாஸக்திஃ குண்டலிநீ பிஸதந்துதநீயஸீ ॥ ச0 ॥</div>
+    <div class="iast">taṭillatāsamaruciḥ ṣaṭcakroparisaṃsthitā | mahāsaktiḥ kuṇḍalinī bisatantutanīyasī || 40 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">107. Taṭil-latā-sama-ruciḥ (தடில்லதாஸமருசிஃ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Flashing with the golden brilliance of a streak of lightning as She ascends the Sushumna channel.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> சுழுமுனை நாடியில் மின்னல் கொடி போல ஒளிவீசும் பிரகாசம் கொண்டவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">108. Ṣaṭ-cakropari-saṃsthitā (ஷட்சக்ரோபரிஸம்ஸ்திதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Established in supreme transcendence above all the six bodily chakras.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஆறு சக்கரங்களையும் கடந்து அப்பால் உள்ள சஹஸ்ராரத்தில் நிலைபெற்றிருப்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">109. Mahāsaktiḥ (மஹாஸக்திஃ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The Great Primordial Power operating behind every force in the cosmos.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிரபஞ்சம் முழுவதையும் இயக்கும் மகா பராசக்தியானவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">110. Kuṇḍalinī (குண்டலிநீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The sacred cosmic serpent energy dormant within every human body waiting to awaken.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> மனித உடலில் உறங்கிக் கிடக்கும் குண்டலினி யோக சக்தியாக விளங்குபவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">111. Bisa-tantu-tanīyasī (பிஸதந்துதநீயஸீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> As exceedingly fine, subtle, and delicate as the microscopic fiber inside a lotus stalk.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> தாமரைத் தண்டின் உள்ளே இருக்கும் நுண்ணிய நூலை விட மெலிதான சூட்சும வடிவம் கொண்டவள்.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 2: VERSES 41 TO 44 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 7: Divine Grace, Compassion & Spotless Nirguna Form / பவானீ & நிர்க்குணம்</span>
+    <span class="verse-pill">Verses 41 – 44 | Namas 112 – 143</span>
+  </div>
+
+  <!-- VERSE 41 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 41</span><span class="n-badge">Namas 112 – 117</span></div>
+    <div class="devanagari">भवानी भावनागम्या भवारण्यकुठारिका । भद्रप्रिया भद्रमूर्तिर्भक्तसौभाग्यदायिनी ॥ ४१ ॥</div>
+    <div class="tamil-shloka">பவாநீ பாவநாகம்யா பவாரண்யகுடாரிகா । பத்ரப்ரியா பத்ரமூர்திர்பக்தஸௌபாக்யதாயிநீ ॥ சக ॥</div>
+    <div class="iast">bhavānī bhāvanāgamyā bhavāraṇyakuṭhārikā | bhadrapriyā bhadramūrtirbhaktasaubhāgyadāyinī || 41 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">112. Bhavānī (பவாநீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The Supreme Mother who gives life to the universe and is the beloved consort of Lord Shiva.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> உலக உயிர்களுக்கு வாழ்வளிப்பவளாகவும், சிவபெருமானின் பிரிய நாயகியாகவும் விளங்கும் பவானி.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">113. Bhāvanā-gamyā (பாவநாகம்யா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Attainable and realized only through sincere, deep, and continuous mental meditation.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> தூய மனதினால் செய்யப்படும் தொடர்ந்த தியானத்தின் மூலமாக மட்டுமே அறியப்படுபவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">114. Bhavāraṇya-kuṭhārikā (பவாரண்யகுடாரிகா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The sharp axe that cuts down the dense, tangled forest of worldly rebirths.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிறவிப்பெருங்கடல் எனும் அடர்ந்த சம்சாரக் காட்டை வெட்டி வீழ்த்தும் கோடாரியாக இருப்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">115. Bhadra-priyā (பத்ரப்ரியா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Highly pleased and delighted with everything that is pure, good, and auspicious.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> மங்களகரமான மற்றும் நன்மையான அனைத்து செயல்களிலும் பிரியம் கொள்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">116. Bhadra-mūrtiḥ (பத்ரமூர்திஃ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The personification and divine embodiment of complete auspiciousness and benevolence.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> மங்களங்களின் திருவுருவாகவே திகழ்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">117. Bhakta-saubhāgya-dāyinī (பக்தஸௌபாக்யதாயிநீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The benevolent granter of prosperity, spiritual auspiciousness, and joy to Her devotees.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> தன்னைச் சரணடையும் பக்தர்களுக்கு அனைத்து மங்களங்களையும் சௌபாக்கியங்களையும் அருள்பவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 42 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 42</span><span class="n-badge">Namas 118 – 125</span></div>
+    <div class="devanagari">भक्तिप्रिया भक्तिगम्या भक्तिवश्या भयापहा । शाम्भवी शारदाराध्या शर्वाणी शर्मदायिनी ॥ ४२ ॥</div>
+    <div class="tamil-shloka">பக்திப்ரியா பக்திகம்யா பக்திவஶ்யா பயாபஹா । ஶாம்பவீ ஶாரதாராத்யா ஶர்வாணீ ஶர்மதாயிநீ ॥ சஉ ॥</div>
+    <div class="iast">bhaktipriyā bhaktigamyā bhaktivaśyā bhayāpahā | śāmbhavī śāradārādhyā śarvāṇī śarmadāyinī || 42 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">118. Bhakti-priyā (பக்திப்ரியா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Fond of and pleased by pure, unmotivated devotion from the heart.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> உள்ளன்போடு செய்யப்படும் தூய பக்தியால் பேரானந்தம் அடைபவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">119. Bhakti-gamyā (பக்திகம்யா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Reached, approached, and realized only through sincere love and devotion.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> பக்தியினால் மட்டுமே எளிதில் அடையக் கூடியவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">120. Bhakti-vaśyā (பக்திவஶ்யா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Readily swayed, won over, and bound by the love of Her true devotees.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> பக்தர்களின் உண்மையான அன்பிற்கு வசப்படுபவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">121. Bhayāpahā (பயாபஹா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The absolute dispeller and destroyer of all fear, anxiety, and dread.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> பக்தர்களின் சகல பயங்களையும் அச்சங்களையும் அடியோடு போக்குபவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">122. Śāmbhavī (ஶாம்பவீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The beloved consort of Shambhu (Shiva) and embodiment of the Shambhavi state.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> சம்புவான சிவபெருமானின் நாயகியாகவும், சாம்பவி முத்திரையின் உருவமாகவும் விளங்குபவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">123. Śāradārādhyā (ஶாரதாராத்யா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Revered and worshipped by Saraswati (Sharada), the Goddess of wisdom.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> கலைமகளான சாரதா தேவியால் பக்தியோடு வழிபடப்படுபவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">124. Śarvāṇī (ஶர்வாணீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The consort of Sharva (Shiva sustaining the cosmos).</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> சர்வனுக்குரிய ஈஸ்வரியாக இருந்து அகிலத்தை காப்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">125. Śarma-dāyinī (ஶர்மதாயிநீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The gracious bestower of supreme eternal happiness, peace, and bliss.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> நிலையான பேரின்பத்தையும் பரம அமைதியையும் வாரி வழங்குபவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 43 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 43</span><span class="n-badge">Namas 126 – 133</span></div>
+    <div class="devanagari">शाङ्करी श्रीकरी साध्वी शरच्चन्द्रनिभानना । शातोदरी शान्तिमती निराधारा निरञ्जना ॥ ४३ ॥</div>
+    <div class="tamil-shloka">ஶாங்கரீ ஸ்ரீகரீ ஸாத்வீ ஶரச்சந்த்ரநிபாநநா । ஶாதோதரீ ஶாந்திமதீ நிராதாரா நிரஞ்ஜநா ॥ சங ॥</div>
+    <div class="iast">śāṅkarī śrīkarī sādhvī śaraccandranibhānanā | śātodarī śāntimatī nirādhārā nirañjanā || 43 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">126. Śāṅkarī (ஶாங்கரீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The source of all auspiciousness and the beloved of Shankara.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> சங்கரரின் தேவியாகவும், மங்களங்களை உருவாக்குபவளாகவும் இருப்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">127. Śrīkarī (ஸ்ரீகரீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The bestower of divine wealth, spiritual radiance, and total well-being.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> செல்வ வளம், அழகு மற்றும் தெய்வீக ஆற்றலை அருள்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">128. Sādhvī (ஸாத்வீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The embodiment of pure righteousness, chastity, and unswerving noble virtue.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> பதிவிரதாதர்மத்தின் சிகரமாகவும் தூய நற்பண்புகளின் வடிவமாகவும் இருப்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">129. Śarac-candra-nibhānanā (ஶரச்சந்த்ரநிபாநநா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Having a radiant, cooling countenance like the full moon of autumn.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> சரத் காலத்தின் பௌர்ணமி நிலவு போன்ற குளிர்ந்த திருமுகத்தைக் கொண்டவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">130. Śātodarī (ஶாதோதரீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Possessing a slender, graceful, and beautifully delicate waist.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> மிகவும் மெல்லிய நுண்ணிய அழகிய இடையைக் கொண்டவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">131. Śāntimatī (ஶாந்திமதீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The personification of eternal, undisturbed peace and serene calm.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> சலனமற்ற அமைதியின் முழு வடிவமாகத் திகழ்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">132. Nirādhārā (நிராதாரா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Having no external support, for She Herself is the foundation of everything.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஆதாரமற்றவள்; ஏனெனில் தானே அனைத்திற்கும் ஆதாரமாக இருப்பவள்.</div>
+    </div>
+    <div class="nama-card">
+      <div class="nama-header">133. Nirañjanā (நிரஞ்ஜநா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Stainless, spotless, and completely free from any tinge of cosmic illusion.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> எந்தவிதமான மாயா மாசுகளும் கலங்கங்களும் இல்லாத மாசற்றவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 44 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 44</span><span class="n-badge">Namas 134 – 143</span></div>
+    <div class="devanagari">निर्लेपा निर्मला नित्या निराकारा निराकुला । निर्गुणा निष्कला शान्ता निष्कामा निरुपप्लवा ॥ ४४ ॥</div>
+    <div class="tamil-shloka">நிர்லேபா நிர்மலா நித்யா நிராகாரா நிராகுலா । நிர்குணா நிஷ்கலா ஶாந்தா நிஷ்காமா நிருபப்லவா ॥ சச ॥</div>
+    <div class="iast">nirlepā nirmalā nityā nirākārā nirākulā | nirguṇā niṣkalā śāntā niṣkāmā nirupaplavā || 44 ||</div>
+    
+    <div class="nama-card"><div class="nama-header">134. Nirlepā (நிர்லேபா)</div><div class="en-meaning"><span class="lbl">English:</span> Untouched and unattached by any karmic actions or consequences.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> செயல்களின் கர்ம வினைகள் எதிலும் ஒட்டாத பற்றற்றவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">135. Nirmalā (நிர்மலா)</div><div class="en-meaning"><span class="lbl">English:</span> Free from the three cosmic impurities (Malas).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மும்மலங்களும் அற்ற பரிசுத்தமானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">136. Nityā (நித்யா)</div><div class="en-meaning"><span class="lbl">English:</span> Eternal, immortal, and changeless across all time.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எப்போதும் நிலையாக இருக்கும் நித்தியமானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">137. Nirākārā (நிராகாரா)</div><div class="en-meaning"><span class="lbl">English:</span> Beyond physical form and shape in Her transcendent essence.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எல்லையற்ற வடிவம் அற்ற அருவ பரம்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">138. Nirākulā (நிராகுலா)</div><div class="en-meaning"><span class="lbl">English:</span> Undisturbed, serene, and free from any agitation.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எந்தவிதமான மனக்கலக்கமும் சலனமும் அற்றவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">139. Nirguṇā (நிர்குணா)</div><div class="en-meaning"><span class="lbl">English:</span> Transcending the three material qualities of nature (Gunas).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> முக்குணங்களையும் கடந்து நிற்கும் நிர்க்குண பரப்பிரம்மம்.</div></div>
+    <div class="nama-card"><div class="nama-header">140. Niṣkalā (நிஷ்கலா)</div><div class="en-meaning"><span class="lbl">English:</span> Indivisible, without parts, and unbroken whole.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிரிவுகளும் பாகங்களும் அற்ற பூரணமானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">141. Śāntā (ஶாந்தா)</div><div class="en-meaning"><span class="lbl">English:</span> Embodiment of absolute tranquil peace.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சாந்த சொரூபிணியானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">142. Niṣkāmā (நிஷ்காமா)</div><div class="en-meaning"><span class="lbl">English:</span> Devoid of selfish desires, completely self-satisfied.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஆசைகளற்ற பரிபூரண திருப்தியுடையவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">143. Nirupaplavā (நிருபப்லவா)</div><div class="en-meaning"><span class="lbl">English:</span> Free from all afflictions, disturbances, and disasters.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எந்தவிதமான ஆபத்துக்களோ இடர்ப்பாடுகளோ அணுக முடியாதவள்.</div></div>
+  </div>
+</div>
+
+<!-- PAGE 3: VERSES 45 TO 47 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 7 (Contd.): Ever-Free, Flawless & Destroyer of Delusion / நித்யமுக்தா & நிர்மோஹா</span>
+    <span class="verse-pill">Verses 45 – 47 | Namas 144 – 167</span>
+  </div>
+
+  <!-- VERSE 45 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 45</span><span class="n-badge">Namas 144 – 151</span></div>
+    <div class="devanagari">नित्यमुक्ता निर्विकारा निष्प्रपञ्चा निराश्रया । नित्यशुद्धा नित्यबुद्धा निरवद्या निरन्तरा ॥ ४५ ॥</div>
+    <div class="tamil-shloka">நித்யமுக்தா நிர்விகாரா நிஷ்ப்ரபஞ்சா நிராஶ்ரயா । நித்யஶுத்தா நித்யபுத்தா நிரவத்யா நிரந்தரா ॥ சரு ॥</div>
+    <div class="iast">nityamuktā nirvikārā niṣprapañcā nirāśrayā | nityaśuddhā nityabuddhā niravadyā nirantarā || 45 ||</div>
+    
+    <div class="nama-card"><div class="nama-header">144. Nityamuktā (நித்யமுக்தா)</div><div class="en-meaning"><span class="lbl">English:</span> Ever-liberated, never bound by worldly existence.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிறவித் தளைகளில் சிக்காத நித்திய முக்தி வடிவானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">145. Nirvikārā (நிர்விகாரா)</div><div class="en-meaning"><span class="lbl">English:</span> Beyond the six material modifications (birth, growth, decay).</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எந்த மாறுதல்களுக்கும் உட்படாத பரம்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">146. Niṣprapañcā (நிஷ்ப்ரபஞ்சா)</div><div class="en-meaning"><span class="lbl">English:</span> Transcending the physical universe of name and form.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஐம்பூத பிரபஞ்ச உலகங்களைத் தாண்டி நிற்கும் பரம்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">147. Nirāśrayā (நிராஶ்ரயா)</div><div class="en-meaning"><span class="lbl">English:</span> Needing no external shelter, being self-existent.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிறிதொரு புகலிடத்தை நாடாத சுயம் பிரகாசமானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">148. Nitya-śuddhā (நித்யஶுத்தா)</div><div class="en-meaning"><span class="lbl">English:</span> Eternally pure and untainted by matter or time.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எப்போதும் தூய்மையின் இருப்பிடமாகத் திகழ்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">149. Nitya-buddhā (நித்யபுத்தா)</div><div class="en-meaning"><span class="lbl">English:</span> The essence of perpetual, uninterrupted Consciousness.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எப்போதும் விழிப்போடு விளங்கும் மெய்யறிவு சொரூபிணி.</div></div>
+    <div class="nama-card"><div class="nama-header">150. Niravadyā (நிரவத்யா)</div><div class="en-meaning"><span class="lbl">English:</span> Completely blameless, flawless, and free from defect.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எவராலும் குறை கூற முடியாத குற்றமற்ற பரிபூரணமானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">151. Nirantarā (நிரந்தரா)</div><div class="en-meaning"><span class="lbl">English:</span> All-pervading and continuous without gaps.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> இடைவெளியின்றி எங்கும் நிறைந்திருக்கும் வியாபகமானவள்.</div></div>
+  </div>
+
+  <!-- VERSE 46 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 46</span><span class="n-badge">Namas 152 – 159</span></div>
+    <div class="devanagari">निष्कारणा निष्कलङ्का निरुपाधिर्निरीश्वरा । नीरागा रागमथनी निर्मदा मदनाशिनी ॥ ४६ ॥</div>
+    <div class="tamil-shloka">நிஷ்காரணா நிஷ்கலங்கா நிருபாதிர்நிரீஶ்வரா । நீராகா ராகமதநீ நிர்மதா மதநாஶிநீ ॥ சசு ॥</div>
+    <div class="iast">niṣkāraṇā niṣkalaṅkā nirupādhirnirīśvarā | nīrāgā rāgamathanī nirmadā madanāśinī || 46 ||</div>
+    
+    <div class="nama-card"><div class="nama-header">152. Niṣkāraṇā (நிஷ்காரணா)</div><div class="en-meaning"><span class="lbl">English:</span> Having no cause, being the Uncaused Cause of everything.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தனக்கு வேறொரு காரணமில்லாத மூல பரம்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">153. Niṣkalaṅkā (நிஷ்கலங்கா)</div><div class="en-meaning"><span class="lbl">English:</span> Immaculate and without the slightest blemish or stain.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எந்தவிதமான கறையோ களங்கமோ அற்ற தூயவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">154. Nirupādhiḥ (நிருபாதிஃ)</div><div class="en-meaning"><span class="lbl">English:</span> Free from limiting adjuncts, conditioning, or labels.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எல்லைகளோ நிபந்தனைகளோ இல்லாத கட்டற்ற பரம் பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">155. Nirīśvarā (நிரீஶ்வரா)</div><div class="en-meaning"><span class="lbl">English:</span> Having no superior master or ruler above Her.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தனக்கு மேல் தலைவனோ ஆட்சியாளரோ இல்லாத தனிப்பெரும் இறைவி.</div></div>
+    <div class="nama-card"><div class="nama-header">156. Nīrāgā (நீராகா)</div><div class="en-meaning"><span class="lbl">English:</span> Passionless and devoid of earthly attachments.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உலக இச்சைகள் இல்லாத பற்றற்றவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">157. Rāga-mathanī (ராகமதநீ)</div><div class="en-meaning"><span class="lbl">English:</span> Destroyer of destructive desires in seekers' minds.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மனதில் உள்ள பற்றுக்களை அழிப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">158. Nirmadā (நிர்மதா)</div><div class="en-meaning"><span class="lbl">English:</span> Free from pride, vanity, and arrogance.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> கர்வமும் செருக்கும் இல்லாத எளிமையானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">159. Mada-nāśinī (மதநாஶிநீ)</div><div class="en-meaning"><span class="lbl">English:</span> Annihilator of haughtiness and pride in seekers.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அடியார்களின் அகங்காரத்தை அழிப்பவள்.</div></div>
+  </div>
+
+  <!-- VERSE 47 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 47</span><span class="n-badge">Namas 160 – 167</span></div>
+    <div class="devanagari">निश्चिन्ता निरहङ्कारा निर्मोहा मोहनाशिनी । निर्ममा ममताहन्त्री निष्पापा पापनाशिनी ॥ ४७ ॥</div>
+    <div class="tamil-shloka">நிஶ்சிந்தா நிரஹங்காரா நிர்மோஹா மோஹநாஶிநீ । நிர்மமா மமதாஹந்த்ரீ நிஷ்பாபா பாபநாஶிநீ ॥ சஎ ॥</div>
+    <div class="iast">niścintā nirahaṅkārā nirmohā mohanāśinī | nirmamā mamatāhantrī niṣpāpā pāpanāśinī || 47 ||</div>
+    
+    <div class="nama-card"><div class="nama-header">160. Niścintā (நிஶ்சிந்தா)</div><div class="en-meaning"><span class="lbl">English:</span> Free from anxiety, worry, and grief.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எந்த கவலைகளும் இல்லாதவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">161. Nirahaṅkārā (நிரஹங்காரா)</div><div class="en-meaning"><span class="lbl">English:</span> Free from egoism and false "I-ness."</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> 'நான்' என்ற அகந்தை அற்றவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">162. Nirmohā (நிர்மோஹா)</div><div class="en-meaning"><span class="lbl">English:</span> Free from spiritual delusion and confusion.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மாயா மயக்கம் அற்ற பரம்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">163. Moha-nāśinī (மோஹநாஶிநீ)</div><div class="en-meaning"><span class="lbl">English:</span> Dispeller of delusion in Her devotees.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பக்தர்களின் அஞ்ஞான மயக்கத்தை நீக்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">164. Nirmamā (நிர்மமா)</div><div class="en-meaning"><span class="lbl">English:</span> Free from possessive "mine-ness."</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> 'எனது' என்ற பற்றற்றவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">165. Mamatā-hantrī (மமதாஹந்த்ரீ)</div><div class="en-meaning"><span class="lbl">English:</span> Destroyer of selfish possessiveness in hearts.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சுயநல பற்றுணர்வை வேரறுப்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">166. Niṣpāpā (நிஷ்பாபா)</div><div class="en-meaning"><span class="lbl">English:</span> Pure and devoid of any sin or wrongdoing.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பாவங்கள் இல்லாத பரிசுத்தமானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">167. Pāpa-nāśinī (பாபநாஶிநீ)</div><div class="en-meaning"><span class="lbl">English:</span> Destroyer of sins and karmic impressions.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பாவங்களை வேரறுப்பவள்.</div></div>
+  </div>
+</div>
+
+<!-- PAGE 4: VERSES 48 TO 50 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 7 (Contd.): Freedom from Doubts, Non-Duality & The Sacred Citadel / நிர்விகல்பா & துர்கா</span>
+    <span class="verse-pill">Verses 48 – 50 | Namas 168 – 192</span>
+  </div>
+
+  <!-- VERSE 48 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 48</span><span class="n-badge">Namas 168 – 175</span></div>
+    <div class="devanagari">निष्क्रोधा क्रोधशमनी निर्लोभा लोभनाशिनी । निःसंशया संशयघ्नी निर्भवा भवनाशिनी ॥ ४८ ॥</div>
+    <div class="tamil-shloka">நிஷ்க்ரோதா க்ரோதஶமநீ நிர்லோபா லோபநாஶிநீ । நிஃஸம்ஶயா ஸம்ஶயக்நீ நிர்பவா பவநாஶிநீ ॥ சஅ ॥</div>
+    <div class="iast">niṣkrodhā krodhaśamanī nirlobhā lobhanāśinī | niḥsaṃśayā saṃśayaghnī nirbhavā bhavanāśinī || 48 ||</div>
+    
+    <div class="nama-card"><div class="nama-header">168. Niṣkrodhā (நிஷ்க்ரோதா)</div><div class="en-meaning"><span class="lbl">English:</span> Devoid of anger, wrath, or ill-will, being embodiment of supreme peace.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> சினம் மற்றும் கோப உணர்ச்சிகள் அற்ற சாந்த சொரூபிணி.</div></div>
+    <div class="nama-card"><div class="nama-header">169. Krodha-śamanī (க்ரோதஶமநீ)</div><div class="en-meaning"><span class="lbl">English:</span> The pacifier and extinguisher of anger within the minds of Her seekers.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பக்தர்களின் உள்ளத்தில் எழும் கோபத்தைத் தணித்து அமைதியைத் தருபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">170. Nirlobhā (நிர்லோபா)</div><div class="en-meaning"><span class="lbl">English:</span> Free from greed, avarice, and covetousness.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பேராசையும் உலோப குணமும் இல்லாதவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">171. Lobha-nāśinī (லோபநாஶிநீ)</div><div class="en-meaning"><span class="lbl">English:</span> The destroyer of greed and selfish desires in Her devotees.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அடியார்களின் மனதில் உள்ள பேராசையை அடியோடு போக்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">172. Niḥsaṃśayā (நிஃஸம்ஶயா)</div><div class="en-meaning"><span class="lbl">English:</span> Free from all doubts, hesitations, and uncertainty.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எந்தவிதமான ஐயமும் சந்தேகமும் அற்ற தெளிவான பரம்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">173. Saṃśayaghnī (ஸம்ஶயக்நீ)</div><div class="en-meaning"><span class="lbl">English:</span> The dispeller of spiritual doubts and mental confusion in seekers.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பக்தர்களின் மனச்சந்தேகங்களையும் குழப்பங்களையும் போக்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">174. Nirbhavā (நிர்பவா)</div><div class="en-meaning"><span class="lbl">English:</span> Unborn and free from the cycle of birth and mortal origin.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிறப்பற்றவளாகவும் சம்சாரத் தோற்றங்கள் இல்லாதவளாகவும் விளங்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">175. Bhavanāśinī (பவனாஶிநீ)</div><div class="en-meaning"><span class="lbl">English:</span> The destroyer of worldly existence and the cycle of mundane samsara.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> உலகச் சுழற்சியையும் பிறவிப்பிணியையும் அழிப்பவள்.</div></div>
+  </div>
+
+  <!-- VERSE 49 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 49</span><span class="n-badge">Namas 176 – 183</span></div>
+    <div class="devanagari">निर्विकल्पा निराबाधा निर्भेदा भेदनाशिनी । निर्नाशा मृत्युमथनी निष्क्रिया निष्परिग्रहा ॥ ४९ ॥</div>
+    <div class="tamil-shloka">நிர்விகல்பா நிராபாதா நிர்பேதா பேதநாஶிநீ । நிர்நாஶா ம்ருத்யுமதநீ நிஷ்க்ரியா நிஷ்பரிகிரஹா ॥ சகூ ॥</div>
+    <div class="iast">nirvikalpā nirābādhā nirbhedā bhedanāśinī | nirnāśā mṛtyumathanī niṣkriyā niṣparigrahā || 49 ||</div>
+    
+    <div class="nama-card"><div class="nama-header">176. Nirvikalpā (நிர்விகல்பா)</div><div class="en-meaning"><span class="lbl">English:</span> Free from mental modifications, division, and dualistic thought forms.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மன விகற்பங்களும் பேத உணர்வுகளும் அற்ற ஏக பரம்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">177. Nirābādhā (நிராபாதா)</div><div class="en-meaning"><span class="lbl">English:</span> Unobstructed, unassailable, and free from all limitations or hindrances.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எவராலும் எதனாலும் தடுக்கப்பட முடியாத தடையற்ற பேராற்றல்.</div></div>
+    <div class="nama-card"><div class="nama-header">178. Nirbhedā (நிர்பேதா)</div><div class="en-meaning"><span class="lbl">English:</span> Devoid of inner divisions, distinctions, or multiplicity.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எந்தவிதமான வேற்றுமைகளும் பிரிவுகளும் இல்லாதவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">179. Bheda-nāśinī (பேதநாஶிநீ)</div><div class="en-meaning"><span class="lbl">English:</span> The destroyer of the false perception of duality and differences.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> வேற்றுமை எனும் பேத உணர்வை அழித்து அத்வைத ஞானம் அருள்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">180. Nirnāśā (நிர்நாஶா)</div><div class="en-meaning"><span class="lbl">English:</span> Imperishable and indestructible across all cosmic dissolutions.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> அழிவற்ற நித்தியமான பரவஸ்து.</div></div>
+    <div class="nama-card"><div class="nama-header">181. Mṛtyu-mathanī (ம்ருத்யுமதநீ)</div><div class="en-meaning"><span class="lbl">English:</span> The vanquisher and crusher of mortality and death.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> மரண பயத்தை அழித்து அமிர்தத்துவத்தை அருள்பவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">182. Niṣkriyā (நிஷ்க்ரியா)</div><div class="en-meaning"><span class="lbl">English:</span> Beyond physical action and karmic exertion, being pure witnessing awareness.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பௌதிகச் செயல்களுக்கு உட்படாத தூய சாட்சிப் பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">183. Niṣparigrahā (நிஷ்பரிகிரஹா)</div><div class="en-meaning"><span class="lbl">English:</span> Possessing nothing from external sources, being completely self-fulfilled.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிறரிடமிருந்து எதையும் ஏற்க வேண்டிய அவசியமற்ற பூரணமானவள்.</div></div>
+  </div>
+
+  <!-- VERSE 50 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 50</span><span class="n-badge">Namas 184 – 192</span></div>
+    <div class="devanagari">निस्तुला नीलचिकुरा निरपाया निरत्यया । दुर्लभा दुर्गमा दुर्गा दुःखहन्त्री सुखप्रदा ॥ ५० ॥</div>
+    <div class="tamil-shloka">நிஸ்துலா நீலசிகுரா நிரபாயா நிரத்யயா । துர்லபா துர்கமா துர்கா துஃகஹந்த்ரீ ஸுகப்ரதா ॥ ரு0 ॥</div>
+    <div class="iast">nistulā nīlacikurā nirapāyā niratyayā | durlabhā durgamā durgā duḥkhahantrī sukhapradā || 50 ||</div>
+    
+    <div class="nama-card"><div class="nama-header">184. Nistulā (நிஸ்துலா)</div><div class="en-meaning"><span class="lbl">English:</span> Incomparable, peerless, and beyond any earthly or celestial parallel.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> நிகரற்றவள்; எதனோடும் ஒப்பிட முடியாத தனிப்பெரும் அழகு கொண்டவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">185. Nīla-cikurā (நீலசிகுரா)</div><div class="en-meaning"><span class="lbl">English:</span> Having shining, luxuriant locks of hair with a rich bluish-black luster.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> நீல நிற ஒளிவீசும் கரிய அழகிய திருக்கூந்தலை உடையவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">186. Nirapāyā (நிரபாயா)</div><div class="en-meaning"><span class="lbl">English:</span> Imperishable, beyond all danger, decay, or diminution.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> என்றும் எவ்விதக் குறைவும் ஆபத்தும் ஏற்படாத நித்தியமானவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">187. Niratyayā (நிரத்யயா)</div><div class="en-meaning"><span class="lbl">English:</span> Transcending all transgression, violation, and boundaries.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> எவராலும் மீற முடியாத இறையாட்சி கொண்டவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">188. Durlabhā (துர்லபா)</div><div class="en-meaning"><span class="lbl">English:</span> Difficult to attain without true devotion, purity, and spiritual discipline.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> தூய பக்தியின்றி எளிதில் அடைய முடியாதவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">189. Durgamā (துர்கமா)</div><div class="en-meaning"><span class="lbl">English:</span> Unfathomable and difficult to reach through mere intellectual speculation.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> வெறும் தர்க்க அறிவினால் அணுக முடியாத அரிய பரம்பொருள்.</div></div>
+    <div class="nama-card"><div class="nama-header">190. Durgā (துர்கா)</div><div class="en-meaning"><span class="lbl">English:</span> Mother Durga, the impenetrable fortress protecting devotees from cosmic distress.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> துன்பங்களிலிருந்து அடியார்களைக் காக்கும் துர்க்கா தேவி.</div></div>
+    <div class="nama-card"><div class="nama-header">191. Duḥkha-hantrī (துஃகஹந்த்ரீ)</div><div class="en-meaning"><span class="lbl">English:</span> The compassionate destroyer of all sorrows, suffering, and afflictions.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> பக்தர்களின் அனைத்துத் துயரங்களையும் துன்பங்களையும் அடியோடு போக்குபவள்.</div></div>
+    <div class="nama-card"><div class="nama-header">192. Sukha-pradā (ஸுகப்ரதா)</div><div class="en-meaning"><span class="lbl">English:</span> The benevolent giver of earthly happiness, auspiciousness, and supreme spiritual bliss.</div><div class="ta-meaning"><span class="lbl">தமிழ்:</span> இகபர சுகங்களையும், ஆனந்தத்தையும், முக்திப் பேரின்பத்தையும் அருள்பவள்.</div></div>
+  </div>
+</div>
+
+</body>
+</html>

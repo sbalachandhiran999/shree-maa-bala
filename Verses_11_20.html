@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+<meta charset="UTF-8">
+<title>Lalitha Sahasranamam - Module 02 (Verses 11 to 20)</title>
+<style>
+  @page {
+    size: A4;
+    margin: 12mm;
+    @bottom-right {
+      content: "Module 02 • Page " counter(page);
+      font-size: 8pt;
+      font-family: Georgia, serif;
+      color: #8A5A36;
+    }
+    @bottom-left {
+      content: "Lalitha Sahasranamam — Verses 11 to 20 (Namas 27 to 48)";
+      font-size: 8pt;
+      font-family: Georgia, serif;
+      color: #8A5A36;
+    }
+  }
+
+  body {
+    font-family: 'Segoe UI', 'Mukta Malar', 'Latha', Arial, sans-serif;
+    color: #2D241E;
+    line-height: 1.45;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-size: 8.5pt;
+  }
+
+  .cover {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 88vh;
+    text-align: center;
+    border: 3px double #C59B27;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    background: radial-gradient(circle, #FFFDF8 0%, #FBF4E6 100%);
+  }
+
+  h1.title {
+    font-family: 'Georgia', serif;
+    color: #800020;
+    font-size: 22pt;
+    margin: 8px 0 2px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .tamil-title {
+    font-size: 15pt;
+    color: #800020;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    font-family: 'Georgia', serif;
+    color: #9A6B1F;
+    font-size: 11pt;
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .divider {
+    width: 120px;
+    height: 2px;
+    background-color: #C59B27;
+    margin: 10px auto;
+  }
+
+  .badge {
+    display: inline-block;
+    background-color: #800020;
+    color: #FFFFFF;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 8pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  .stage-card {
+    border: 1px solid #E2D1B3;
+    background-color: #FCFAF6;
+    border-left: 4px solid #800020;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    page-break-inside: avoid;
+  }
+
+  .stage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px dashed #D6C29E;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+  }
+
+  .stage-title {
+    font-family: Georgia, serif;
+    font-size: 10.5pt;
+    color: #800020;
+    font-weight: bold;
+  }
+
+  .verse-pill {
+    background-color: #F1E5D1;
+    color: #6E4613;
+    font-size: 7pt;
+    font-weight: bold;
+    padding: 2px 7px;
+    border-radius: 8px;
+    border: 1px solid #DFCEAE;
+  }
+
+  .anchor-box {
+    background-color: #FFF6E5;
+    border: 1px solid #F0DEB7;
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+  }
+
+  .anchor-title {
+    font-weight: bold;
+    color: #87570E;
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+
+  .anchor-desc {
+    font-style: italic;
+    color: #4A3B32;
+    font-size: 7.5pt;
+  }
+
+  .shloka-unit {
+    border-bottom: 1px solid #EFE6D8;
+    padding: 8px 0;
+    page-break-inside: avoid;
+  }
+
+  .shloka-unit:last-child {
+    border-bottom: none;
+  }
+
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 7.5pt;
+    margin-bottom: 2px;
+  }
+
+  .v-badge {
+    color: #800020;
+    font-weight: bold;
+  }
+
+  .n-badge {
+    color: #7A5318;
+    font-weight: 600;
+  }
+
+  .devanagari {
+    font-family: 'Sanskrit Text', 'Nirmala UI', Georgia, serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #691515;
+    line-height: 1.35;
+  }
+
+  .tamil-shloka {
+    font-size: 9.5pt;
+    color: #1A4D2E;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-top: 2px;
+  }
+
+  .iast {
+    font-size: 8pt;
+    color: #4A3B32;
+    font-style: italic;
+    line-height: 1.25;
+    margin-top: 2px;
+  }
+
+  .nama-card {
+    margin-top: 6px;
+    background-color: #F8F4EC;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 7.5pt;
+    line-height: 1.4;
+  }
+
+  .nama-header {
+    font-weight: bold;
+    color: #800020;
+    font-size: 8pt;
+    border-bottom: 1px solid #E5D6C0;
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+  }
+
+  .en-meaning {
+    color: #2D241E;
+    margin-bottom: 2px;
+  }
+
+  .ta-meaning {
+    color: #5C3D1E;
+    font-weight: 500;
+  }
+
+  .lbl {
+    font-weight: bold;
+    color: #800020;
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+  <div class="badge">Module 02 of 09 • தொகுதி 2</div>
+  <h1 class="title">Lalitha Sahasranamam</h1>
+  <div class="tamil-title">ஸ்ரீ லலிதா ஸஹஸ்ரநாம ஸ்தோத்திரம்</div>
+  <div class="subtitle">Complete Verses 11 to 20 (Namas 27 to 48) with Name-by-Name Meanings</div>
+  <div class="divider"></div>
+  <p style="font-size: 9pt; max-width: 500px; color: #4A3B32; margin: 6px auto;">
+    Trilingual Edition (Devanagari • தமிழ் • IAST) completing the <strong>Keśādi-Pāda Meditation</strong>: Celestial Voice, Chin, Mangalasutra, Golden Ornaments, Torso, Slender Waist, Thighs, Calves, and the Lotus Soles.
+  </p>
+  <div class="divider"></div>
+  <div style="font-size: 8pt; color: #5C4A3E; line-height: 1.5;">
+    <strong>Covers:</strong> Verses 11 to 20 (Namas 27 to 48)<br>
+    <strong>Visual Anchor:</strong> Golden Form from Voice to Lotus Feet (நாதம் & பாதகமலங்கள்)<br>
+    <em>Devanagari • தமிழ் வரிவடிவம் • English IAST • Granular Word-by-Word Definitions</em>
+  </div>
+</div>
+
+<!-- PAGE 1: VERSES 11 TO 13 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 2B: Voice, Chin, Neck & Golden Arms / குரல், கழுத்து & திருக்கரங்கள்</span>
+    <span class="verse-pill">Verses 11 – 13 | Namas 27 – 32</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Celestial Voice & Mangalasutra (மங்கல நாண்)</div>
+    <div class="anchor-desc">A voice sweeter than Saraswati's Veena, an incomparable chin, the sacred auspicious Mangalasutra on Her conch-like neck, and arms adorned with golden keyuras and pearl necklaces.</div>
+  </div>
+
+  <!-- VERSE 11 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 11</span><span class="n-badge">Namas 27 – 28</span></div>
+    <div class="devanagari">निजसंलापमाधुर्यविनिर्भर्त्सितकच्छपी । मन्दस्मितप्रभापूरमज्जत्कामेशमानसा ॥ ११ ॥</div>
+    <div class="tamil-shloka">நிஜஸம்லாபமாதுர்யவிநிர்பர்த்ஸிதகச்சபீ । மந்தஸ்மிதப்ரபாபூரமஜ்ஜத்காமேஶமாநஸா ॥ கக ॥</div>
+    <div class="iast">nijasaṃlāpamādhuryavinirbhartsitakacchapī | mandasmitaprabhāpūramajjatkāmeśamānasā || 11 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">27. Nijasaṃlāpa-mādhurya-vinirbhartsita-kacchapī (நிஜஸம்லாபமாதுர்யவிநிர்பர்த்ஸிதகச்சபீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Possessing a conversational voice whose sweet melodious resonance eclipses the divine music of Saraswati's veena (Kacchapi).</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> சரஸ்வதி தேவியின் கச்சபீ எனும் வீணாகானத்தின் இனிமையையும் மிஞ்சும் இனிய குரல் வளத்தால் பேசுகின்றவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">28. Mandasmita-prabhāpūra-majjat-kāmeśa-mānasā (மந்தஸ்மிதப்ரபாபூரமஜ்ஜத்காமேஶமாநஸா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Immersing and captivating the heart and mind of Lord Kameshwara within the overflowing radiant light of Her gentle smile.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> தனது மெல்லிய புன்னகையின் ஒளி வெள்ளத்தில் காமேஸ்வரரின் திருவுள்ளத்தை மூழ்கச் செய்பவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 12 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 12</span><span class="n-badge">Namas 29 – 30</span></div>
+    <div class="devanagari">अनाकलितसादृश्यचिबुकश्रीविराजिता । कामेशबद्धमाङ्गल्यसूत्रशोभितकन्धरा ॥ १२ ॥</div>
+    <div class="tamil-shloka">அநாகலிதஸாத்ருஶ்யசிபுகஶ்ரீவிராஜிதா । காமேஶபத்தமாங்கல்யஸூத்ரஶோபிதகந்தரா ॥ கஉ ॥</div>
+    <div class="iast">anākalitasādṛśyacibukaśrīvirājitā | kāmeśabaddhamāṅgalyasūtraśobhitakandharā || 12 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">29. Anākalita-sādṛśya-cibuka-śrī-virājitā (அநாகலிதஸாத்ருஶ்யசிபுகஶ்ரீவிராஜிதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Resplendent with a chin of matchless, peerless beauty for which no earthly or celestial comparison exists.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஒப்புமை கூற முடியாத அளவு இணையற்ற அழகுடைய அழகிய தாடையை உடையவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">30. Kāmeśa-baddha-māṅgalya-sūtra-śobhita-kandharā (காமேஶபத்தமாங்கல்யஸூத்ரஶோபிதகந்தரா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Neck adorned with the sacred Mangalasutra tied with immense eternal love by Lord Kameshwara.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> சிவகாமேஸ்வரரால் கட்டப்பட்ட திருமாங்கல்யக் கயிற்றினால் அலங்கரிக்கப்பட்ட அழகிய கழுத்தை உடையவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 13 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 13</span><span class="n-badge">Namas 31 – 32</span></div>
+    <div class="devanagari">कनकाङ्गदकेयूरकमनीयभुजान्विता । रत्नग्रैवेयचिन्ताकलोलमुक्ताफलान्विता ॥ १३ ॥</div>
+    <div class="tamil-shloka">கநகாங்கதகேயூரகமநீயபுஜாந்விதா । ரத்நக்ரைவேயசிந்தாகலோலமுக்தாபலாந்விதா ॥ கங ॥</div>
+    <div class="iast">kanakāṅgadakeyūrakamanīyabhujānvitā | ratnagraiveyacintākalolamuktāphalānvitā || 13 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">31. Kanakāṅgada-keyūra-kamanīya-bhujānvitā (கநகாங்கதகேயூரகமநீயபுஜாந்விதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Possessing enchanting, graceful arms adorned with golden armlets and jeweled bangles (*Keyuras*).</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> பொன்னால் செய்யப்பட்ட தோள்வளைகள் மற்றும் கடகங்கள் அணிந்து அழகு மிளிரும் திருக்கரங்களை உடையவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">32. Ratna-graiveya-cintāka-lola-muktā-phalānvitā (ரத்நக்ரைவேயசிந்தாகலோலமுக்தாபலாந்விதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Adorned with gemstone neck-collars and gently swaying necklaces strung with luminous pearls.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> நவரத்தின அட்டிகையும், சிந்தாக்கு பதக்கமும், அசைந்தாடும் முத்து மாலைகளும் அணிந்திருப்பவள்.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 2: VERSES 14 TO 16 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 2B (Contd.): Torso, Slender Waist & Ruby Girdle / திருமேனி, இடை & இடைவடம்</span>
+    <span class="verse-pill">Verses 14 – 16 | Namas 33 – 38</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Slender Waist & Red Silk Garments (செம்பட்டு ஆடை)</div>
+    <div class="anchor-desc">Contemplating the divine motherly bosom, the slender waist marked by three folds of beauty, draped in brilliant crimson-red silk, and cinched with jingling golden gem bells.</div>
+  </div>
+
+  <!-- VERSE 14 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 14</span><span class="n-badge">Namas 33 – 34</span></div>
+    <div class="devanagari">कामेश्वरप्रेमरत्नमणिप्रतिपणस्तनी । नाभ्यालवालरोमावलिलताफलकुचद्वयी ॥ १४ ॥</div>
+    <div class="tamil-shloka">காமேஶ்வரப்ரேமரத்நமணிப்ரதிபணஸ்தநீ । நாப்யாலவாலரோமாவலிலதாபலகுசத்வயீ ॥ கச ॥</div>
+    <div class="iast">kāmeśvarapremaratnamaṇipratipaṇastanī | nābhyālavālaromāvalilatāphalakucadvayī || 14 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">33. Kāmeśvara-prema-ratnamaṇi-pratipaṇa-stanī (காமேஶ்வரப்ரேமரத்நமணிப்ரதிபணஸ்தநீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Bosom offered as a sacred pledge in exchange for the priceless jewel of Lord Kameshwara's supreme love.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> காமேஸ்வரரின் பிரேமை என்னும் மாணிக்கத்திற்கு நிகராகத் தனது அன்பை அருள்பவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">34. Nābhyālavāla-romāvali-latā-phala-kuca-dvayī (நாப்யாலவாலரோமாவலிலதாபலகுசத்வயீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Her motherly form appearing like twin fruits on the delicate vine of romavali rising from the basin of Her navel.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> திருநாபி என்னும் பாத்தியிலிருந்து எழும் கொடியில் பூத்த இரட்டைப் பழங்கள் போன்ற பேரழகுடைய திருமேனி கொண்டவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 15 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 15</span><span class="n-badge">Namas 35 – 36</span></div>
+    <div class="devanagari">लक्ष्यरोमलताधारतासमुन्नेयमध्यमा । स्तनभारदलन्मध्यपट्टबन्धवलित्रया ॥ १५ ॥</div>
+    <div class="tamil-shloka">லக்ஷ்யரோமலதாதாரதாஸமுந்நேயமத்யமா । ஸ்தநபாரதலந்மத்யபட்டபந்தவலித்ரயா ॥ கரு ॥</div>
+    <div class="iast">lakṣyaromalatādhāratāsamunneyamadhyamā | stanabhāradalanmadhyapaṭṭabandhavalitrayā || 15 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">35. Lakṣya-roma-latā-dhāratā-samunneya-madhyamā (லக்ஷ்யரோமலதாதாரதாஸமுந்நேயமத்யமா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Slender waist whose delicate presence is inferred only by the fine vine-like line of romavali resting upon it.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> நுண்ணிய கொடி போன்ற ரோமாவலி இருப்பதைக் கொண்டு மட்டுமே அறியக்கூடிய மெல்லிய இடையை உடையவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">36. Stana-bhāra-dalan-madhya-paṭṭa-bandha-vali-trayā (ஸ்தநபாரதலந்மத்யபட்டபந்தவலித்ரயா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Bearing three graceful folds on Her abdomen (*Valitraya*) that look like protective silk bands supporting Her slender middle.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> மெல்லிய இடை தாங்குவதற்காகக் கட்டப்பட்ட பட்டுக் கச்சைகள் போன்ற மூன்று மடிப்புகளை (திரிவலி) வயிற்றில் உடையவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 16 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 16</span><span class="n-badge">Namas 37 – 38</span></div>
+    <div class="devanagari">अरुणारुणकौसुम्भवस्त्रभास्वत्कटीतटी । रत्नकिङ्किणिकारम्यरशनादामभूषिता ॥ १६ ॥</div>
+    <div class="tamil-shloka">அருணாருணகௌஸும்பவஸ்த்ரபாஸ்வத்கடீதடீ । ரத்நகிங்கிணிகாரம்யரஶநாதாமபூஷிதா ॥ கசு ॥</div>
+    <div class="iast">aruṇāruṇakausumbhavastrabhāsvatkaṭītaṭī | ratnakiṅkiṇikāramyaraśanādāmabhūṣitā || 16 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">37. Aruṇāruṇa-kausumbha-vastra-bhāsvat-kaṭī-taṭī (அருணாருணகௌஸும்பவஸ்த்ரபாஸ்வத்கடீதடீ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Hips shining resplendently, draped in silk woven in the bright crimson red of the Kusumbha flower and morning dawn.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> செக்கச்சிவந்த பட்டு வஸ்திரத்தை இடையில் உடுத்தி ஒளிவீசுபவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">38. Ratna-kiṅkiṇikā-ramya-raśanā-dāma-bhūṣitā (ரத்நகிங்கிணிகாரம்யரஶநாதாமபூஷிதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Adorned with a magnificent golden waist-girdle (*Mekhala*) studded with gems and sweet, tinkling tiny golden bells.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> ரத்தினங்கள் பதித்ததும் இனிய ஓசை எழுப்பும் மணிகளைக் கொண்டதுமான ஒட்டியாணத்தால் அலங்கரிக்கப்பட்டவள்.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 3: VERSES 17 TO 20 -->
+<div class="page-break"></div>
+
+<div class="stage-card">
+  <div class="stage-header">
+    <span class="stage-title">STAGE 2B (Contd.): Thighs, Ankles, Lotus Soles & Swan Gait / தொடைகள், கணுக்கால் & பாதகமலங்கள்</span>
+    <span class="verse-pill">Verses 17 – 20 | Namas 39 – 48</span>
+  </div>
+  
+  <div class="anchor-box">
+    <div class="anchor-title">👁️ Visual Anchor: The Ten Radiating Lotus Toe-Nails (பாத கமலங்கள்)</div>
+    <div class="anchor-desc">Golden plantain-stem thighs, crown-like knees, quiver-like calves, turtle-shell feet, shining toe-nails dispelling darkness, and the graceful swan gait.</div>
+  </div>
+
+  <!-- VERSE 17 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 17</span><span class="n-badge">Namas 39 – 40</span></div>
+    <div class="devanagari">कामेशज्ञातसौभाग्यमार्दवोरुद्वयान्विता । माणिक्यमुकुटाकारजानुद्वयविराजिता ॥ १७ ॥</div>
+    <div class="tamil-shloka">காமேஶஜ்ஞாதஸௌபாக்யமார்தவோருத்வயாந்விதா । மாணிக்யமுகுடாகாரஜாநுத்வயவிராஜிதா ॥ கஎ ॥</div>
+    <div class="iast">kāmeśajñātasaubhāgyamārdavorudvayānvitā | māṇikyamukuṭākārajānudvayavirājitā || 17 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">39. Kāmeśa-jñāta-saubhāgya-mārdavoru-dvayānvitā (காமேஶஜ்ஞாதஸௌபாக்யமார்தவோருத்வயாந்விதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Possessing twin thighs whose auspicious beauty, grace, and exquisite softness are fully known only to Lord Kameshwara.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> காமேஸ்வரரால் மட்டுமே முழுமையாக அறியப்பட்ட மங்கலகரமான மென்மை வாய்ந்த இரு தொடைகளை உடையவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">40. Māṇikya-mukuṭākāra-jānu-dvaya-virājitā (மாணிக்யமுகுடாகாரஜாநுத்வயவிராஜிதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Adorned with twin knees that shine gracefully like crowns fashioned from pure polished rubies.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> மாணிக்க கிரீடங்களின் வடிவத்தைப் போன்ற பிரகாசமான முழங்கால்களை உடையவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 18 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 18</span><span class="n-badge">Namas 41 – 43</span></div>
+    <div class="devanagari">इन्द्रगोपपरिक्षिप्तस्मरतूणाभजङ्घिका । गूढगुल्फा कूर्मपृष्ठजयिष्णुप्रपदान्विता ॥ १८ ॥</div>
+    <div class="tamil-shloka">இந்த்ரகோபபரிக்ஷிப்தஸ்மரதூணாபஜங்கிகா । கூடகுல்பா கூர்மப்ருஷ்டஜயிஷ்ணுப்ரபதாந்விதா ॥ கஅ ॥</div>
+    <div class="iast">indragopaparikṣiptasmaratūṇābhajaṅghikā | gūḍhagulphā kūrmapṛṣṭhajayiṣṇuprapadānvitā || 18 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">41. Indragopa-parikṣipta-smara-tūṇābha-jaṅghikā (இந்த்ரகோபபரிக்ஷிப்தஸ்மரதூணாபஜங்கிகா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Calves rounded and smooth like the arrow-quiver of Manmatha studded with tiny scarlet Indragopa jewels.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> இந்திரகோப மணிகள் பதித்த மன்மதனின் அம்புக்கூடு போன்ற கணைக் கால்களை உடையவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">42. Gūḍha-gulphā (கூடகுல்பா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Having elegant, concealed ankle joints without visible protruding bone structure.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> எலும்புகள் துருத்தாமல் அழகாக மறைந்திருக்கும் கணுக்கால்களை உடையவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">43. Kūrma-pṛṣṭha-jayiṣṇu-prapadānvitā (கூர்மப்ருஷ்டஜயிஷ்ணுப்ரபதாந்விதா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Forefeet gracefully arched, surpassing the smooth symmetry of a tortoise shell.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> ஆமையின் முதுகின் வளைந்த அழகையும் வெல்லும் முன் பாதங்களை உடையவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 19 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 19</span><span class="n-badge">Namas 44 – 45</span></div>
+    <div class="devanagari">नखदीधितिसञ्छन्ननमज्जनतमोगुणा । पदद्वयप्रभापराजितसरोरुहा ॥ १९ ॥</div>
+    <div class="tamil-shloka">நகதீதிதிஸஞ்சந்நநமஜ்ஜநதமோகுணா । பதத்வயப்ரபாபராஜிதஸரோருஹா ॥ ககூ ॥</div>
+    <div class="iast">nakhadīdhitisañchannanamajjanatamoguṇā | padadvayaprabhāparājitasaroruhā || 19 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">44. Nakha-dīdhiti-sañchanna-namajjana-tamo-guṇā (நகதீதிதிஸஞ்சந்நநமஜ்ஜநதமோகுணா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Dispelling the inner darkness (tamas) and ignorance of devotees bowing at Her feet through the radiant light beaming from Her toe-nails.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> தன்னை வணங்கும் பக்தர்களின் அறியாமை மற்றும் தமோ குணத்தை தனது கால் நகங்களின் ஒளிக்கதிர்களால் அகற்றுபவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">45. Pada-dvaya-prabhā-parājita-saroruhā (பதத்வயப்ரபாபராஜிதஸரோருஹா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Possessing a pair of lotus feet whose natural glowing pink luster humbles and defeats the beauty of blooming red lotuses.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> மலர்ந்த செந்தாமரை மலர்களின் பேரழகையும் மிஞ்சித் தோற்கடிக்கும் பாதகமலங்களை உடையவள்.</div>
+    </div>
+  </div>
+
+  <!-- VERSE 20 -->
+  <div class="shloka-unit">
+    <div class="meta-row"><span class="v-badge">Verse 20</span><span class="n-badge">Namas 46 – 48</span></div>
+    <div class="devanagari">शिञ्जानमणिमञ्जीरमण्डितश्रीपदाम्बुजा । मरालीमन्दगमना महालावण्यशेवधिः ॥ २० ॥</div>
+    <div class="tamil-shloka">ஶிஞ்ஜாநமணிமஞ்ஜீரமண்டிதஶ்ரீபதாம்புஜா । மராலீமந்தகமநா மஹாலாவண்யஶேவதிஃ ॥ உ0 ॥</div>
+    <div class="iast">śiñjānamaṇimañjīramaṇḍitaśrīpadāmbujā | marālīmandagamanā mahālāvanyaśevadhiḥ || 20 ||</div>
+    
+    <div class="nama-card">
+      <div class="nama-header">46. Śiñjāna-maṇi-mañjīra-maṇḍita-śrī-padāmbujā (ஶிஞ்ஜாநமணிமஞ்ஜீரமண்டிதஶ்ரீபதாம்புஜா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Lotus feet adorned with jewel-studded golden anklets (*Manjeera*) that chime with melodious music at every step.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> மெல்ல அடி எடுத்து வைக்கும் போது இனிமையாக ஒலிக்கும் ரத்தின கொலுசுகளால் அலங்கரிக்கப்பட்ட பாதங்களை உடையவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">47. Marālī-manda-gamanā (மராலீமந்தகமநா)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> Moving with the gentle, dignified, and elegant slow gait of a royal swan (*Marali*).</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> அன்னப் பறவையைப் போன்ற கம்பீரமும் மென்மையும் கொண்ட நளினமான மெதுவான நடையுடையவள்.</div>
+    </div>
+
+    <div class="nama-card">
+      <div class="nama-header">48. Mahā-lāvaṇya-śevadhiḥ (மஹாலாவண்யஶேவதிஃ)</div>
+      <div class="en-meaning"><span class="lbl">English:</span> The infinite, inexhaustible treasure-house (*Shevadhi*) of absolute divine beauty and supreme grace.</div>
+      <div class="ta-meaning"><span class="lbl">தமிழ்:</span> பிரபஞ்சத்தின் எல்லை இல்லாத பேரழகின் பொக்கிஷமாகத் திகழ்பவள்.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
